@@ -13,5 +13,14 @@
     <Compile Update="FormTransaksiMasuk.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FromEditStok.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FromLaporan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="fromTransaksiKeluar.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

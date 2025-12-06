@@ -36,8 +36,10 @@ Partial Class FormStokBarang
         btnCari = New Button()
         btnKeluar = New Button()
         Panel1 = New Panel()
-        PictureBox1 = New PictureBox()
         Label6 = New Label()
+        PictureBox1 = New PictureBox()
+        MenuStrip1 = New MenuStrip()
+        Label7 = New Label()
         CType(dgvStokBarang, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -46,55 +48,49 @@ Partial Class FormStokBarang
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(42, 108)
-        Label1.Margin = New Padding(4, 0, 4, 0)
+        Label1.Location = New Point(34, 86)
         Label1.Name = "Label1"
-        Label1.Size = New Size(132, 25)
+        Label1.Size = New Size(110, 20)
         Label1.TabIndex = 0
         Label1.Text = "KODE BARANG"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(42, 181)
-        Label2.Margin = New Padding(4, 0, 4, 0)
+        Label2.Location = New Point(34, 145)
         Label2.Name = "Label2"
-        Label2.Size = New Size(140, 25)
+        Label2.Size = New Size(116, 20)
         Label2.TabIndex = 1
         Label2.Text = "NAMA BARANG"
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(42, 244)
-        Label3.Margin = New Padding(4, 0, 4, 0)
+        Label3.Location = New Point(34, 195)
         Label3.Name = "Label3"
-        Label3.Size = New Size(46, 25)
+        Label3.Size = New Size(38, 20)
         Label3.TabIndex = 2
         Label3.Text = "SIZE"
         ' 
         ' txtKode
         ' 
-        txtKode.Location = New Point(240, 104)
-        txtKode.Margin = New Padding(4, 4, 4, 4)
+        txtKode.Location = New Point(192, 83)
         txtKode.Name = "txtKode"
-        txtKode.Size = New Size(340, 31)
+        txtKode.Size = New Size(273, 27)
         txtKode.TabIndex = 3
         ' 
         ' txtNama
         ' 
-        txtNama.Location = New Point(240, 172)
-        txtNama.Margin = New Padding(4, 4, 4, 4)
+        txtNama.Location = New Point(192, 138)
         txtNama.Name = "txtNama"
-        txtNama.Size = New Size(340, 31)
+        txtNama.Size = New Size(273, 27)
         txtNama.TabIndex = 4
         ' 
         ' txtSize
         ' 
-        txtSize.Location = New Point(240, 240)
-        txtSize.Margin = New Padding(4, 4, 4, 4)
+        txtSize.Location = New Point(192, 192)
         txtSize.Name = "txtSize"
-        txtSize.Size = New Size(340, 31)
+        txtSize.Size = New Size(273, 27)
         txtSize.TabIndex = 5
         ' 
         ' dgvStokBarang
@@ -102,65 +98,58 @@ Partial Class FormStokBarang
         dgvStokBarang.AllowUserToAddRows = False
         dgvStokBarang.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader
         dgvStokBarang.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgvStokBarang.Location = New Point(899, 279)
-        dgvStokBarang.Margin = New Padding(4, 4, 4, 4)
+        dgvStokBarang.Location = New Point(719, 223)
         dgvStokBarang.Name = "dgvStokBarang"
         dgvStokBarang.RowHeadersWidth = 51
-        dgvStokBarang.Size = New Size(1125, 559)
+        dgvStokBarang.Size = New Size(900, 447)
         dgvStokBarang.TabIndex = 8
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(42, 322)
-        Label4.Margin = New Padding(4, 0, 4, 0)
+        Label4.Location = New Point(34, 258)
         Label4.Name = "Label4"
-        Label4.Size = New Size(93, 25)
+        Label4.Size = New Size(77, 20)
         Label4.TabIndex = 9
         Label4.Text = "KATEGORI"
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(42, 398)
-        Label5.Margin = New Padding(4, 0, 4, 0)
+        Label5.Location = New Point(34, 318)
         Label5.Name = "Label5"
-        Label5.Size = New Size(70, 25)
+        Label5.Size = New Size(57, 20)
         Label5.TabIndex = 10
         Label5.Text = "LOKASI"
         ' 
         ' txtkategori
         ' 
-        txtkategori.Location = New Point(240, 314)
-        txtkategori.Margin = New Padding(4, 4, 4, 4)
+        txtkategori.Location = New Point(192, 251)
         txtkategori.Name = "txtkategori"
-        txtkategori.Size = New Size(340, 31)
+        txtkategori.Size = New Size(273, 27)
         txtkategori.TabIndex = 11
         ' 
         ' txtLokasi
         ' 
-        txtLokasi.Location = New Point(240, 394)
-        txtLokasi.Margin = New Padding(4, 4, 4, 4)
+        txtLokasi.Location = New Point(192, 315)
         txtLokasi.Name = "txtLokasi"
-        txtLokasi.Size = New Size(340, 31)
+        txtLokasi.Size = New Size(273, 27)
         txtLokasi.TabIndex = 12
         ' 
         ' btnCari
         ' 
-        btnCari.Location = New Point(240, 479)
-        btnCari.Margin = New Padding(4, 4, 4, 4)
+        btnCari.Location = New Point(192, 383)
         btnCari.Name = "btnCari"
-        btnCari.Size = New Size(118, 36)
+        btnCari.Size = New Size(94, 29)
         btnCari.TabIndex = 13
         btnCari.Text = "cari"
         btnCari.UseVisualStyleBackColor = True
         ' 
         ' btnKeluar
         ' 
-        btnKeluar.Location = New Point(382, 479)
-        btnKeluar.Margin = New Padding(4, 4, 4, 4)
+        btnKeluar.Location = New Point(306, 383)
         btnKeluar.Name = "btnKeluar"
-        btnKeluar.Size = New Size(118, 36)
+        btnKeluar.Size = New Size(94, 29)
         btnKeluar.TabIndex = 14
         btnKeluar.Text = "keluar"
         btnKeluar.UseVisualStyleBackColor = True
@@ -181,11 +170,20 @@ Partial Class FormStokBarang
         Panel1.Controls.Add(Label3)
         Panel1.Controls.Add(txtSize)
         Panel1.Controls.Add(Label4)
-        Panel1.Location = New Point(76, 279)
-        Panel1.Margin = New Padding(4, 4, 4, 4)
+        Panel1.Location = New Point(61, 223)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(728, 559)
+        Panel1.Size = New Size(582, 447)
         Panel1.TabIndex = 15
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.Location = New Point(44, 364)
+        Label6.Margin = New Padding(2, 0, 2, 0)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(59, 20)
+        Label6.TabIndex = 15
+        Label6.Text = "Sampel"
         ' 
         ' PictureBox1
         ' 
@@ -193,34 +191,45 @@ Partial Class FormStokBarang
         PictureBox1.BackgroundImage = My.Resources.Resources.Logo_Kelompok_3_Sistem_Inventory
         PictureBox1.BackgroundImageLayout = ImageLayout.Zoom
         PictureBox1.Dock = DockStyle.Bottom
-        PictureBox1.Location = New Point(0, 825)
-        PictureBox1.Margin = New Padding(4, 4, 4, 4)
+        PictureBox1.Location = New Point(0, 660)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(1924, 159)
+        PictureBox1.Size = New Size(1539, 127)
         PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox1.TabIndex = 16
         PictureBox1.TabStop = False
         ' 
-        ' Label6
+        ' MenuStrip1
         ' 
-        Label6.AutoSize = True
-        Label6.Location = New Point(55, 455)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(71, 25)
-        Label6.TabIndex = 15
-        Label6.Text = "Sampel"
+        MenuStrip1.ImageScalingSize = New Size(20, 20)
+        MenuStrip1.Location = New Point(0, 0)
+        MenuStrip1.Name = "MenuStrip1"
+        MenuStrip1.Size = New Size(1539, 24)
+        MenuStrip1.TabIndex = 17
+        MenuStrip1.Text = "MenuStrip1"
+        ' 
+        ' Label7
+        ' 
+        Label7.AutoSize = True
+        Label7.Font = New Font("MS Reference Sans Serif", 16.2F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label7.Location = New Point(651, 76)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(205, 35)
+        Label7.TabIndex = 18
+        Label7.Text = "stok barang "
         ' 
         ' FormStokBarang
         ' 
-        AutoScaleDimensions = New SizeF(10F, 25F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = My.Resources.Resources.assd1
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(1924, 984)
+        ClientSize = New Size(1539, 787)
+        Controls.Add(Label7)
         Controls.Add(PictureBox1)
         Controls.Add(Panel1)
         Controls.Add(dgvStokBarang)
-        Margin = New Padding(4, 4, 4, 4)
+        Controls.Add(MenuStrip1)
+        MainMenuStrip = MenuStrip1
         Name = "FormStokBarang"
         Text = "FormStokBarang"
         CType(dgvStokBarang, ComponentModel.ISupportInitialize).EndInit()
@@ -228,6 +237,7 @@ Partial Class FormStokBarang
         Panel1.PerformLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents Label1 As Label
@@ -246,4 +256,6 @@ Partial Class FormStokBarang
     Friend WithEvents Panel1 As Panel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label6 As Label
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents Label7 As Label
 End Class

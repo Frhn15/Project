@@ -53,7 +53,20 @@ Public Class Form1
         Hide()
     End Sub
 
+    Private Sub TransaksiKeluarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TransaksiKeluarToolStripMenuItem.Click
+        fromTransaksiKeluar.Show()
+        Hide()
+    End Sub
 
+    Private Sub LaporanMasukKeluarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LaporanMasukKeluarToolStripMenuItem.Click
+        FromLaporan.Show()
+        Hide()
+    End Sub
+
+    Private Sub EditStokBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EditStokBarangToolStripMenuItem.Click
+        FromEditStok.Show()
+        Hide()
+    End Sub
 End Class
 
 

@@ -1,0 +1,22 @@
+# Ignore Visual Studio cache
+.vs/
+
+# Build directories
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.cache
+*.log
+
+# Backup & temp files
+*.tmp
+*.bak
+*.db
+*.db-wal
+*.db-shm
+
+# Others
+*.vsidx
