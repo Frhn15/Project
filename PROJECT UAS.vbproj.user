@@ -7,6 +7,9 @@
     <Compile Update="FormLogin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="formMasterSuplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormStokBarang.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -19,7 +22,19 @@
     <Compile Update="FromLaporan.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="fromMasterBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="fromMasterKategori.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="fromTransaksiKeluar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FromTransferAntarGudang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="fromusermanagemen.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

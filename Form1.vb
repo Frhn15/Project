@@ -1,4 +1,6 @@
 ﻿
+Imports System.DirectoryServices.ActiveDirectory
+
 Public Class Form1
     Private Sub LOGINToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LOGINToolStripMenuItem.Click
         FormLogin.Show()
@@ -13,7 +15,11 @@ Public Class Form1
         TransaksiKeluarToolStripMenuItem.Enabled = False
         LaporanMasukKeluarToolStripMenuItem.Enabled = False
         LogoutToolStripMenuItem1.Enabled = False
-
+        datamaster.Enabled = False
+        MasterKategoriToolStripMenuItem.Enabled = False
+        MasterSuplierToolStripMenuItem.Enabled = False
+        TransferAntarGudangToolStripMenuItem.Enabled = False
+        usermanagement.Enabled = False
 
     End Sub
     Public Sub BukaMenu()
@@ -23,6 +29,11 @@ Public Class Form1
         TransaksiKeluarToolStripMenuItem.Enabled = True
         LaporanMasukKeluarToolStripMenuItem.Enabled = True
         LogoutToolStripMenuItem1.Enabled = True
+        datamaster.Enabled = True
+        MasterKategoriToolStripMenuItem.Enabled = True
+        MasterSuplierToolStripMenuItem.Enabled = True
+        TransferAntarGudangToolStripMenuItem.Enabled = True
+        usermanagement.Enabled = True
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -67,6 +78,33 @@ Public Class Form1
         FromEditStok.Show()
         Hide()
     End Sub
+
+    Private Sub MasterKategoriToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MasterKategoriToolStripMenuItem.Click
+        fromMasterKategori.Show()
+        Hide()
+    End Sub
+
+    Private Sub MasterSuplierToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MasterSuplierToolStripMenuItem.Click
+        formMasterSuplier.Show()
+        Hide()
+    End Sub
+
+    Private Sub MasterBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MasterBarangToolStripMenuItem.Click
+        fromMasterBarang.Show()
+        Hide()
+    End Sub
+
+    Private Sub TransferAntarGudangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TransferAntarGudangToolStripMenuItem.Click
+        FromTransferAntarGudang.Show()
+        Hide()
+    End Sub
+
+    Private Sub usermanagement_Click(sender As Object, e As EventArgs) Handles usermanagement.Click
+        fromusermanagemen.Show()
+        Hide()
+    End Sub
+
+
 End Class
 
 

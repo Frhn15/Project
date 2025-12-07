@@ -143,3 +143,8 @@ C:\Users\sahru\Source\Repos\Project\obj\Debug\net9.0-windows\refint\PROJECT UAS.
 C:\Users\sahru\Source\Repos\Project\obj\Debug\net9.0-windows\PROJECT UAS.pdb
 C:\Users\sahru\Source\Repos\Project\obj\Debug\net9.0-windows\PROJECT UAS.genruntimeconfig.cache
 C:\Users\sahru\Source\Repos\Project\obj\Debug\net9.0-windows\ref\PROJECT UAS.dll
+C:\Users\Pongo\Source\Repos\Project\obj\Debug\net9.0-windows\PROJECT_UAS.formMasterSuplier.resources
+C:\Users\Pongo\Source\Repos\Project\obj\Debug\net9.0-windows\PROJECT_UAS.fromMasterBarang.resources
+C:\Users\Pongo\Source\Repos\Project\obj\Debug\net9.0-windows\PROJECT_UAS.fromMasterKategori.resources
+C:\Users\Pongo\Source\Repos\Project\obj\Debug\net9.0-windows\PROJECT_UAS.FromTransferAntarGudang.resources
+C:\Users\Pongo\Source\Repos\Project\obj\Debug\net9.0-windows\PROJECT_UAS.fromusermanagemen.resources
