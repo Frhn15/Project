@@ -1,58 +1,66 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\sahru\\source\\repos\\Project\\",
+  "WorkspaceRootPath": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{772C9105-FE82-46CC-9294-C1E03F92E72B}|PROJECT UAS.vbproj|c:\\users\\sahru\\source\\repos\\project\\formlogin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{772C9105-FE82-46CC-9294-C1E03F92E72B}|PROJECT UAS.vbproj|solutionrelative:formlogin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\formlogin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:formlogin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{772C9105-FE82-46CC-9294-C1E03F92E72B}|PROJECT UAS.vbproj|c:\\users\\pongo\\source\\repos\\project\\fromeditstok.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{772C9105-FE82-46CC-9294-C1E03F92E72B}|PROJECT UAS.vbproj|solutionrelative:fromeditstok.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:1:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FromEditStok.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:1:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FromEditStok.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{772C9105-FE82-46CC-9294-C1E03F92E72B}|PROJECT UAS.vbproj|c:\\users\\pongo\\source\\repos\\project\\fromeditstok.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{772C9105-FE82-46CC-9294-C1E03F92E72B}|PROJECT UAS.vbproj|solutionrelative:fromeditstok.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:1:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FromEditStok.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:1:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FromEditStok.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{772C9105-FE82-46CC-9294-C1E03F92E72B}|PROJECT UAS.vbproj|c:\\users\\pongo\\source\\repos\\project\\fromeditstok.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{772C9105-FE82-46CC-9294-C1E03F92E72B}|PROJECT UAS.vbproj|solutionrelative:fromeditstok.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\fromlaporan.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:fromlaporan.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{772C9105-FE82-46CC-9294-C1E03F92E72B}|PROJECT UAS.vbproj|c:\\users\\pongo\\source\\repos\\project\\formlogin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{772C9105-FE82-46CC-9294-C1E03F92E72B}|PROJECT UAS.vbproj|solutionrelative:formlogin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:2:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FromLaporan.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:2:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FromLaporan.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{772C9105-FE82-46CC-9294-C1E03F92E72B}|PROJECT UAS.vbproj|c:\\users\\pongo\\source\\repos\\project\\formlogin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{772C9105-FE82-46CC-9294-C1E03F92E72B}|PROJECT UAS.vbproj|solutionrelative:formlogin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:2:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FromEditStok.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:2:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FromEditStok.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{772C9105-FE82-46CC-9294-C1E03F92E72B}|PROJECT UAS.vbproj|c:\\users\\pongo\\source\\repos\\project\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{772C9105-FE82-46CC-9294-C1E03F92E72B}|PROJECT UAS.vbproj|solutionrelative:form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\formstokbarang.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:formstokbarang.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{772C9105-FE82-46CC-9294-C1E03F92E72B}|PROJECT UAS.vbproj|c:\\users\\pongo\\source\\repos\\project\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{772C9105-FE82-46CC-9294-C1E03F92E72B}|PROJECT UAS.vbproj|solutionrelative:form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FromLaporan.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FromLaporan.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{772C9105-FE82-46CC-9294-C1E03F92E72B}|PROJECT UAS.vbproj|c:\\users\\pongo\\source\\repos\\project\\fromlaporan.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{772C9105-FE82-46CC-9294-C1E03F92E72B}|PROJECT UAS.vbproj|solutionrelative:fromlaporan.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\Form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{772C9105-FE82-46CC-9294-C1E03F92E72B}|PROJECT UAS.vbproj|c:\\users\\pongo\\source\\repos\\project\\fromlaporan.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{772C9105-FE82-46CC-9294-C1E03F92E72B}|PROJECT UAS.vbproj|solutionrelative:fromlaporan.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\fromTransaksiKeluar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:fromTransaksiKeluar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{772C9105-FE82-46CC-9294-C1E03F92E72B}|PROJECT UAS.vbproj|c:\\users\\pongo\\source\\repos\\project\\fromtransaksikeluar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{772C9105-FE82-46CC-9294-C1E03F92E72B}|PROJECT UAS.vbproj|solutionrelative:fromtransaksikeluar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FormLogin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FormLogin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{772C9105-FE82-46CC-9294-C1E03F92E72B}|PROJECT UAS.vbproj|c:\\users\\pongo\\source\\repos\\project\\formstokbarang.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{772C9105-FE82-46CC-9294-C1E03F92E72B}|PROJECT UAS.vbproj|solutionrelative:formstokbarang.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:2:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FromEditStok.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:2:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FromEditStok.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{772C9105-FE82-46CC-9294-C1E03F92E72B}|PROJECT UAS.vbproj|c:\\users\\pongo\\source\\repos\\project\\fromtransaksikeluar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{772C9105-FE82-46CC-9294-C1E03F92E72B}|PROJECT UAS.vbproj|solutionrelative:fromtransaksikeluar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:2:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FormLogin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:2:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FormLogin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FormStokBarang.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:2:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FormStokBarang.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\Form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,47 +70,10 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{26341fe2-71dd-46fd-bb1b-2e51a92a0d64}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Users\\Pongo\\source\\repos\\Project\\.gitignore",
-              "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "C:\\Users\\Pongo\\source\\repos\\Project\\.gitignore",
-              "RelativeToolTip": ".gitignore",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-06T17:57:42.037Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FromEditStok.vb",
-              "DocumentMoniker": "C:\\Users\\Pongo\\source\\repos\\Project\\FromEditStok.vb",
-              "RelativeDocumentMoniker": "FromEditStok.vb",
-              "ToolTip": "C:\\Users\\Pongo\\source\\repos\\Project\\FromEditStok.vb",
-              "RelativeToolTip": "FromEditStok.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-12-06T17:29:48.558Z"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
@@ -110,79 +81,36 @@
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FromEditStok.Designer.vb",
-              "DocumentMoniker": "C:\\Users\\sahru\\source\\repos\\Project\\FromEditStok.Designer.vb",
-              "RelativeDocumentMoniker": "FromEditStok.Designer.vb",
-              "ToolTip": "C:\\Users\\sahru\\source\\repos\\Project\\FromEditStok.Designer.vb",
-              "RelativeToolTip": "FromEditStok.Designer.vb",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-12-06T17:29:44.491Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FromEditStok.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\sahru\\source\\repos\\Project\\FromEditStok.vb",
-              "RelativeDocumentMoniker": "FromEditStok.vb",
-              "ToolTip": "C:\\Users\\sahru\\source\\repos\\Project\\FromEditStok.vb [Design]",
-              "RelativeToolTip": "FromEditStok.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-12-06T17:29:15.968Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "FromLaporan.vb",
-              "DocumentMoniker": "C:\\Users\\sahru\\source\\repos\\Project\\FromLaporan.vb",
+              "DocumentMoniker": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FromLaporan.vb",
               "RelativeDocumentMoniker": "FromLaporan.vb",
-              "ToolTip": "C:\\Users\\sahru\\source\\repos\\Project\\FromLaporan.vb",
+              "ToolTip": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FromLaporan.vb",
               "RelativeToolTip": "FromLaporan.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-12-06T17:27:41.989Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T17:27:41.989Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormLogin.vb",
-              "DocumentMoniker": "C:\\Users\\sahru\\source\\repos\\Project\\FormLogin.vb",
-              "RelativeDocumentMoniker": "FormLogin.vb",
-              "ToolTip": "C:\\Users\\sahru\\source\\repos\\Project\\FormLogin.vb",
-              "RelativeToolTip": "FormLogin.vb",
+              "DocumentIndex": 5,
+              "Title": "FromEditStok.vb",
+              "DocumentMoniker": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FromEditStok.vb",
+              "RelativeDocumentMoniker": "FromEditStok.vb",
+              "ToolTip": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FromEditStok.vb",
+              "RelativeToolTip": "FromEditStok.vb",
               "ViewState": "AgIAAAIAAAAAAAAAAAAxwCUAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-12-06T17:21:09.785Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T17:21:09.785Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Users\\sahru\\source\\repos\\Project\\.gitignore",
-              "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "C:\\Users\\sahru\\source\\repos\\Project\\.gitignore",
-              "RelativeToolTip": ".gitignore",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-06T17:57:42.037Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "FromLaporan.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\sahru\\source\\repos\\Project\\FromLaporan.vb",
+              "DocumentMoniker": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FromLaporan.vb",
               "RelativeDocumentMoniker": "FromLaporan.vb",
-              "ToolTip": "C:\\Users\\sahru\\source\\repos\\Project\\FromLaporan.vb [Design]",
+              "ToolTip": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FromLaporan.vb [Design]",
               "RelativeToolTip": "FromLaporan.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-12-06T17:25:44.632Z",
@@ -190,24 +118,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Form1.vb",
-              "DocumentMoniker": "C:\\Users\\sahru\\source\\repos\\Project\\Form1.vb",
+              "DocumentMoniker": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\Form1.vb",
               "RelativeDocumentMoniker": "Form1.vb",
-              "ToolTip": "C:\\Users\\sahru\\source\\repos\\Project\\Form1.vb",
+              "ToolTip": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\Form1.vb",
               "RelativeToolTip": "Form1.vb",
               "ViewState": "AgIAADcAAAAAAAAAAIA3wEMAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-12-06T17:22:38.943Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T17:22:38.943Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "fromTransaksiKeluar.vb",
-              "DocumentMoniker": "C:\\Users\\sahru\\source\\repos\\Project\\fromTransaksiKeluar.vb",
+              "DocumentMoniker": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\fromTransaksiKeluar.vb",
               "RelativeDocumentMoniker": "fromTransaksiKeluar.vb",
-              "ToolTip": "C:\\Users\\sahru\\source\\repos\\Project\\fromTransaksiKeluar.vb",
+              "ToolTip": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\fromTransaksiKeluar.vb",
               "RelativeToolTip": "fromTransaksiKeluar.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
@@ -215,35 +142,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "FormLogin.vb",
-              "DocumentMoniker": "C:\\Users\\Pongo\\source\\repos\\Project\\FormLogin.vb",
+              "DocumentMoniker": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FormLogin.vb",
               "RelativeDocumentMoniker": "FormLogin.vb",
-              "ToolTip": "C:\\Users\\Pongo\\source\\repos\\Project\\FormLogin.vb",
+              "ToolTip": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FormLogin.vb",
               "RelativeToolTip": "FormLogin.vb",
               "ViewState": "AgIAABkAAAAAAAAAAAAhwCUAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-12-06T17:21:09.785Z"
+              "WhenOpened": "2025-12-06T17:21:09.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormLogin.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FormLogin.vb",
+              "RelativeDocumentMoniker": "FormLogin.vb",
+              "ToolTip": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FormLogin.vb [Design]",
+              "RelativeToolTip": "FormLogin.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-12-06T17:57:42.037Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FromEditStok.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FromEditStok.Designer.vb",
+              "RelativeDocumentMoniker": "FromEditStok.Designer.vb",
+              "ToolTip": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FromEditStok.Designer.vb",
+              "RelativeToolTip": "FromEditStok.Designer.vb",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-12-06T17:29:44.491Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "fromTransaksiKeluar.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\sahru\\source\\repos\\Project\\fromTransaksiKeluar.vb",
-              "RelativeDocumentMoniker": "fromTransaksiKeluar.vb",
-              "ToolTip": "C:\\Users\\sahru\\source\\repos\\Project\\fromTransaksiKeluar.vb [Design]",
-              "RelativeToolTip": "fromTransaksiKeluar.vb [Design]",
+              "Title": "FromEditStok.vb",
+              "DocumentMoniker": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FromEditStok.vb",
+              "RelativeDocumentMoniker": "FromEditStok.vb",
+              "ToolTip": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FromEditStok.vb",
+              "RelativeToolTip": "FromEditStok.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-12-06T17:29:48.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FromEditStok.Designer.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FromEditStok.Designer.vb",
+              "RelativeDocumentMoniker": "FromEditStok.Designer.vb",
+              "ToolTip": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FromEditStok.Designer.vb [Design]",
+              "RelativeToolTip": "FromEditStok.Designer.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-12-06T17:20:54.374Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "FormLogin.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\sahru\\source\\repos\\Project\\FormLogin.vb",
+              "DocumentMoniker": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FormLogin.vb",
               "RelativeDocumentMoniker": "FormLogin.vb",
-              "ToolTip": "C:\\Users\\sahru\\source\\repos\\Project\\FormLogin.vb [Design]",
+              "ToolTip": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FormLogin.vb [Design]",
               "RelativeToolTip": "FormLogin.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-12-06T17:18:08.219Z",
@@ -251,11 +215,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "FormStokBarang.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\sahru\\source\\repos\\Project\\FormStokBarang.vb",
+              "DocumentMoniker": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FormStokBarang.vb",
               "RelativeDocumentMoniker": "FormStokBarang.vb",
-              "ToolTip": "C:\\Users\\sahru\\source\\repos\\Project\\FormStokBarang.vb [Design]",
+              "ToolTip": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FormStokBarang.vb [Design]",
               "RelativeToolTip": "FormStokBarang.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-12-06T16:56:01.632Z",
@@ -263,11 +227,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "Form1.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\sahru\\source\\repos\\Project\\Form1.vb",
+              "DocumentMoniker": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\Form1.vb",
               "RelativeDocumentMoniker": "Form1.vb",
-              "ToolTip": "C:\\Users\\sahru\\source\\repos\\Project\\Form1.vb [Design]",
+              "ToolTip": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\Form1.vb [Design]",
               "RelativeToolTip": "Form1.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-12-06T16:55:42.874Z",
@@ -275,7 +239,34 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FromEditStok.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FromEditStok.vb",
+              "RelativeDocumentMoniker": "FromEditStok.vb",
+              "ToolTip": "C:\\Users\\sahru\\source\\repos\\Project\\FromEditStok.vb [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\sahru\\source\\repos\\Project\\FromEditStok.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-12-06T17:29:15.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormStokBarang.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FormStokBarang.vb",
+              "RelativeDocumentMoniker": "FormStokBarang.vb",
+              "ToolTip": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Project UAS\\FormStokBarang.vb [Design]",
+              "RelativeToolTip": "FormStokBarang.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-12-06T17:57:42.037Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

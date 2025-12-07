@@ -31,13 +31,14 @@ Partial Class FormLogin
         PanelLogin = New Panel()
         Label3 = New Label()
         Panel1 = New Panel()
+        Button1 = New Button()
         PanelLogin.SuspendLayout()
         SuspendLayout()
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.Location = New Point(74, 224)
         Label1.Name = "Label1"
         Label1.Size = New Size(91, 20)
@@ -47,7 +48,7 @@ Partial Class FormLogin
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.Location = New Point(74, 301)
         Label2.Name = "Label2"
         Label2.Size = New Size(91, 20)
@@ -56,7 +57,7 @@ Partial Class FormLogin
         ' 
         ' txtUser
         ' 
-        txtUser.Font = New Font("Palatino Linotype", 9.0F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        txtUser.Font = New Font("Palatino Linotype", 9F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         txtUser.Location = New Point(200, 216)
         txtUser.Name = "txtUser"
         txtUser.Size = New Size(217, 28)
@@ -92,6 +93,7 @@ Partial Class FormLogin
         ' 
         PanelLogin.Anchor = AnchorStyles.Top
         PanelLogin.BackColor = SystemColors.ScrollBar
+        PanelLogin.Controls.Add(Button1)
         PanelLogin.Controls.Add(Label3)
         PanelLogin.Controls.Add(btnBack)
         PanelLogin.Controls.Add(btnLogin)
@@ -125,9 +127,18 @@ Partial Class FormLogin
         Panel1.Size = New Size(1651, 250)
         Panel1.TabIndex = 7
         ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(290, 153)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(94, 29)
+        Button1.TabIndex = 7
+        Button1.Text = "Button1"
+        Button1.UseVisualStyleBackColor = True
+        ' 
         ' FormLogin
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = My.Resources.Resources.assd
         BackgroundImageLayout = ImageLayout.Stretch
@@ -150,4 +161,5 @@ Partial Class FormLogin
     Friend WithEvents PanelLogin As Panel
     Friend WithEvents Label3 As Label
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents Button1 As Button
 End Class
