@@ -39,4 +39,12 @@ Public Class FormLogin
         PanelLogin.Left = (Me.ClientSize.Width - PanelLogin.Width) \ 2
         PanelLogin.Top = (Me.ClientSize.Height - PanelLogin.Height) \ 2
     End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
+    End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+
+    End Sub
 End Class

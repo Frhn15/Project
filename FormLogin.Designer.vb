@@ -31,7 +31,7 @@ Partial Class FormLogin
         PanelLogin = New Panel()
         Label3 = New Label()
         Panel1 = New Panel()
-        Button1 = New Button()
+        Label4 = New Label()
         PanelLogin.SuspendLayout()
         SuspendLayout()
         ' 
@@ -93,7 +93,7 @@ Partial Class FormLogin
         ' 
         PanelLogin.Anchor = AnchorStyles.Top
         PanelLogin.BackColor = SystemColors.ScrollBar
-        PanelLogin.Controls.Add(Button1)
+        PanelLogin.Controls.Add(Label4)
         PanelLogin.Controls.Add(Label3)
         PanelLogin.Controls.Add(btnBack)
         PanelLogin.Controls.Add(btnLogin)
@@ -122,19 +122,19 @@ Partial Class FormLogin
         Panel1.BackgroundImage = My.Resources.Resources.Logo_Kelompok_3_Sistem_Inventory
         Panel1.BackgroundImageLayout = ImageLayout.Zoom
         Panel1.Dock = DockStyle.Bottom
-        Panel1.Location = New Point(0, 371)
+        Panel1.Location = New Point(0, 484)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(1651, 250)
+        Panel1.Size = New Size(1651, 137)
         Panel1.TabIndex = 7
         ' 
-        ' Button1
+        ' Label4
         ' 
-        Button1.Location = New Point(290, 153)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(94, 29)
-        Button1.TabIndex = 7
-        Button1.Text = "Button1"
-        Button1.UseVisualStyleBackColor = True
+        Label4.AutoSize = True
+        Label4.Location = New Point(263, 167)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(79, 20)
+        Label4.TabIndex = 7
+        Label4.Text = "User Login"
         ' 
         ' FormLogin
         ' 
@@ -161,5 +161,5 @@ Partial Class FormLogin
     Friend WithEvents PanelLogin As Panel
     Friend WithEvents Label3 As Label
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Button1 As Button
+    Friend WithEvents Label4 As Label
 End Class
