@@ -2,6 +2,7 @@
 Imports System.DirectoryServices.ActiveDirectory
 
 Public Class Form1
+    Public loggedUser As String
     Private Sub LOGINToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LOGINToolStripMenuItem.Click
         FormLogin.Show()
         Hide()
@@ -42,7 +43,8 @@ Public Class Form1
 
         Me.BackgroundImageLayout = ImageLayout.Stretch
 
-
+        lblUser.Text = "Selamat datang, " & loggedUser
+        Timer1.Start()
 
     End Sub
 
@@ -104,7 +106,9 @@ Public Class Form1
         Hide()
     End Sub
 
-
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        lblJam.Text = Format(Now, "HH:mm:ss")
+    End Sub
 End Class
 
 

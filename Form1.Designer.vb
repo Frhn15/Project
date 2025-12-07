@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         MenuStrip1 = New MenuStrip()
         LOGINToolStripMenuItem = New ToolStripMenuItem()
         datamaster = New ToolStripMenuItem()
@@ -40,19 +41,24 @@ Partial Class Form1
         ToolStripMenuItem2 = New ToolStripMenuItem()
         ToolStripMenuItem3 = New ToolStripMenuItem()
         PictureBox1 = New PictureBox()
+        Label1 = New Label()
+        Label2 = New Label()
+        lblUser = New Label()
+        Timer1 = New Timer(components)
+        lblJam = New Label()
         MenuStrip1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' MenuStrip1
         ' 
-        MenuStrip1.BackColor = Color.WhiteSmoke
+        MenuStrip1.BackColor = Color.Transparent
         MenuStrip1.BackgroundImageLayout = ImageLayout.Stretch
         MenuStrip1.Dock = DockStyle.None
         MenuStrip1.Font = New Font("Segoe UI", 10.8F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
         MenuStrip1.ImageScalingSize = New Size(20, 20)
         MenuStrip1.Items.AddRange(New ToolStripItem() {LOGINToolStripMenuItem, datamaster, StokBarangToolStripMenuItem, TransaksiMasukToolStripMenuItem, TransaksiKeluarToolStripMenuItem, EditStokBarangToolStripMenuItem, TransferAntarGudangToolStripMenuItem, LaporanMasukKeluarToolStripMenuItem, usermanagement, LogoutToolStripMenuItem1, ToolStripMenuItem1, ToolStripMenuItem2, ToolStripMenuItem3})
-        MenuStrip1.Location = New Point(133, 9)
+        MenuStrip1.Location = New Point(169, 101)
         MenuStrip1.Name = "MenuStrip1"
         MenuStrip1.Padding = New Padding(12, 0, 6, 0)
         MenuStrip1.RenderMode = ToolStripRenderMode.Professional
@@ -178,6 +184,51 @@ Partial Class Form1
         PictureBox1.TabIndex = 2
         PictureBox1.TabStop = False
         ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.BackColor = Color.Transparent
+        Label1.Font = New Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = Color.Indigo
+        Label1.Location = New Point(843, 9)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(306, 38)
+        Label1.TabIndex = 3
+        Label1.Text = "INVENTORY GUDANG"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.BackColor = Color.Transparent
+        Label2.Font = New Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.ForeColor = Color.Black
+        Label2.Location = New Point(62, 45)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(179, 25)
+        Label2.TabIndex = 4
+        Label2.Text = "SELAMAT DATANG,"
+        ' 
+        ' lblUser
+        ' 
+        lblUser.AutoSize = True
+        lblUser.ForeColor = Color.Black
+        lblUser.Location = New Point(247, 50)
+        lblUser.Name = "lblUser"
+        lblUser.Size = New Size(0, 20)
+        lblUser.TabIndex = 5
+        ' 
+        ' Timer1
+        ' 
+        ' 
+        ' lblJam
+        ' 
+        lblJam.AutoSize = True
+        lblJam.ForeColor = Color.Black
+        lblJam.Location = New Point(0, 0)
+        lblJam.Name = "lblJam"
+        lblJam.Size = New Size(0, 20)
+        lblJam.TabIndex = 6
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -186,6 +237,10 @@ Partial Class Form1
         BackgroundImage = My.Resources.Resources.assd
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1806, 453)
+        Controls.Add(lblJam)
+        Controls.Add(lblUser)
+        Controls.Add(Label2)
+        Controls.Add(Label1)
         Controls.Add(PictureBox1)
         Controls.Add(MenuStrip1)
         ForeColor = Color.BurlyWood
@@ -219,5 +274,10 @@ Partial Class Form1
     Friend WithEvents ToolStripMenuItem3 As ToolStripMenuItem
     Friend WithEvents usermanagement As ToolStripMenuItem
     Friend WithEvents MasterBarangToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents lblUser As Label
+    Friend WithEvents Timer1 As Timer
+    Friend WithEvents lblJam As Label
 
 End Class
