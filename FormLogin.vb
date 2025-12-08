@@ -4,27 +4,47 @@ Public Class FormLogin
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
 
+        If txtUsername.Text = "" Or txtPassword.Text = "" Then
+            MsgBox("Username dan Password tidak boleh kosong!", vbExclamation)
+            Exit Sub
+        End If
+
         Call Koneksi()
 
-        cmd = New MySqlCommand("SELECT * FROM users WHERE username=@u AND password=@p", conn)
-        cmd.Parameters.AddWithValue("@u", txtUser.Text)
-        cmd.Parameters.AddWithValue("@p", txtPass.Text)
+        Dim query As String = "SELECT * FROM users WHERE username=@user AND password=@pass"
+        Dim cmd As New MySqlCommand(query, conn)
 
-        dr = cmd.ExecuteReader()
+        cmd.Parameters.AddWithValue("@user", txtUsername.Text)
+        cmd.Parameters.AddWithValue("@pass", txtPassword.Text)
 
-        If dr.HasRows Then
-            MessageBox.Show("Login berhasil!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        Dim rd As MySqlDataReader = cmd.ExecuteReader()
 
-            Form1.BukaMenu()   ' 🔓 AKTIFKAN MENU
-            Form1.Show()
+        If rd.Read() Then
+
+            Dim role As String = rd("role").ToString()
+
+            ' Kirim data ke Form1 SEBELUM Form1_Load berjalan
+            Form1.loggedUser = txtUsername.Text
+            Form1.lblRole.Text = role
+
+            MsgBox("Login berhasil sebagai: " & role, vbInformation)
+
+            rd.Close()
+            conn.Close()
+
             Me.Hide()
 
+            ' Penting: jalankan Form1 setelah role dikirim
+            Form1.Show()
+            Form1.BringToFront()
+            Form1.BukaMenuBerdasarkanRole()
+
         Else
-            MessageBox.Show("Username atau Password salah!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-
-            Form1.KunciMenu()  ' 🔒 MENU TETAP TERKUNCI
-
+            MsgBox("Username atau Password salah!", vbCritical)
         End If
+
+        rd.Close()
+        conn.Close()
 
     End Sub
 
@@ -36,15 +56,9 @@ Public Class FormLogin
     Private Sub FormLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.WindowState = FormWindowState.Maximized
         Me.BackgroundImageLayout = ImageLayout.Stretch
+
         PanelLogin.Left = (Me.ClientSize.Width - PanelLogin.Width) \ 2
         PanelLogin.Top = (Me.ClientSize.Height - PanelLogin.Height) \ 2
     End Sub
 
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
-
-    End Sub
-
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
-
-    End Sub
 End Class

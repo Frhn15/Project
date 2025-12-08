@@ -40,17 +40,17 @@ Partial Class FormTransaksiMasuk
         btnHapus = New Button()
         btnKembali = New Button()
         dgvInput = New DataGridView()
+        Panel1 = New Panel()
+        btnKonfirmasi = New Button()
+        Label8 = New Label()
+        PictureBox1 = New PictureBox()
         kode_barang = New DataGridViewTextBoxColumn()
         nama_barang = New DataGridViewTextBoxColumn()
         qty = New DataGridViewTextBoxColumn()
         tgl_masuk = New DataGridViewTextBoxColumn()
         kategori = New DataGridViewTextBoxColumn()
-        size = New DataGridViewTextBoxColumn()
+        UkuranBarang = New DataGridViewTextBoxColumn()
         lokasi = New DataGridViewTextBoxColumn()
-        Panel1 = New Panel()
-        btnKonfirmasi = New Button()
-        Label8 = New Label()
-        PictureBox1 = New PictureBox()
         CType(dgvInput, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -59,7 +59,7 @@ Partial Class FormTransaksiMasuk
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.Location = New Point(22, 107)
         Label1.Name = "Label1"
         Label1.Size = New Size(96, 20)
@@ -69,7 +69,7 @@ Partial Class FormTransaksiMasuk
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.Location = New Point(22, 163)
         Label2.Name = "Label2"
         Label2.Size = New Size(105, 20)
@@ -79,7 +79,7 @@ Partial Class FormTransaksiMasuk
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label3.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label3.Location = New Point(302, 104)
         Label3.Name = "Label3"
         Label3.Size = New Size(34, 20)
@@ -89,7 +89,7 @@ Partial Class FormTransaksiMasuk
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label4.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label4.Location = New Point(302, 171)
         Label4.Name = "Label4"
         Label4.Size = New Size(53, 20)
@@ -99,7 +99,7 @@ Partial Class FormTransaksiMasuk
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label5.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label5.Location = New Point(22, 217)
         Label5.Name = "Label5"
         Label5.Size = New Size(69, 20)
@@ -109,7 +109,7 @@ Partial Class FormTransaksiMasuk
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label6.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label6.Location = New Point(158, 267)
         Label6.Name = "Label6"
         Label6.Size = New Size(80, 20)
@@ -164,7 +164,7 @@ Partial Class FormTransaksiMasuk
         ' Label7
         ' 
         Label7.AutoSize = True
-        Label7.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label7.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label7.Location = New Point(302, 217)
         Label7.Name = "Label7"
         Label7.Size = New Size(36, 20)
@@ -210,61 +210,12 @@ Partial Class FormTransaksiMasuk
         ' dgvInput
         ' 
         dgvInput.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgvInput.Columns.AddRange(New DataGridViewColumn() {kode_barang, nama_barang, qty, tgl_masuk, kategori, size, lokasi})
+        dgvInput.Columns.AddRange(New DataGridViewColumn() {kode_barang, nama_barang, qty, tgl_masuk, kategori, UkuranBarang, lokasi})
         dgvInput.Location = New Point(809, 165)
         dgvInput.Name = "dgvInput"
         dgvInput.RowHeadersWidth = 51
         dgvInput.Size = New Size(933, 468)
         dgvInput.TabIndex = 18
-        ' 
-        ' kode_barang
-        ' 
-        kode_barang.HeaderText = "Kode Barang"
-        kode_barang.MinimumWidth = 6
-        kode_barang.Name = "kode_barang"
-        kode_barang.Width = 125
-        ' 
-        ' nama_barang
-        ' 
-        nama_barang.HeaderText = "Nama Barang"
-        nama_barang.MinimumWidth = 6
-        nama_barang.Name = "nama_barang"
-        nama_barang.Width = 125
-        ' 
-        ' qty
-        ' 
-        qty.HeaderText = "Qty"
-        qty.MinimumWidth = 6
-        qty.Name = "qty"
-        qty.Width = 125
-        ' 
-        ' tgl_masuk
-        ' 
-        tgl_masuk.HeaderText = "Tgl Masuk"
-        tgl_masuk.MinimumWidth = 6
-        tgl_masuk.Name = "tgl_masuk"
-        tgl_masuk.Width = 125
-        ' 
-        ' kategori
-        ' 
-        kategori.HeaderText = "Kategori"
-        kategori.MinimumWidth = 6
-        kategori.Name = "kategori"
-        kategori.Width = 125
-        ' 
-        ' size
-        ' 
-        size.HeaderText = "Size"
-        size.MinimumWidth = 6
-        size.Name = "size"
-        size.Width = 125
-        ' 
-        ' lokasi
-        ' 
-        lokasi.HeaderText = "Lokasi"
-        lokasi.MinimumWidth = 6
-        lokasi.Name = "lokasi"
-        lokasi.Width = 125
         ' 
         ' Panel1
         ' 
@@ -305,7 +256,7 @@ Partial Class FormTransaksiMasuk
         ' Label8
         ' 
         Label8.AutoSize = True
-        Label8.Font = New Font("Impact", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label8.Font = New Font("Impact", 24.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label8.Location = New Point(719, 27)
         Label8.Name = "Label8"
         Label8.Size = New Size(552, 48)
@@ -325,9 +276,58 @@ Partial Class FormTransaksiMasuk
         PictureBox1.TabIndex = 21
         PictureBox1.TabStop = False
         ' 
+        ' kode_barang
+        ' 
+        kode_barang.HeaderText = "Kode Barang"
+        kode_barang.MinimumWidth = 6
+        kode_barang.Name = "kode_barang"
+        kode_barang.Width = 125
+        ' 
+        ' nama_barang
+        ' 
+        nama_barang.HeaderText = "Nama Barang"
+        nama_barang.MinimumWidth = 6
+        nama_barang.Name = "nama_barang"
+        nama_barang.Width = 125
+        ' 
+        ' qty
+        ' 
+        qty.HeaderText = "Qty"
+        qty.MinimumWidth = 6
+        qty.Name = "qty"
+        qty.Width = 125
+        ' 
+        ' tgl_masuk
+        ' 
+        tgl_masuk.HeaderText = "Tgl Masuk"
+        tgl_masuk.MinimumWidth = 6
+        tgl_masuk.Name = "tgl_masuk"
+        tgl_masuk.Width = 125
+        ' 
+        ' kategori
+        ' 
+        kategori.HeaderText = "Kategori"
+        kategori.MinimumWidth = 6
+        kategori.Name = "kategori"
+        kategori.Width = 125
+        ' 
+        ' UkuranBarang
+        ' 
+        UkuranBarang.HeaderText = "Size"
+        UkuranBarang.MinimumWidth = 6
+        UkuranBarang.Name = "UkuranBarang"
+        UkuranBarang.Width = 125
+        ' 
+        ' lokasi
+        ' 
+        lokasi.HeaderText = "Lokasi"
+        lokasi.MinimumWidth = 6
+        lokasi.Name = "lokasi"
+        lokasi.Width = 125
+        ' 
         ' FormTransaksiMasuk
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = My.Resources.Resources.assd1
         BackgroundImageLayout = ImageLayout.Stretch
@@ -364,15 +364,15 @@ Partial Class FormTransaksiMasuk
     Friend WithEvents btnHapus As Button
     Friend WithEvents btnKembali As Button
     Friend WithEvents dgvInput As DataGridView
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents btnKonfirmasi As Button
+    Friend WithEvents Label8 As Label
+    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents kode_barang As DataGridViewTextBoxColumn
     Friend WithEvents nama_barang As DataGridViewTextBoxColumn
     Friend WithEvents qty As DataGridViewTextBoxColumn
     Friend WithEvents tgl_masuk As DataGridViewTextBoxColumn
     Friend WithEvents kategori As DataGridViewTextBoxColumn
-    Friend WithEvents size As DataGridViewTextBoxColumn
+    Friend WithEvents UkuranBarang As DataGridViewTextBoxColumn
     Friend WithEvents lokasi As DataGridViewTextBoxColumn
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents btnKonfirmasi As Button
-    Friend WithEvents Label8 As Label
-    Friend WithEvents PictureBox1 As PictureBox
 End Class

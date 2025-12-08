@@ -24,14 +24,14 @@ Partial Class FormLogin
     Private Sub InitializeComponent()
         Label1 = New Label()
         Label2 = New Label()
-        txtUser = New TextBox()
-        txtPass = New TextBox()
+        txtUsername = New TextBox()
+        txtPassword = New TextBox()
         btnLogin = New Button()
         btnBack = New Button()
         PanelLogin = New Panel()
+        Label4 = New Label()
         Label3 = New Label()
         Panel1 = New Panel()
-        Label4 = New Label()
         PanelLogin.SuspendLayout()
         SuspendLayout()
         ' 
@@ -55,21 +55,21 @@ Partial Class FormLogin
         Label2.TabIndex = 1
         Label2.Text = "PASSWORD"
         ' 
-        ' txtUser
+        ' txtUsername
         ' 
-        txtUser.Font = New Font("Palatino Linotype", 9F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        txtUser.Location = New Point(200, 216)
-        txtUser.Name = "txtUser"
-        txtUser.Size = New Size(217, 28)
-        txtUser.TabIndex = 2
+        txtUsername.Font = New Font("Palatino Linotype", 9F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        txtUsername.Location = New Point(200, 216)
+        txtUsername.Name = "txtUsername"
+        txtUsername.Size = New Size(217, 28)
+        txtUsername.TabIndex = 2
         ' 
-        ' txtPass
+        ' txtPassword
         ' 
-        txtPass.Location = New Point(200, 294)
-        txtPass.Name = "txtPass"
-        txtPass.PasswordChar = "*"c
-        txtPass.Size = New Size(217, 27)
-        txtPass.TabIndex = 3
+        txtPassword.Location = New Point(200, 294)
+        txtPassword.Name = "txtPassword"
+        txtPassword.PasswordChar = "*"c
+        txtPassword.Size = New Size(217, 27)
+        txtPassword.TabIndex = 3
         ' 
         ' btnLogin
         ' 
@@ -97,14 +97,23 @@ Partial Class FormLogin
         PanelLogin.Controls.Add(Label3)
         PanelLogin.Controls.Add(btnBack)
         PanelLogin.Controls.Add(btnLogin)
-        PanelLogin.Controls.Add(txtPass)
-        PanelLogin.Controls.Add(txtUser)
+        PanelLogin.Controls.Add(txtPassword)
+        PanelLogin.Controls.Add(txtUsername)
         PanelLogin.Controls.Add(Label2)
         PanelLogin.Controls.Add(Label1)
         PanelLogin.Location = New Point(598, 12)
         PanelLogin.Name = "PanelLogin"
         PanelLogin.Size = New Size(550, 488)
         PanelLogin.TabIndex = 6
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Location = New Point(263, 167)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(79, 20)
+        Label4.TabIndex = 7
+        Label4.Text = "User Login"
         ' 
         ' Label3
         ' 
@@ -127,15 +136,6 @@ Partial Class FormLogin
         Panel1.Size = New Size(1651, 137)
         Panel1.TabIndex = 7
         ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Location = New Point(263, 167)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(79, 20)
-        Label4.TabIndex = 7
-        Label4.Text = "User Login"
-        ' 
         ' FormLogin
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -154,8 +154,8 @@ Partial Class FormLogin
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents txtUser As TextBox
-    Friend WithEvents txtPass As TextBox
+    Friend WithEvents txtUsername As TextBox
+    Friend WithEvents txtPassword As TextBox
     Friend WithEvents btnLogin As Button
     Friend WithEvents btnBack As Button
     Friend WithEvents PanelLogin As Panel

@@ -46,6 +46,7 @@ Partial Class Form1
         lblUser = New Label()
         Timer1 = New Timer(components)
         lblJam = New Label()
+        lblRole = New Label()
         MenuStrip1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -190,7 +191,7 @@ Partial Class Form1
         Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.Indigo
-        Label1.Location = New Point(843, 9)
+        Label1.Location = New Point(709, 18)
         Label1.Name = "Label1"
         Label1.Size = New Size(306, 38)
         Label1.TabIndex = 3
@@ -202,7 +203,7 @@ Partial Class Form1
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.Black
-        Label2.Location = New Point(62, 45)
+        Label2.Location = New Point(78, 50)
         Label2.Name = "Label2"
         Label2.Size = New Size(179, 25)
         Label2.TabIndex = 4
@@ -229,6 +230,15 @@ Partial Class Form1
         lblJam.Size = New Size(0, 20)
         lblJam.TabIndex = 6
         ' 
+        ' lblRole
+        ' 
+        lblRole.AutoSize = True
+        lblRole.ForeColor = Color.Black
+        lblRole.Location = New Point(247, 49)
+        lblRole.Name = "lblRole"
+        lblRole.Size = New Size(0, 20)
+        lblRole.TabIndex = 7
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -237,6 +247,7 @@ Partial Class Form1
         BackgroundImage = My.Resources.Resources.assd
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1806, 453)
+        Controls.Add(lblRole)
         Controls.Add(lblJam)
         Controls.Add(lblUser)
         Controls.Add(Label2)
@@ -277,7 +288,8 @@ Partial Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents lblUser As Label
-    Friend WithEvents Timer1 As Timer
     Friend WithEvents lblJam As Label
+    Friend WithEvents lblRole As Label
+    Public WithEvents Timer1 As Timer
 
 End Class
