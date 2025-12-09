@@ -23,6 +23,7 @@ Partial Class FormTransaksiMasuk
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Panel1 = New Panel()
+        Button2 = New Button()
         Button1 = New Button()
         NumericUpDown1 = New NumericUpDown()
         ComboBox3 = New ComboBox()
@@ -41,7 +42,6 @@ Partial Class FormTransaksiMasuk
         Label8 = New Label()
         PictureBox1 = New PictureBox()
         DataGridView1 = New DataGridView()
-        Button2 = New Button()
         Panel1.SuspendLayout()
         CType(NumericUpDown1, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -73,8 +73,19 @@ Partial Class FormTransaksiMasuk
         Panel1.Size = New Size(661, 585)
         Panel1.TabIndex = 19
         ' 
+        ' Button2
+        ' 
+        Button2.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        Button2.Location = New Point(368, 460)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(202, 41)
+        Button2.TabIndex = 15
+        Button2.Text = "Kembali"
+        Button2.UseVisualStyleBackColor = True
+        ' 
         ' Button1
         ' 
+        Button1.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         Button1.Location = New Point(104, 460)
         Button1.Name = "Button1"
         Button1.Size = New Size(212, 41)
@@ -237,15 +248,6 @@ Partial Class FormTransaksiMasuk
         DataGridView1.RowHeadersWidth = 62
         DataGridView1.Size = New Size(984, 522)
         DataGridView1.TabIndex = 22
-        ' 
-        ' Button2
-        ' 
-        Button2.Location = New Point(368, 460)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(202, 41)
-        Button2.TabIndex = 15
-        Button2.Text = "Kembali"
-        Button2.UseVisualStyleBackColor = True
         ' 
         ' FormTransaksiMasuk
         ' 
