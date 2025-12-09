@@ -48,7 +48,7 @@ Partial Class FormLogin
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.ForeColor = Color.DimGray
+        Label1.ForeColor = Color.Black
         Label1.Location = New Point(110, 168)
         Label1.Name = "Label1"
         Label1.Size = New Size(80, 20)
@@ -59,7 +59,7 @@ Partial Class FormLogin
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label2.ForeColor = Color.DimGray
+        Label2.ForeColor = Color.Black
         Label2.Location = New Point(110, 238)
         Label2.Name = "Label2"
         Label2.Size = New Size(76, 20)
@@ -84,7 +84,7 @@ Partial Class FormLogin
         ' 
         ' btnLogin
         ' 
-        btnLogin.BackColor = Color.Silver
+        btnLogin.BackColor = Color.Black
         btnLogin.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnLogin.ForeColor = SystemColors.ButtonHighlight
         btnLogin.Location = New Point(110, 304)
@@ -101,13 +101,13 @@ Partial Class FormLogin
         btnBack.ForeColor = Color.Transparent
         btnBack.Location = New Point(442, 23)
         btnBack.Name = "btnBack"
-        btnBack.Size = New Size(32, 32)
+        btnBack.Size = New Size(35, 35)
         btnBack.TabIndex = 5
         btnBack.UseVisualStyleBackColor = False
         ' 
         ' PanelLogin
         ' 
-        PanelLogin.BackColor = SystemColors.ScrollBar
+        PanelLogin.BackColor = Color.Black
         PanelLogin.Controls.Add(Label4)
         PanelLogin.Controls.Add(Label7)
         PanelLogin.Controls.Add(Label6)
@@ -124,7 +124,7 @@ Partial Class FormLogin
         Label4.BackColor = Color.Transparent
         Label4.Font = New Font("Segoe UI Semibold", 7.20000029F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label4.ForeColor = Color.White
-        Label4.Location = New Point(55, 485)
+        Label4.Location = New Point(55, 477)
         Label4.Name = "Label4"
         Label4.Size = New Size(291, 17)
         Label4.TabIndex = 11
@@ -185,7 +185,7 @@ Partial Class FormLogin
         ' 
         Label8.AutoSize = True
         Label8.Font = New Font("Segoe UI Semibold", 13F, FontStyle.Bold)
-        Label8.ForeColor = Color.DimGray
+        Label8.ForeColor = Color.Black
         Label8.Location = New Point(115, 108)
         Label8.Name = "Label8"
         Label8.Size = New Size(290, 30)
