@@ -5,10 +5,10 @@ Public Class FormStokBarang
     Sub TampilSemua()
         Call Koneksi()
 
-        da = New MySqlDataAdapter("SELECT * FROM stok_barang", conn)
+        da = New MySqlDataAdapter("SELECT * FROM stok_gudang", conn)
         ds = New DataSet
-        da.Fill(ds, "stok_barang")
-        dgvStokBarang.DataSource = ds.Tables("stok_barang")
+        da.Fill(ds, "stok_gudang")
+        dgvStokBarang.DataSource = ds.Tables("stok_gudang")
     End Sub
     Private Sub FormStokBarang_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.WindowState = FormWindowState.Maximized
@@ -31,7 +31,7 @@ Public Class FormStokBarang
 
         Call Koneksi()
 
-        Dim sql As String = "SELECT * FROM stok_barang 
+        Dim sql As String = "SELECT * FROM stok_gudang
                          WHERE (kode_barang LIKE @kode OR @kode = '') 
                          AND (nama_barang LIKE @nama OR @nama = '') 
                          AND (size LIKE @size OR @size = '') 
@@ -56,6 +56,10 @@ Public Class FormStokBarang
     End Sub
 
     Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
+
+    End Sub
+
+    Private Sub dgvStokBarang_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvStokBarang.CellContentClick
 
     End Sub
 End Class
