@@ -38,6 +38,7 @@ Partial Class FormLogin
         Label6 = New Label()
         Label7 = New Label()
         Label4 = New Label()
+        Label8 = New Label()
         PanelLogin.SuspendLayout()
         Panel1.SuspendLayout()
         Panel2.SuspendLayout()
@@ -49,7 +50,7 @@ Partial Class FormLogin
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.Black
-        Label1.Location = New Point(110, 176)
+        Label1.Location = New Point(110, 168)
         Label1.Name = "Label1"
         Label1.Size = New Size(80, 20)
         Label1.TabIndex = 0
@@ -60,7 +61,7 @@ Partial Class FormLogin
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.Black
-        Label2.Location = New Point(110, 246)
+        Label2.Location = New Point(110, 238)
         Label2.Name = "Label2"
         Label2.Size = New Size(76, 20)
         Label2.TabIndex = 1
@@ -69,14 +70,14 @@ Partial Class FormLogin
         ' txtUsername
         ' 
         txtUsername.Font = New Font("Palatino Linotype", 9F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        txtUsername.Location = New Point(110, 199)
+        txtUsername.Location = New Point(110, 191)
         txtUsername.Name = "txtUsername"
         txtUsername.Size = New Size(300, 28)
         txtUsername.TabIndex = 2
         ' 
         ' txtPassword
         ' 
-        txtPassword.Location = New Point(110, 269)
+        txtPassword.Location = New Point(110, 261)
         txtPassword.Name = "txtPassword"
         txtPassword.PasswordChar = "*"c
         txtPassword.Size = New Size(300, 27)
@@ -87,7 +88,7 @@ Partial Class FormLogin
         btnLogin.BackColor = Color.Silver
         btnLogin.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnLogin.ForeColor = SystemColors.ButtonHighlight
-        btnLogin.Location = New Point(110, 312)
+        btnLogin.Location = New Point(110, 304)
         btnLogin.Name = "btnLogin"
         btnLogin.Size = New Size(300, 45)
         btnLogin.TabIndex = 4
@@ -138,6 +139,7 @@ Partial Class FormLogin
         ' Panel2
         ' 
         Panel2.BackColor = Color.White
+        Panel2.Controls.Add(Label8)
         Panel2.Controls.Add(Label5)
         Panel2.Controls.Add(txtUsername)
         Panel2.Controls.Add(Label3)
@@ -156,7 +158,7 @@ Partial Class FormLogin
         Label5.AutoSize = True
         Label5.Font = New Font("Segoe UI", 7.20000029F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label5.ForeColor = Color.Black
-        Label5.Location = New Point(133, 360)
+        Label5.Location = New Point(133, 352)
         Label5.Name = "Label5"
         Label5.Size = New Size(254, 17)
         Label5.TabIndex = 8
@@ -208,6 +210,17 @@ Partial Class FormLogin
         Label4.TabIndex = 4
         Label4.Text = "© 2025 Kelompok 3 - Sistem Inventori Gudang."
         ' 
+        ' Label8
+        ' 
+        Label8.AutoSize = True
+        Label8.Font = New Font("Segoe UI Semibold", 13F, FontStyle.Bold)
+        Label8.ForeColor = Color.DimGray
+        Label8.Location = New Point(125, 94)
+        Label8.Name = "Label8"
+        Label8.Size = New Size(290, 30)
+        Label8.TabIndex = 9
+        Label8.Text = "INVENTORY SYSTEM LOGIN"
+        ' 
         ' FormLogin
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -243,4 +256,5 @@ Partial Class FormLogin
     Friend WithEvents Label6 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label7 As Label
+    Friend WithEvents Label8 As Label
 End Class
