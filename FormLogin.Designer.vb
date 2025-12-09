@@ -30,26 +30,25 @@ Partial Class FormLogin
         btnLogin = New Button()
         btnBack = New Button()
         PanelLogin = New Panel()
+        Label4 = New Label()
+        Label7 = New Label()
+        Label6 = New Label()
+        PictureBox1 = New PictureBox()
+        Panel2 = New Panel()
+        Label8 = New Label()
+        Label5 = New Label()
         Label3 = New Label()
         Panel1 = New Panel()
-        Panel2 = New Panel()
-        Label5 = New Label()
-        PictureBox1 = New PictureBox()
-        Label6 = New Label()
-        Label7 = New Label()
-        Label4 = New Label()
-        Label8 = New Label()
         PanelLogin.SuspendLayout()
-        Panel1.SuspendLayout()
-        Panel2.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        Panel2.SuspendLayout()
         SuspendLayout()
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.ForeColor = Color.Black
+        Label1.ForeColor = Color.DimGray
         Label1.Location = New Point(110, 168)
         Label1.Name = "Label1"
         Label1.Size = New Size(80, 20)
@@ -60,7 +59,7 @@ Partial Class FormLogin
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label2.ForeColor = Color.Black
+        Label2.ForeColor = Color.DimGray
         Label2.Location = New Point(110, 238)
         Label2.Name = "Label2"
         Label2.Size = New Size(76, 20)
@@ -97,44 +96,73 @@ Partial Class FormLogin
         ' 
         ' btnBack
         ' 
+        btnBack.BackColor = Color.Transparent
         btnBack.BackgroundImage = CType(resources.GetObject("btnBack.BackgroundImage"), Image)
-        btnBack.Location = New Point(452, 19)
+        btnBack.ForeColor = Color.Transparent
+        btnBack.Location = New Point(442, 23)
         btnBack.Name = "btnBack"
         btnBack.Size = New Size(32, 32)
         btnBack.TabIndex = 5
-        btnBack.UseVisualStyleBackColor = True
+        btnBack.UseVisualStyleBackColor = False
         ' 
         ' PanelLogin
         ' 
-        PanelLogin.Anchor = AnchorStyles.Top
         PanelLogin.BackColor = SystemColors.ScrollBar
+        PanelLogin.Controls.Add(Label4)
+        PanelLogin.Controls.Add(Label7)
+        PanelLogin.Controls.Add(Label6)
+        PanelLogin.Controls.Add(PictureBox1)
         PanelLogin.Controls.Add(Panel2)
         PanelLogin.Location = New Point(172, 73)
         PanelLogin.Name = "PanelLogin"
         PanelLogin.Size = New Size(900, 520)
         PanelLogin.TabIndex = 6
         ' 
-        ' Label3
+        ' Label4
         ' 
-        Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(214, 85)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(0, 41)
-        Label3.TabIndex = 6
+        Label4.AutoSize = True
+        Label4.BackColor = Color.Transparent
+        Label4.Font = New Font("Segoe UI Semibold", 7.20000029F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label4.ForeColor = Color.White
+        Label4.Location = New Point(55, 485)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(291, 17)
+        Label4.TabIndex = 11
+        Label4.Text = "© 2025 Kelompok 3 - Sistem Inventori Gudang"
         ' 
-        ' Panel1
+        ' Label7
         ' 
-        Panel1.BackColor = Color.Silver
-        Panel1.Controls.Add(Label4)
-        Panel1.Controls.Add(Label7)
-        Panel1.Controls.Add(Label6)
-        Panel1.Controls.Add(PictureBox1)
-        Panel1.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Panel1.Location = New Point(172, 73)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(400, 520)
-        Panel1.TabIndex = 7
+        Label7.AutoSize = True
+        Label7.BackColor = Color.Transparent
+        Label7.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label7.ForeColor = Color.White
+        Label7.Location = New Point(65, 263)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(291, 20)
+        Label7.TabIndex = 10
+        Label7.Text = "Step into smarter inventory management"
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.BackColor = Color.Transparent
+        Label6.Font = New Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label6.ForeColor = Color.White
+        Label6.Location = New Point(96, 227)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(208, 38)
+        Label6.TabIndex = 9
+        Label6.Text = "Welcome Back"
+        ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.BackColor = Color.Transparent
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
+        PictureBox1.Location = New Point(105, 44)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(180, 180)
+        PictureBox1.TabIndex = 8
+        PictureBox1.TabStop = False
         ' 
         ' Panel2
         ' 
@@ -153,6 +181,17 @@ Partial Class FormLogin
         Panel2.Size = New Size(500, 520)
         Panel2.TabIndex = 7
         ' 
+        ' Label8
+        ' 
+        Label8.AutoSize = True
+        Label8.Font = New Font("Segoe UI Semibold", 13F, FontStyle.Bold)
+        Label8.ForeColor = Color.DimGray
+        Label8.Location = New Point(115, 108)
+        Label8.Name = "Label8"
+        Label8.Size = New Size(290, 30)
+        Label8.TabIndex = 9
+        Label8.Text = "INVENTORY SYSTEM LOGIN"
+        ' 
         ' Label5
         ' 
         Label5.AutoSize = True
@@ -164,80 +203,39 @@ Partial Class FormLogin
         Label5.TabIndex = 8
         Label5.Text = "*Pastikan data yang anda masukkan benar"
         ' 
-        ' PictureBox1
+        ' Label3
         ' 
-        PictureBox1.BackColor = Color.Transparent
-        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(110, 42)
-        PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(180, 180)
-        PictureBox1.TabIndex = 0
-        PictureBox1.TabStop = False
+        Label3.AutoSize = True
+        Label3.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label3.Location = New Point(214, 85)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(0, 41)
+        Label3.TabIndex = 6
         ' 
-        ' Label6
+        ' Panel1
         ' 
-        Label6.AutoSize = True
-        Label6.BackColor = Color.Transparent
-        Label6.Font = New Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label6.ForeColor = Color.White
-        Label6.Location = New Point(101, 225)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(208, 38)
-        Label6.TabIndex = 2
-        Label6.Text = "Welcome Back"
-        ' 
-        ' Label7
-        ' 
-        Label7.AutoSize = True
-        Label7.BackColor = Color.Transparent
-        Label7.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label7.ForeColor = Color.White
-        Label7.Location = New Point(70, 261)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(291, 20)
-        Label7.TabIndex = 3
-        Label7.Text = "Step into smarter inventory management"
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.BackColor = Color.Transparent
-        Label4.Font = New Font("Segoe UI Semibold", 7.20000029F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label4.ForeColor = Color.White
-        Label4.Location = New Point(60, 483)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(294, 17)
-        Label4.TabIndex = 4
-        Label4.Text = "© 2025 Kelompok 3 - Sistem Inventori Gudang."
-        ' 
-        ' Label8
-        ' 
-        Label8.AutoSize = True
-        Label8.Font = New Font("Segoe UI Semibold", 13F, FontStyle.Bold)
-        Label8.ForeColor = Color.DimGray
-        Label8.Location = New Point(125, 94)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(290, 30)
-        Label8.TabIndex = 9
-        Label8.Text = "INVENTORY SYSTEM LOGIN"
+        Panel1.BackColor = Color.DarkGray
+        Panel1.Location = New Point(172, 73)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(904, 524)
+        Panel1.TabIndex = 7
         ' 
         ' FormLogin
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.White
+        BackColor = Color.WhiteSmoke
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1262, 673)
-        Controls.Add(Panel1)
         Controls.Add(PanelLogin)
+        Controls.Add(Panel1)
         Name = "FormLogin"
         Text = "FormLogin"
         PanelLogin.ResumeLayout(False)
-        Panel1.ResumeLayout(False)
-        Panel1.PerformLayout()
+        PanelLogin.PerformLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -249,7 +247,6 @@ Partial Class FormLogin
     Friend WithEvents btnBack As Button
     Friend WithEvents PanelLogin As Panel
     Friend WithEvents Label3 As Label
-    Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label5 As Label
     Friend WithEvents PictureBox1 As PictureBox
@@ -257,4 +254,5 @@ Partial Class FormLogin
     Friend WithEvents Label4 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
+    Friend WithEvents Panel1 As Panel
 End Class
