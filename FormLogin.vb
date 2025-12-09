@@ -81,11 +81,23 @@ Public Class FormLogin
 
     End Sub
 
-    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
+    Private Sub Label6_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Label4_Click_1(sender As Object, e As EventArgs) Handles Label4.Click
+    Private Sub Label4_Click_1(sender As Object, e As EventArgs)
 
     End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
+    End Sub
+
+    Private Sub Form1_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+        Panel1.Left = (Me.ClientSize.Width - Panel1.Width) \ 2
+        Panel1.Top = (Me.ClientSize.Height - Panel1.Height) \ 2
+    End Sub
+
+
+
 End Class
