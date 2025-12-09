@@ -23,33 +23,35 @@ Partial Class FormTransaksiMasuk
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Panel1 = New Panel()
+        Button1 = New Button()
+        NumericUpDown1 = New NumericUpDown()
+        ComboBox3 = New ComboBox()
+        TextBox2 = New TextBox()
+        ComboBox2 = New ComboBox()
+        ComboBox1 = New ComboBox()
+        Label7 = New Label()
+        Label6 = New Label()
+        Label5 = New Label()
+        Label4 = New Label()
+        Label3 = New Label()
+        Label2 = New Label()
+        DateTimePicker1 = New DateTimePicker()
+        TextBox1 = New TextBox()
+        Label1 = New Label()
         Label8 = New Label()
         PictureBox1 = New PictureBox()
-        Label1 = New Label()
-        TextBox1 = New TextBox()
-        DateTimePicker1 = New DateTimePicker()
-        Label2 = New Label()
-        Label3 = New Label()
-        Label4 = New Label()
-        Label5 = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
-        ComboBox1 = New ComboBox()
-        ComboBox2 = New ComboBox()
-        TextBox2 = New TextBox()
-        ComboBox3 = New ComboBox()
-        NumericUpDown1 = New NumericUpDown()
-        Button1 = New Button()
         DataGridView1 = New DataGridView()
+        Button2 = New Button()
         Panel1.SuspendLayout()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(NumericUpDown1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Panel1
         ' 
         Panel1.BackColor = SystemColors.ControlDark
+        Panel1.Controls.Add(Button2)
         Panel1.Controls.Add(Button1)
         Panel1.Controls.Add(NumericUpDown1)
         Panel1.Controls.Add(ComboBox3)
@@ -66,10 +68,141 @@ Partial Class FormTransaksiMasuk
         Panel1.Controls.Add(TextBox1)
         Panel1.Controls.Add(Label1)
         Panel1.Location = New Point(116, 206)
-        Panel1.Margin = New Padding(4, 4, 4, 4)
+        Panel1.Margin = New Padding(4)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(661, 585)
         Panel1.TabIndex = 19
+        ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(104, 460)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(212, 41)
+        Button1.TabIndex = 14
+        Button1.Text = "Tambah ke list"
+        Button1.UseVisualStyleBackColor = True
+        ' 
+        ' NumericUpDown1
+        ' 
+        NumericUpDown1.Location = New Point(248, 390)
+        NumericUpDown1.Name = "NumericUpDown1"
+        NumericUpDown1.Size = New Size(180, 31)
+        NumericUpDown1.TabIndex = 13
+        ' 
+        ' ComboBox3
+        ' 
+        ComboBox3.FormattingEnabled = True
+        ComboBox3.Location = New Point(246, 331)
+        ComboBox3.Name = "ComboBox3"
+        ComboBox3.Size = New Size(182, 33)
+        ComboBox3.TabIndex = 12
+        ' 
+        ' TextBox2
+        ' 
+        TextBox2.Location = New Point(246, 272)
+        TextBox2.Name = "TextBox2"
+        TextBox2.Size = New Size(150, 31)
+        TextBox2.TabIndex = 11
+        ' 
+        ' ComboBox2
+        ' 
+        ComboBox2.FormattingEnabled = True
+        ComboBox2.Location = New Point(246, 215)
+        ComboBox2.Name = "ComboBox2"
+        ComboBox2.Size = New Size(182, 33)
+        ComboBox2.TabIndex = 10
+        ' 
+        ' ComboBox1
+        ' 
+        ComboBox1.FormattingEnabled = True
+        ComboBox1.Location = New Point(246, 161)
+        ComboBox1.Name = "ComboBox1"
+        ComboBox1.Size = New Size(182, 33)
+        ComboBox1.TabIndex = 9
+        ' 
+        ' Label7
+        ' 
+        Label7.AutoSize = True
+        Label7.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        Label7.Location = New Point(47, 396)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(43, 25)
+        Label7.TabIndex = 8
+        Label7.Text = "Qty"
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        Label6.Location = New Point(47, 339)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(115, 25)
+        Label6.TabIndex = 7
+        Label6.Text = "Pilih Barang"
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        Label5.Location = New Point(47, 278)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(111, 25)
+        Label5.TabIndex = 6
+        Label5.Text = "Keterangan"
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        Label4.Location = New Point(47, 223)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(79, 25)
+        Label4.TabIndex = 5
+        Label4.Text = "Gudang"
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        Label3.Location = New Point(47, 169)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(82, 25)
+        Label3.TabIndex = 4
+        Label3.Text = "Supplier"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        Label2.Location = New Point(47, 110)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(79, 25)
+        Label2.TabIndex = 3
+        Label2.Text = "Tanggal"
+        ' 
+        ' DateTimePicker1
+        ' 
+        DateTimePicker1.Location = New Point(246, 104)
+        DateTimePicker1.Name = "DateTimePicker1"
+        DateTimePicker1.Size = New Size(300, 31)
+        DateTimePicker1.TabIndex = 2
+        ' 
+        ' TextBox1
+        ' 
+        TextBox1.Location = New Point(246, 52)
+        TextBox1.Name = "TextBox1"
+        TextBox1.Size = New Size(150, 31)
+        TextBox1.TabIndex = 1
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        Label1.Location = New Point(47, 55)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(158, 25)
+        Label1.TabIndex = 0
+        Label1.Text = "Nomor Dokumen"
         ' 
         ' Label8
         ' 
@@ -89,143 +222,12 @@ Partial Class FormTransaksiMasuk
         PictureBox1.BackgroundImageLayout = ImageLayout.Zoom
         PictureBox1.Dock = DockStyle.Bottom
         PictureBox1.Location = New Point(0, 735)
-        PictureBox1.Margin = New Padding(4, 4, 4, 4)
+        PictureBox1.Margin = New Padding(4)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(1924, 263)
         PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox1.TabIndex = 21
         PictureBox1.TabStop = False
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
-        Label1.Location = New Point(47, 55)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(158, 25)
-        Label1.TabIndex = 0
-        Label1.Text = "Nomor Dokumen"
-        ' 
-        ' TextBox1
-        ' 
-        TextBox1.Location = New Point(246, 52)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(150, 31)
-        TextBox1.TabIndex = 1
-        ' 
-        ' DateTimePicker1
-        ' 
-        DateTimePicker1.Location = New Point(246, 104)
-        DateTimePicker1.Name = "DateTimePicker1"
-        DateTimePicker1.Size = New Size(300, 31)
-        DateTimePicker1.TabIndex = 2
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
-        Label2.Location = New Point(47, 110)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(79, 25)
-        Label2.TabIndex = 3
-        Label2.Text = "Tanggal"
-        ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
-        Label3.Location = New Point(47, 169)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(82, 25)
-        Label3.TabIndex = 4
-        Label3.Text = "Supplier"
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
-        Label4.Location = New Point(47, 223)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(79, 25)
-        Label4.TabIndex = 5
-        Label4.Text = "Gudang"
-        ' 
-        ' Label5
-        ' 
-        Label5.AutoSize = True
-        Label5.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
-        Label5.Location = New Point(47, 278)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(111, 25)
-        Label5.TabIndex = 6
-        Label5.Text = "Keterangan"
-        ' 
-        ' Label6
-        ' 
-        Label6.AutoSize = True
-        Label6.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
-        Label6.Location = New Point(47, 339)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(115, 25)
-        Label6.TabIndex = 7
-        Label6.Text = "Pilih Barang"
-        ' 
-        ' Label7
-        ' 
-        Label7.AutoSize = True
-        Label7.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
-        Label7.Location = New Point(47, 396)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(43, 25)
-        Label7.TabIndex = 8
-        Label7.Text = "Qty"
-        ' 
-        ' ComboBox1
-        ' 
-        ComboBox1.FormattingEnabled = True
-        ComboBox1.Location = New Point(246, 161)
-        ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(182, 33)
-        ComboBox1.TabIndex = 9
-        ' 
-        ' ComboBox2
-        ' 
-        ComboBox2.FormattingEnabled = True
-        ComboBox2.Location = New Point(246, 215)
-        ComboBox2.Name = "ComboBox2"
-        ComboBox2.Size = New Size(182, 33)
-        ComboBox2.TabIndex = 10
-        ' 
-        ' TextBox2
-        ' 
-        TextBox2.Location = New Point(246, 272)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(150, 31)
-        TextBox2.TabIndex = 11
-        ' 
-        ' ComboBox3
-        ' 
-        ComboBox3.FormattingEnabled = True
-        ComboBox3.Location = New Point(246, 331)
-        ComboBox3.Name = "ComboBox3"
-        ComboBox3.Size = New Size(182, 33)
-        ComboBox3.TabIndex = 12
-        ' 
-        ' NumericUpDown1
-        ' 
-        NumericUpDown1.Location = New Point(248, 390)
-        NumericUpDown1.Name = "NumericUpDown1"
-        NumericUpDown1.Size = New Size(180, 31)
-        NumericUpDown1.TabIndex = 13
-        ' 
-        ' Button1
-        ' 
-        Button1.Location = New Point(161, 467)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(344, 34)
-        Button1.TabIndex = 14
-        Button1.Text = "Tambah ke list"
-        Button1.UseVisualStyleBackColor = True
         ' 
         ' DataGridView1
         ' 
@@ -235,6 +237,15 @@ Partial Class FormTransaksiMasuk
         DataGridView1.RowHeadersWidth = 62
         DataGridView1.Size = New Size(984, 522)
         DataGridView1.TabIndex = 22
+        ' 
+        ' Button2
+        ' 
+        Button2.Location = New Point(368, 460)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(202, 41)
+        Button2.TabIndex = 15
+        Button2.Text = "Kembali"
+        Button2.UseVisualStyleBackColor = True
         ' 
         ' FormTransaksiMasuk
         ' 
@@ -247,13 +258,13 @@ Partial Class FormTransaksiMasuk
         Controls.Add(PictureBox1)
         Controls.Add(Label8)
         Controls.Add(Panel1)
-        Margin = New Padding(4, 4, 4, 4)
+        Margin = New Padding(4)
         Name = "FormTransaksiMasuk"
         Text = "FormTransaksiMasuk"
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         CType(NumericUpDown1, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
@@ -277,4 +288,5 @@ Partial Class FormTransaksiMasuk
     Friend WithEvents Label3 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Button2 As Button
 End Class
