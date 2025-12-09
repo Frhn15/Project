@@ -88,4 +88,8 @@ Public Class FormLogin
     Private Sub Label4_Click_1(sender As Object, e As EventArgs) Handles Label4.Click
 
     End Sub
+
+    Private Sub txtUsername_TextChanged(sender As Object, e As EventArgs) Handles txtUsername.TextChanged
+
+    End Sub
 End Class
