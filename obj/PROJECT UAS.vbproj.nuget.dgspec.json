@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pongo\\Source\\Repos\\Project\\PROJECT UAS.vbproj": {}
+    "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\PROJECT UAS.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\Pongo\\Source\\Repos\\Project\\PROJECT UAS.vbproj": {
+    "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\PROJECT UAS.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pongo\\Source\\Repos\\Project\\PROJECT UAS.vbproj",
+        "projectUniqueName": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\PROJECT UAS.vbproj",
         "projectName": "PROJECT UAS",
-        "projectPath": "C:\\Users\\Pongo\\Source\\Repos\\Project\\PROJECT UAS.vbproj",
-        "packagesPath": "C:\\Users\\Pongo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pongo\\Source\\Repos\\Project\\obj\\",
+        "projectPath": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\PROJECT UAS.vbproj",
+        "packagesPath": "C:\\Users\\Hype JKT\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Pongo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hype JKT\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -75,7 +74,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

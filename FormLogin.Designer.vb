@@ -30,69 +30,15 @@ Partial Class FormLogin
         btnLogin = New Button()
         btnBack = New Button()
         PanelLogin = New Panel()
-        Label3 = New Label()
-        Panel1 = New Panel()
-        Panel2 = New Panel()
-        Label5 = New Label()
-        PictureBox1 = New PictureBox()
-        Label6 = New Label()
-        Label8 = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
         Label4 = New Label()
+        Label7 = New Label()
+        Label6 = New Label()
+        PictureBox1 = New PictureBox()
+        Panel2 = New Panel()
         Label8 = New Label()
         Label5 = New Label()
         Label3 = New Label()
-        Panel1 = New Panel()
         PanelLogin.SuspendLayout()
-        Panel1.SuspendLayout()
-        Panel2.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel2.SuspendLayout()
         SuspendLayout()
@@ -100,44 +46,39 @@ Partial Class FormLogin
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.Black
-        Label1.Location = New Point(138, 210)
-        Label1.Margin = New Padding(4, 0, 4, 0)
-        btnBack.ForeColor = Color.Transparent
-        btnBack.Location = New Point(442, 23)
-        Label1.Size = New Size(97, 25)
-        btnBack.Size = New Size(35, 35)
+        Label1.Location = New Point(99, 195)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(80, 20)
+        Label1.TabIndex = 10
         Label1.Text = "Username"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.Black
-        Label2.Location = New Point(138, 298)
-        Label2.Margin = New Padding(4, 0, 4, 0)
+        Label2.Location = New Point(99, 265)
         Label2.Name = "Label2"
-        Label2.Size = New Size(92, 25)
+        Label2.Size = New Size(76, 20)
         Label2.TabIndex = 1
         Label2.Text = "Password"
         ' 
         ' txtUsername
         ' 
-        txtUsername.Font = New Font("Palatino Linotype", 9.0F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        txtUsername.Location = New Point(138, 239)
-        txtUsername.Margin = New Padding(4, 4, 4, 4)
+        txtUsername.Font = New Font("Palatino Linotype", 9F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        txtUsername.Location = New Point(99, 218)
         txtUsername.Name = "txtUsername"
-        txtUsername.Size = New Size(374, 32)
+        txtUsername.Size = New Size(300, 28)
         txtUsername.TabIndex = 2
         ' 
         ' txtPassword
         ' 
-        txtPassword.Location = New Point(138, 326)
-        txtPassword.Margin = New Padding(4, 4, 4, 4)
+        txtPassword.Location = New Point(99, 288)
         txtPassword.Name = "txtPassword"
         txtPassword.PasswordChar = "*"c
-        txtPassword.Size = New Size(374, 31)
+        txtPassword.Size = New Size(300, 27)
         txtPassword.TabIndex = 3
         ' 
         ' btnLogin
@@ -145,10 +86,9 @@ Partial Class FormLogin
         btnLogin.BackColor = Color.Black
         btnLogin.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnLogin.ForeColor = SystemColors.ButtonHighlight
-        btnLogin.Location = New Point(138, 380)
-        btnLogin.Margin = New Padding(4, 4, 4, 4)
+        btnLogin.Location = New Point(99, 331)
         btnLogin.Name = "btnLogin"
-        btnLogin.Size = New Size(375, 56)
+        btnLogin.Size = New Size(300, 45)
         btnLogin.TabIndex = 4
         btnLogin.Text = "Login"
         btnLogin.UseVisualStyleBackColor = False
@@ -157,7 +97,9 @@ Partial Class FormLogin
         ' 
         btnBack.BackColor = Color.Transparent
         btnBack.BackgroundImage = CType(resources.GetObject("btnBack.BackgroundImage"), Image)
-        btnBack.Location = New Point(452, 19)
+        btnBack.ForeColor = Color.Transparent
+        btnBack.Location = New Point(441, 23)
+        btnBack.Margin = New Padding(2)
         btnBack.Name = "btnBack"
         btnBack.Size = New Size(32, 32)
         btnBack.TabIndex = 5
@@ -171,44 +113,60 @@ Partial Class FormLogin
         PanelLogin.Controls.Add(Label6)
         PanelLogin.Controls.Add(PictureBox1)
         PanelLogin.Controls.Add(Panel2)
-        PanelLogin.Location = New Point(215, 91)
-        PanelLogin.Margin = New Padding(4, 4, 4, 4)
+        PanelLogin.Location = New Point(120, 62)
         PanelLogin.Name = "PanelLogin"
-        PanelLogin.Size = New Size(1125, 650)
+        PanelLogin.Size = New Size(900, 520)
         PanelLogin.TabIndex = 6
         ' 
-        ' Label3
+        ' Label4
         ' 
-        Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(214, 85)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(0, 41)
-        Label3.TabIndex = 6
+        Label4.AutoSize = True
+        Label4.BackColor = Color.Transparent
+        Label4.Font = New Font("Segoe UI Semibold", 7.20000029F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label4.ForeColor = Color.White
+        Label4.Location = New Point(55, 482)
+        Label4.Margin = New Padding(2, 0, 2, 0)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(294, 17)
+        Label4.TabIndex = 11
+        Label4.Text = "© 2025 Kelompok 3 - Sistem Inventori Gudang."
         ' 
+        ' Label7
         ' 
-        ' Label3
+        Label7.AutoSize = True
+        Label7.BackColor = Color.Transparent
+        Label7.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label7.ForeColor = Color.White
+        Label7.Location = New Point(67, 252)
+        Label7.Margin = New Padding(2, 0, 2, 0)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(291, 20)
+        Label7.TabIndex = 10
+        Label7.Text = "Step into smarter inventory management"
         ' 
-        Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(214, 85)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(0, 41)
-        Label3.TabIndex = 6
+        ' Label6
         ' 
-        ' Panel1
-        ' Panel1
+        Label6.AutoSize = True
+        Label6.BackColor = Color.Transparent
+        Label6.Font = New Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label6.ForeColor = Color.White
+        Label6.Location = New Point(100, 214)
+        Label6.Margin = New Padding(2, 0, 2, 0)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(208, 38)
+        Label6.TabIndex = 9
+        Label6.Text = "Welcome Back"
         ' 
-        Panel1.BackColor = Color.Silver
-        Panel1.Controls.Add(Label4)
-        Panel1.Controls.Add(Label7)
-        Panel1.Controls.Add(Label6)
-        Panel1.Controls.Add(PictureBox1)
-        Panel1.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Panel1.Location = New Point(172, 73)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(400, 520)
-        Panel1.TabIndex = 7
+        ' PictureBox1
+        ' 
+        PictureBox1.BackColor = Color.Transparent
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
+        PictureBox1.Location = New Point(109, 32)
+        PictureBox1.Margin = New Padding(2)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(180, 180)
+        PictureBox1.TabIndex = 8
+        PictureBox1.TabStop = False
         ' 
         ' Panel2
         ' 
@@ -222,98 +180,60 @@ Partial Class FormLogin
         Panel2.Controls.Add(btnLogin)
         Panel2.Controls.Add(Label1)
         Panel2.Controls.Add(Label2)
-        Panel2.Location = New Point(500, 0)
-        Panel2.Margin = New Padding(4, 4, 4, 4)
+        Panel2.Location = New Point(400, 0)
         Panel2.Name = "Panel2"
-        Panel2.Size = New Size(625, 650)
+        Panel2.Size = New Size(500, 520)
         Panel2.TabIndex = 7
+        ' 
+        ' Label8
+        ' 
+        Label8.AutoSize = True
+        Label8.Font = New Font("Segoe UI Semibold", 13F, FontStyle.Bold)
+        Label8.ForeColor = Color.DimGray
+        Label8.Location = New Point(99, 131)
+        Label8.Margin = New Padding(2, 0, 2, 0)
+        Label8.Name = "Label8"
+        Label8.Size = New Size(290, 30)
+        Label8.TabIndex = 9
+        Label8.Text = "INVENTORY SYSTEM LOGIN"
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Segoe UI", 7.20000029F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label5.ForeColor = Color.Black
-        Label5.Location = New Point(166, 440)
-        Label5.Margin = New Padding(4, 0, 4, 0)
+        Label5.Location = New Point(122, 379)
         Label5.Name = "Label5"
-        Label5.Size = New Size(286, 20)
+        Label5.Size = New Size(254, 17)
         Label5.TabIndex = 8
         Label5.Text = "*Pastikan data yang anda masukkan benar"
         ' 
-        ' PictureBox1
+        ' Label3
         ' 
-        PictureBox1.BackColor = Color.Transparent
-        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(110, 42)
-        PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(180, 180)
-        PictureBox1.TabIndex = 0
-        PictureBox1.TabStop = False
-        ' 
-        ' Label6
-        ' 
-        Label6.AutoSize = True
-        Label6.BackColor = Color.Transparent
-        Label6.Font = New Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label6.ForeColor = Color.White
-        Label6.Location = New Point(101, 225)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(208, 38)
-        Label6.TabIndex = 2
-        Label6.Text = "Welcome Back"
-        ' 
-        ' Label7
-        ' 
-        Label7.AutoSize = True
-        Label7.BackColor = Color.Transparent
-        Label7.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label7.ForeColor = Color.White
-        Label7.Location = New Point(70, 261)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(291, 20)
-        Label7.TabIndex = 3
-        Label7.Text = "Step into smarter inventory management"
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.BackColor = Color.Transparent
-        Label4.Font = New Font("Segoe UI Semibold", 7.20000029F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label4.ForeColor = Color.White
-        Label4.Location = New Point(60, 483)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(294, 17)
-        Label4.TabIndex = 4
-        Label4.Text = "© 2025 Kelompok 3 - Sistem Inventori Gudang."
-        ' 
-        ' Label8
-        ' 
-        Label8.AutoSize = True
-        Label8.Font = New Font("Segoe UI Semibold", 13.0F, FontStyle.Bold)
-        Label8.ForeColor = Color.DimGray
-        Label8.Location = New Point(125, 94)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(290, 30)
-        Label8.TabIndex = 9
-        Label8.Text = "INVENTORY SYSTEM LOGIN"
+        Label3.AutoSize = True
+        Label3.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label3.Location = New Point(190, 111)
+        Label3.Margin = New Padding(2, 0, 2, 0)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(0, 41)
+        Label3.TabIndex = 6
         ' 
         ' FormLogin
         ' 
-        AutoScaleDimensions = New SizeF(10.0F, 25.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.WhiteSmoke
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1262, 673)
-        Controls.Add(Panel1)
         Controls.Add(PanelLogin)
+        Margin = New Padding(2)
         Name = "FormLogin"
         Text = "FormLogin"
         PanelLogin.ResumeLayout(False)
-        Panel1.ResumeLayout(False)
-        Panel1.PerformLayout()
+        PanelLogin.PerformLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -327,10 +247,9 @@ Partial Class FormLogin
     Friend WithEvents Label3 As Label
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label5 As Label
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label6 As Label
+    Friend WithEvents Label8 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Label6 As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
