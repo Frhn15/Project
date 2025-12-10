@@ -166,7 +166,7 @@ Public Class fromMasterBarang
         Try
             Dim row As DataGridViewRow = DataGridView1.Rows(e.RowIndex)
 
-            txtID.Text = row.Cells(0).Value.ToString()
+
             TextBox1.Text = row.Cells(1).Value.ToString()
             TextBox2.Text = row.Cells(2).Value.ToString()
             ComboBox1.Text = row.Cells(3).Value.ToString()
@@ -183,7 +183,7 @@ Public Class fromMasterBarang
     ' CLEAR FIELD
     '==========================================
     Private Sub Bersihkan()
-        txtID.Clear()
+
         TextBox1.Clear()
         TextBox2.Clear()
         TextBox3.Clear()

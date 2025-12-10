@@ -30,7 +30,7 @@ Public Class FormLogin
             Dim role As String = rd("role").ToString()
 
             ' Kirim data ke Form1 sebelum ditampilkan
-            Form1.loggedUser = txtUsername.Text
+            Form1.loggedUser = rd("username").ToString()
             Form1.lblRole.Text = role
 
             MsgBox("Login berhasil sebagai: " & role, vbInformation)
@@ -38,72 +38,29 @@ Public Class FormLogin
             rd.Close()
             conn.Close()
 
-            Me.Hide()
+            ' --- Pindah ke Form1 ---
+            Me.Hide()                 ' Sembunyikan FormLogin dulu
+            Form1.Show()              ' Tampilkan Form1
+            Form1.BringToFront()      ' Pastikan muncul di depan
 
-            Form1.Show()
-            Form1.BringToFront()
+            ' Jalankan role setelah form tampil
             Form1.BukaMenuBerdasarkanRole()
 
         Else
             MsgBox("Username atau Password salah!", vbCritical)
+            rd.Close()
+            conn.Close()
         End If
 
-        rd.Close()
-        conn.Close()
-
-    End Sub
-
-    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
-        Form1.Show()
-        Me.Hide()
     End Sub
 
     Private Sub FormLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.WindowState = FormWindowState.Maximized
-        CenterPanel()      ' <-- PENTING
+        CenterPanel()
     End Sub
 
     Private Sub FormLogin_Resize(sender As Object, e As EventArgs) Handles Me.Resize
-        CenterPanel()      ' <-- Panel tetap di tengah saat window di-resize
-    End Sub
-
-
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
-
-    End Sub
-
-    Private Sub txtPassword_TextChanged(sender As Object, e As EventArgs) Handles txtPassword.TextChanged
-
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-
-    End Sub
-
-    Private Sub Label4_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Label6_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Label4_Click_1(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs)
-
-    End Sub
-
-
-
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
-
+        CenterPanel()
     End Sub
 
 End Class
