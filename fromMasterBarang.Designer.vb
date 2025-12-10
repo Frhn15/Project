@@ -38,15 +38,18 @@ Partial Class fromMasterBarang
         TextBox4 = New TextBox()
         ComboBox1 = New ComboBox()
         NumericUpDown1 = New NumericUpDown()
-        txtID = New TextBox()
+        PictureBox1 = New PictureBox()
+        Label7 = New Label()
+        Button4 = New Button()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         CType(NumericUpDown1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(96, 51)
+        Label1.Location = New Point(294, 32)
         Label1.Name = "Label1"
         Label1.Size = New Size(133, 20)
         Label1.TabIndex = 0
@@ -55,7 +58,7 @@ Partial Class fromMasterBarang
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(96, 101)
+        Label2.Location = New Point(294, 72)
         Label2.Name = "Label2"
         Label2.Size = New Size(100, 20)
         Label2.TabIndex = 1
@@ -64,7 +67,7 @@ Partial Class fromMasterBarang
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(96, 152)
+        Label3.Location = New Point(294, 112)
         Label3.Name = "Label3"
         Label3.Size = New Size(98, 20)
         Label3.TabIndex = 2
@@ -73,7 +76,7 @@ Partial Class fromMasterBarang
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(102, 227)
+        Label4.Location = New Point(294, 192)
         Label4.Name = "Label4"
         Label4.Size = New Size(50, 20)
         Label4.TabIndex = 3
@@ -82,7 +85,7 @@ Partial Class fromMasterBarang
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(98, 192)
+        Label5.Location = New Point(294, 152)
         Label5.Name = "Label5"
         Label5.Size = New Size(54, 20)
         Label5.TabIndex = 4
@@ -91,7 +94,7 @@ Partial Class fromMasterBarang
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Location = New Point(98, 273)
+        Label6.Location = New Point(294, 232)
         Label6.Name = "Label6"
         Label6.Size = New Size(96, 20)
         Label6.TabIndex = 5
@@ -99,96 +102,133 @@ Partial Class fromMasterBarang
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(215, 348)
+        Button1.BackColor = Color.Black
+        Button1.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button1.ForeColor = Color.White
+        Button1.Location = New Point(84, 592)
         Button1.Name = "Button1"
-        Button1.Size = New Size(94, 29)
+        Button1.Size = New Size(146, 30)
         Button1.TabIndex = 6
-        Button1.Text = "simpan"
-        Button1.UseVisualStyleBackColor = True
+        Button1.Text = "Simpan"
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' Button2
         ' 
-        Button2.Location = New Point(351, 348)
+        Button2.BackColor = Color.Coral
+        Button2.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button2.ForeColor = Color.White
+        Button2.Location = New Point(244, 592)
         Button2.Name = "Button2"
-        Button2.Size = New Size(94, 29)
+        Button2.Size = New Size(146, 30)
         Button2.TabIndex = 7
-        Button2.Text = "edit"
-        Button2.UseVisualStyleBackColor = True
+        Button2.Text = "Edit"
+        Button2.UseVisualStyleBackColor = False
         ' 
         ' Button3
         ' 
-        Button3.Location = New Point(467, 348)
+        Button3.BackColor = Color.OrangeRed
+        Button3.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button3.ForeColor = Color.White
+        Button3.Location = New Point(408, 592)
         Button3.Name = "Button3"
-        Button3.Size = New Size(94, 29)
+        Button3.Size = New Size(146, 30)
         Button3.TabIndex = 8
         Button3.Text = "Hapus"
-        Button3.UseVisualStyleBackColor = True
+        Button3.UseVisualStyleBackColor = False
         ' 
         ' DataGridView1
         ' 
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Location = New Point(451, 51)
+        DataGridView1.Location = New Point(84, 288)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.RowHeadersWidth = 51
-        DataGridView1.Size = New Size(631, 188)
+        DataGridView1.Size = New Size(630, 287)
         DataGridView1.TabIndex = 9
         ' 
         ' TextBox1
         ' 
-        TextBox1.Location = New Point(271, 48)
+        TextBox1.Location = New Point(464, 32)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(125, 27)
+        TextBox1.Size = New Size(250, 27)
         TextBox1.TabIndex = 10
         ' 
         ' TextBox2
         ' 
-        TextBox2.Location = New Point(271, 101)
+        TextBox2.Location = New Point(464, 72)
         TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(125, 27)
+        TextBox2.Size = New Size(250, 27)
         TextBox2.TabIndex = 11
         ' 
         ' TextBox3
         ' 
-        TextBox3.Location = New Point(271, 185)
+        TextBox3.Location = New Point(464, 152)
         TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(125, 27)
+        TextBox3.Size = New Size(250, 27)
         TextBox3.TabIndex = 12
         ' 
         ' TextBox4
         ' 
-        TextBox4.Location = New Point(271, 240)
+        TextBox4.Location = New Point(464, 192)
         TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(125, 27)
+        TextBox4.Size = New Size(250, 27)
         TextBox4.TabIndex = 13
         ' 
         ' ComboBox1
         ' 
         ComboBox1.FormattingEnabled = True
-        ComboBox1.Location = New Point(271, 152)
+        ComboBox1.Location = New Point(464, 112)
         ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(151, 28)
+        ComboBox1.Size = New Size(250, 28)
         ComboBox1.TabIndex = 14
         ' 
         ' NumericUpDown1
         ' 
-        NumericUpDown1.Location = New Point(271, 283)
+        NumericUpDown1.Location = New Point(464, 232)
         NumericUpDown1.Name = "NumericUpDown1"
-        NumericUpDown1.Size = New Size(150, 27)
+        NumericUpDown1.Size = New Size(250, 27)
         NumericUpDown1.TabIndex = 15
         ' 
-        ' txtID
+        ' PictureBox1
         ' 
-        txtID.Location = New Point(271, 12)
-        txtID.Name = "txtID"
-        txtID.Size = New Size(125, 27)
-        txtID.TabIndex = 16
+        PictureBox1.BackColor = Color.Black
+        PictureBox1.Image = My.Resources.Resources._11111
+        PictureBox1.Location = New Point(84, 39)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(181, 180)
+        PictureBox1.TabIndex = 16
+        PictureBox1.TabStop = False
+        ' 
+        ' Label7
+        ' 
+        Label7.AutoSize = True
+        Label7.Font = New Font("Segoe UI", 12.5F, FontStyle.Bold)
+        Label7.Location = New Point(84, 222)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(192, 30)
+        Label7.TabIndex = 17
+        Label7.Text = "MASTER BARANG"
+        ' 
+        ' Button4
+        ' 
+        Button4.BackColor = Color.Silver
+        Button4.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button4.ForeColor = Color.White
+        Button4.Location = New Point(568, 592)
+        Button4.Name = "Button4"
+        Button4.Size = New Size(146, 30)
+        Button4.TabIndex = 18
+        Button4.Text = "Kembali"
+        Button4.UseVisualStyleBackColor = False
         ' 
         ' fromMasterBarang
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1136, 450)
-        Controls.Add(txtID)
+        BackColor = Color.White
+        ClientSize = New Size(816, 673)
+        Controls.Add(Button4)
+        Controls.Add(Label7)
+        Controls.Add(PictureBox1)
         Controls.Add(NumericUpDown1)
         Controls.Add(ComboBox1)
         Controls.Add(TextBox4)
@@ -206,9 +246,10 @@ Partial Class fromMasterBarang
         Controls.Add(Label2)
         Controls.Add(Label1)
         Name = "fromMasterBarang"
-        Text = "fromMasterBarang"
+        Text = "FormMasterBarang"
         CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
         CType(NumericUpDown1, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -230,4 +271,7 @@ Partial Class fromMasterBarang
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents NumericUpDown1 As NumericUpDown
     Friend WithEvents txtID As TextBox
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Button4 As Button
 End Class

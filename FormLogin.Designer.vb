@@ -113,7 +113,7 @@ Partial Class FormLogin
         PanelLogin.Controls.Add(Label6)
         PanelLogin.Controls.Add(PictureBox1)
         PanelLogin.Controls.Add(Panel2)
-        PanelLogin.Location = New Point(120, 62)
+        PanelLogin.Location = New Point(163, 77)
         PanelLogin.Name = "PanelLogin"
         PanelLogin.Size = New Size(900, 520)
         PanelLogin.TabIndex = 6
