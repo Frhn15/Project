@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class fromTransaksiKeluar
+Partial Class fromstockopname
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,16 +22,40 @@ Partial Class fromTransaksiKeluar
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Label1 = New Label()
+        ComboBox1 = New ComboBox()
         SuspendLayout()
         ' 
-        ' fromTransaksiKeluar
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Location = New Point(126, 95)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(56, 20)
+        Label1.TabIndex = 0
+        Label1.Text = "Barang"
+        ' 
+        ' ComboBox1
+        ' 
+        ComboBox1.FormattingEnabled = True
+        ComboBox1.Location = New Point(252, 95)
+        ComboBox1.Name = "ComboBox1"
+        ComboBox1.Size = New Size(151, 28)
+        ComboBox1.TabIndex = 1
+        ' 
+        ' fromstockopname
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        BackgroundImage = My.Resources.Resources.assd1
-        ClientSize = New Size(986, 686)
-        Name = "fromTransaksiKeluar"
-        Text = "fromTransaksiKeluar"
+        ClientSize = New Size(800, 450)
+        Controls.Add(ComboBox1)
+        Controls.Add(Label1)
+        Name = "fromstockopname"
+        Text = "fromstockopname"
         ResumeLayout(False)
+        PerformLayout()
     End Sub
+
+    Friend WithEvents Label1 As Label
+    Friend WithEvents ComboBox1 As ComboBox
 End Class

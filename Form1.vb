@@ -23,6 +23,7 @@ Public Class Form1
         MasterSuplierToolStripMenuItem.Enabled = False
         TransferAntarGudangToolStripMenuItem.Enabled = False
         usermanagement.Enabled = False
+        StockOpnameToolStripMenuItem.Enabled = False
     End Sub
 
     '===============================
@@ -66,6 +67,7 @@ Public Class Form1
             MasterSuplierToolStripMenuItem.Enabled = False
             TransferAntarGudangToolStripMenuItem.Enabled = False
             usermanagement.Enabled = False
+            StockOpnameToolStripMenuItem.Enabled = False
 
         ElseIf role = "admin" Then
 
@@ -81,7 +83,7 @@ Public Class Form1
             MasterSuplierToolStripMenuItem.Enabled = True
             TransferAntarGudangToolStripMenuItem.Enabled = True
             usermanagement.Enabled = True
-
+            StockOpnameToolStripMenuItem.Enabled = True
         End If
 
     End Sub
@@ -139,5 +141,7 @@ Public Class Form1
         lblJam.Text = Format(Now, "HH:mm:ss")
     End Sub
 
-
+    Private Sub StockOpnameToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles StockOpnameToolStripMenuItem.Click
+        fromstockopname.Show() : Hide()
+    End Sub
 End Class
