@@ -67,8 +67,7 @@ Public Class FormLogin
         CenterPanel()      ' <-- Panel tetap di tengah saat window di-resize
     End Sub
 
-<<<<<<< HEAD
-=======
+
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
 
     End Sub
@@ -106,5 +105,5 @@ Public Class FormLogin
     Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
 
     End Sub
->>>>>>> 397dbed76f99140f60582203702c1d3c16251ffb
+
 End Class
