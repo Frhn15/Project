@@ -235,3 +235,4 @@ C:\Users\Pongo\Source\Repos\Project\obj\Debug\net9.0-windows\PROJECT UAS.pdb
 C:\Users\Pongo\Source\Repos\Project\obj\Debug\net9.0-windows\PROJECT UAS.genruntimeconfig.cache
 C:\Users\Pongo\Source\Repos\Project\obj\Debug\net9.0-windows\ref\PROJECT UAS.dll
 C:\Users\Pongo\Source\Repos\Project\obj\Debug\net9.0-windows\PROJECT_UAS.fromstockopname.resources
+C:\Users\Pongo\Source\Repos\Project\obj\Debug\net9.0-windows\PROJECT_UAS.fromMastergudang.resources

@@ -24,6 +24,7 @@ Public Class Form1
         TransferAntarGudangToolStripMenuItem.Enabled = False
         usermanagement.Enabled = False
         StockOpnameToolStripMenuItem.Enabled = False
+        MasterGudangToolStripMenuItem.Enabled = False
     End Sub
 
     '===============================
@@ -68,6 +69,7 @@ Public Class Form1
             TransferAntarGudangToolStripMenuItem.Enabled = False
             usermanagement.Enabled = False
             StockOpnameToolStripMenuItem.Enabled = False
+            MasterGudangToolStripMenuItem.Enabled = False
 
         ElseIf role = "admin" Then
 
@@ -84,6 +86,7 @@ Public Class Form1
             TransferAntarGudangToolStripMenuItem.Enabled = True
             usermanagement.Enabled = True
             StockOpnameToolStripMenuItem.Enabled = True
+            MasterGudangToolStripMenuItem.Enabled = True
         End If
 
     End Sub
@@ -142,6 +145,10 @@ Public Class Form1
     End Sub
 
     Private Sub StockOpnameToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles StockOpnameToolStripMenuItem.Click
+        fromstockopname.Show() : Hide()
+    End Sub
+
+    Private Sub MasterGudangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MasterGudangToolStripMenuItem.Click
         fromstockopname.Show() : Hide()
     End Sub
 End Class

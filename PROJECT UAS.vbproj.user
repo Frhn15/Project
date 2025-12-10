@@ -25,6 +25,9 @@
     <Compile Update="fromMasterBarang.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="fromMastergudang.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="fromMasterKategori.vb">
       <SubType>Form</SubType>
     </Compile>

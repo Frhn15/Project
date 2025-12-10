@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FromLaporan
+Partial Class fromMastergudang
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,33 +22,15 @@ Partial Class FromLaporan
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        PictureBox1 = New PictureBox()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
-        ' PictureBox1
-        ' 
-        PictureBox1.BackColor = Color.Transparent
-        PictureBox1.BackgroundImage = My.Resources.Resources.Logo_Kelompok_3_Sistem_Inventory
-        PictureBox1.BackgroundImageLayout = ImageLayout.Center
-        PictureBox1.Image = My.Resources.Resources.ikon_180x180
-        PictureBox1.Location = New Point(161, 44)
-        PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(194, 177)
-        PictureBox1.TabIndex = 0
-        PictureBox1.TabStop = False
-        ' 
-        ' FromLaporan
+        ' fromMastergudang
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
-        Controls.Add(PictureBox1)
-        Name = "FromLaporan"
-        Text = "FromLaporan"
-        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        Name = "fromMastergudang"
+        Text = "fromMastergudang"
         ResumeLayout(False)
     End Sub
-
-    Friend WithEvents PictureBox1 As PictureBox
 End Class

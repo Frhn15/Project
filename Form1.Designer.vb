@@ -48,6 +48,7 @@ Partial Class Form1
         Timer1 = New Timer(components)
         lblJam = New Label()
         lblRole = New Label()
+        MasterGudangToolStripMenuItem = New ToolStripMenuItem()
         MenuStrip1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -80,7 +81,7 @@ Partial Class Form1
         ' 
         ' datamaster
         ' 
-        datamaster.DropDownItems.AddRange(New ToolStripItem() {MasterKategoriToolStripMenuItem, MasterSuplierToolStripMenuItem, MasterBarangToolStripMenuItem, StockOpnameToolStripMenuItem})
+        datamaster.DropDownItems.AddRange(New ToolStripItem() {MasterKategoriToolStripMenuItem, MasterSuplierToolStripMenuItem, MasterBarangToolStripMenuItem, MasterGudangToolStripMenuItem, StockOpnameToolStripMenuItem})
         datamaster.Name = "datamaster"
         datamaster.Size = New Size(130, 29)
         datamaster.Text = "Data Master"
@@ -246,6 +247,12 @@ Partial Class Form1
         lblRole.Size = New Size(0, 20)
         lblRole.TabIndex = 7
         ' 
+        ' MasterGudangToolStripMenuItem
+        ' 
+        MasterGudangToolStripMenuItem.Name = "MasterGudangToolStripMenuItem"
+        MasterGudangToolStripMenuItem.Size = New Size(235, 30)
+        MasterGudangToolStripMenuItem.Text = "Master Gudang"
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -299,5 +306,6 @@ Partial Class Form1
     Friend WithEvents lblRole As Label
     Public WithEvents Timer1 As Timer
     Friend WithEvents StockOpnameToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MasterGudangToolStripMenuItem As ToolStripMenuItem
 
 End Class
