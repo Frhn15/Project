@@ -191,7 +191,7 @@ Partial Class fromMasterBarang
         ' PictureBox1
         ' 
         PictureBox1.BackColor = Color.Black
-        PictureBox1.Image = My.Resources.Resources._11111
+        PictureBox1.Image = My.Resources.Resources.ikon_white_180x180
         PictureBox1.Location = New Point(84, 39)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(181, 180)
