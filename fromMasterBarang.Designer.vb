@@ -51,9 +51,9 @@ Partial Class fromMasterBarang
         Label1.AutoSize = True
         Label1.Location = New Point(294, 32)
         Label1.Name = "Label1"
-        Label1.Size = New Size(133, 20)
+        Label1.Size = New Size(95, 20)
         Label1.TabIndex = 0
-        Label1.Text = "Input Kode Barang"
+        Label1.Text = "Kode Barang"
         ' 
         ' Label2
         ' 
@@ -225,6 +225,7 @@ Partial Class fromMasterBarang
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
+        BackgroundImage = My.Resources.Resources.assd1
         ClientSize = New Size(816, 673)
         Controls.Add(Button4)
         Controls.Add(Label7)
