@@ -149,6 +149,6 @@ Public Class Form1
     End Sub
 
     Private Sub MasterGudangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MasterGudangToolStripMenuItem.Click
-        fromstockopname.Show() : Hide()
+        fromMastergudang.Show() : Hide()
     End Sub
 End Class
