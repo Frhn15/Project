@@ -162,16 +162,16 @@ Public Class fromMasterBarang
     '==========================================
     ' KLIK DATAGRID → ISI FIELD
     '==========================================
-    Private Sub Data_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+    Private Sub Data_CellClick(sender As Object, e As DataGridViewCellEventArgs)
         Try
-            Dim row As DataGridViewRow = DataGridView1.Rows(e.RowIndex)
+            Dim row = DataGridView1.Rows(e.RowIndex)
 
 
-            TextBox1.Text = row.Cells(1).Value.ToString()
-            TextBox2.Text = row.Cells(2).Value.ToString()
-            ComboBox1.Text = row.Cells(3).Value.ToString()
-            TextBox3.Text = row.Cells(4).Value.ToString()
-            TextBox4.Text = row.Cells(5).Value.ToString()
+            TextBox1.Text = row.Cells(1).Value.ToString
+            TextBox2.Text = row.Cells(2).Value.ToString
+            ComboBox1.Text = row.Cells(3).Value.ToString
+            TextBox3.Text = row.Cells(4).Value.ToString
+            TextBox4.Text = row.Cells(5).Value.ToString
             NumericUpDown1.Value = row.Cells(6).Value
 
         Catch ex As Exception
