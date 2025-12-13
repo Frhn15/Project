@@ -47,6 +47,7 @@ Partial Class fromstockopname
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.GhostWhite
         ClientSize = New Size(800, 450)
         Controls.Add(ComboBox1)
         Controls.Add(Label1)

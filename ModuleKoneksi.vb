@@ -10,7 +10,7 @@ Module ModuleKoneksi
 
     Public Sub Koneksi()
         conn = New MySqlConnection("server=localhost;user id=root;password=;database=inventory;")
-        conn.Open()
+       
     End Sub
 
 End Module

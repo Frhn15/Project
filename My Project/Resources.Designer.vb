@@ -103,6 +103,17 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property Gray_White_Orange_Modern_Geometric_Background_Professional_Business_LinkedIn_Banner() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Gray White Orange Modern Geometric Background Professional Business LinkedIn Bann"& _ 
+                        "er", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property ikon_180x180() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("ikon 180x180", resourceCulture)
