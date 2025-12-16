@@ -32,18 +32,20 @@ Partial Class FromLaporan
         PictureBox1.BackgroundImage = My.Resources.Resources.Logo_Kelompok_3_Sistem_Inventory
         PictureBox1.BackgroundImageLayout = ImageLayout.Center
         PictureBox1.Image = My.Resources.Resources.ikon_180x180
-        PictureBox1.Location = New Point(161, 44)
+        PictureBox1.Location = New Point(197, 55)
+        PictureBox1.Margin = New Padding(4, 4, 4, 4)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(194, 177)
+        PictureBox1.Size = New Size(176, 182)
         PictureBox1.TabIndex = 0
         PictureBox1.TabStop = False
         ' 
         ' FromLaporan
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(1000, 562)
         Controls.Add(PictureBox1)
+        Margin = New Padding(4, 4, 4, 4)
         Name = "FromLaporan"
         Text = "FromLaporan"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
