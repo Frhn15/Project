@@ -63,4 +63,10 @@ Public Class FormLogin
         CenterPanel()
     End Sub
 
+    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+        Form1.Show()
+        Form1.BringToFront()
+        Me.Hide()
+    End Sub
+
 End Class
