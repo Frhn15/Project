@@ -115,7 +115,7 @@ Partial Class FormTransaksiMasuk
         ComboBox3.Location = New Point(246, 331)
         ComboBox3.Margin = New Padding(2)
         ComboBox3.Name = "ComboBox3"
-        ComboBox3.Size = New Size(182, 33)
+        ComboBox3.Size = New Size(300, 33)
         ComboBox3.TabIndex = 12
         ' 
         ' TextBox2
@@ -123,7 +123,7 @@ Partial Class FormTransaksiMasuk
         TextBox2.Location = New Point(246, 272)
         TextBox2.Margin = New Padding(2)
         TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(150, 31)
+        TextBox2.Size = New Size(300, 31)
         TextBox2.TabIndex = 11
         ' 
         ' ComboBox2
@@ -132,7 +132,7 @@ Partial Class FormTransaksiMasuk
         ComboBox2.Location = New Point(246, 215)
         ComboBox2.Margin = New Padding(2)
         ComboBox2.Name = "ComboBox2"
-        ComboBox2.Size = New Size(182, 33)
+        ComboBox2.Size = New Size(300, 33)
         ComboBox2.TabIndex = 10
         ' 
         ' ComboBox1
@@ -141,7 +141,7 @@ Partial Class FormTransaksiMasuk
         ComboBox1.Location = New Point(246, 161)
         ComboBox1.Margin = New Padding(2)
         ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(182, 33)
+        ComboBox1.Size = New Size(300, 33)
         ComboBox1.TabIndex = 9
         ' 
         ' Label7
@@ -223,7 +223,7 @@ Partial Class FormTransaksiMasuk
         TextBox1.Location = New Point(246, 52)
         TextBox1.Margin = New Padding(2)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(150, 31)
+        TextBox1.Size = New Size(300, 31)
         TextBox1.TabIndex = 1
         ' 
         ' Label1
@@ -265,6 +265,7 @@ Partial Class FormTransaksiMasuk
         ' 
         ' DataGridView1
         ' 
+        DataGridView1.BackgroundColor = Color.White
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridView1.Location = New Point(858, 206)
         DataGridView1.Margin = New Padding(2)
