@@ -52,7 +52,7 @@ Partial Class FormTransaksiMasuk
         ' 
         ' Panel1
         ' 
-        Panel1.BackColor = SystemColors.ControlDark
+        Panel1.BackColor = Color.Transparent
         Panel1.Controls.Add(Button2)
         Panel1.Controls.Add(Button1)
         Panel1.Controls.Add(NumericUpDown1)
@@ -70,15 +70,16 @@ Partial Class FormTransaksiMasuk
         Panel1.Controls.Add(TextBox1)
         Panel1.Controls.Add(Label1)
         Panel1.Location = New Point(116, 206)
-        Panel1.Margin = New Padding(4, 4, 4, 4)
+        Panel1.Margin = New Padding(4)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(661, 585)
         Panel1.TabIndex = 19
         ' 
         ' Button2
         ' 
-        Button2.BackColor = Color.LightCoral
+        Button2.BackColor = Color.Silver
         Button2.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        Button2.ForeColor = Color.White
         Button2.Location = New Point(368, 460)
         Button2.Margin = New Padding(2)
         Button2.Name = "Button2"
@@ -89,8 +90,9 @@ Partial Class FormTransaksiMasuk
         ' 
         ' Button1
         ' 
-        Button1.BackColor = Color.GreenYellow
+        Button1.BackColor = Color.Black
         Button1.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        Button1.ForeColor = Color.White
         Button1.Location = New Point(104, 460)
         Button1.Margin = New Padding(2)
         Button1.Name = "Button1"
@@ -239,11 +241,11 @@ Partial Class FormTransaksiMasuk
         ' 
         Label8.AutoSize = True
         Label8.BackColor = SystemColors.Window
-        Label8.Font = New Font("Impact", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label8.Font = New Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label8.Location = New Point(545, 67)
         Label8.Margin = New Padding(4, 0, 4, 0)
         Label8.Name = "Label8"
-        Label8.Size = New Size(540, 60)
+        Label8.Size = New Size(576, 54)
         Label8.TabIndex = 20
         Label8.Text = "TRANSAKSI BARANG MASUK"
         ' 
@@ -254,7 +256,7 @@ Partial Class FormTransaksiMasuk
         PictureBox1.BackgroundImageLayout = ImageLayout.Zoom
         PictureBox1.Dock = DockStyle.Bottom
         PictureBox1.Location = New Point(0, 736)
-        PictureBox1.Margin = New Padding(4, 4, 4, 4)
+        PictureBox1.Margin = New Padding(4)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(1924, 262)
         PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
@@ -277,7 +279,7 @@ Partial Class FormTransaksiMasuk
         PictureBox2.Image = My.Resources.Resources.ikon_white_180x180
         PictureBox2.Location = New Point(362, 12)
         PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(170, 174)
+        PictureBox2.Size = New Size(180, 180)
         PictureBox2.TabIndex = 23
         PictureBox2.TabStop = False
         ' 
@@ -293,7 +295,7 @@ Partial Class FormTransaksiMasuk
         Controls.Add(PictureBox1)
         Controls.Add(Label8)
         Controls.Add(Panel1)
-        Margin = New Padding(4, 4, 4, 4)
+        Margin = New Padding(4)
         Name = "FormTransaksiMasuk"
         Text = "FormTransaksiMasuk"
         Panel1.ResumeLayout(False)
