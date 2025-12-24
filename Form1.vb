@@ -159,7 +159,7 @@ Public Class Form1
 
     End Sub
 
-    Private Sub MenuStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles MenuStrip1.ItemClicked
+    Private Sub MenuStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles MenuStrip1.ItemClicked, MenuStrip1.ItemClicked
 
     End Sub
 
@@ -168,6 +168,10 @@ Public Class Form1
     End Sub
 
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
+    End Sub
+
+    Private Sub formsPlot1_Load(sender As Object, e As EventArgs)
 
     End Sub
 End Class

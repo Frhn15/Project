@@ -24,6 +24,12 @@ Partial Class Form1
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Label1 = New Label()
+        Timer1 = New Timer(components)
+        lblJam = New Label()
+        lblUser = New Label()
+        lblRole = New Label()
+        Panel1 = New Panel()
         MenuStrip1 = New MenuStrip()
         LOGINToolStripMenuItem = New ToolStripMenuItem()
         datamaster = New ToolStripMenuItem()
@@ -41,25 +47,77 @@ Partial Class Form1
         usermanagement = New ToolStripMenuItem()
         LogoutToolStripMenuItem1 = New ToolStripMenuItem()
         ToolStripMenuItem1 = New ToolStripMenuItem()
-        Label1 = New Label()
-        Timer1 = New Timer(components)
-        lblJam = New Label()
-        lblUser = New Label()
-        lblRole = New Label()
-        Panel2 = New Panel()
         PictureBox1 = New PictureBox()
-        Panel1 = New Panel()
         Panel3 = New Panel()
-        Panel4 = New Panel()
-        Panel5 = New Panel()
-        Panel6 = New Panel()
         Panel7 = New Panel()
+        Panel6 = New Panel()
+        Panel5 = New Panel()
+        Panel4 = New Panel()
         PanelGrafik = New Panel()
+        FormsPlot1 = New ScottPlot.WinForms.FormsPlot()
+        Panel8 = New Panel()
+        Panel9 = New Panel()
+        Panel2 = New Panel()
+        Panel11 = New Panel()
+        PanelTransaksiTerakhir = New Panel()
+        PanelStokMenipis = New Panel()
+        Panel10 = New Panel()
         MenuStrip1.SuspendLayout()
-        Panel2.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel3.SuspendLayout()
+        PanelGrafik.SuspendLayout()
+        Panel2.SuspendLayout()
         SuspendLayout()
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.BackColor = Color.Transparent
+        Label1.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
+        Label1.ForeColor = Color.Black
+        Label1.Location = New Point(103, 18)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(329, 41)
+        Label1.TabIndex = 3
+        Label1.Text = "INVENTORY GUDANG"
+        ' 
+        ' Timer1
+        ' 
+        ' 
+        ' lblJam
+        ' 
+        lblJam.AutoSize = True
+        lblJam.ForeColor = Color.Black
+        lblJam.Location = New Point(0, 0)
+        lblJam.Name = "lblJam"
+        lblJam.Size = New Size(0, 20)
+        lblJam.TabIndex = 6
+        ' 
+        ' lblUser
+        ' 
+        lblUser.AutoSize = True
+        lblUser.ForeColor = Color.Black
+        lblUser.Location = New Point(251, 60)
+        lblUser.Name = "lblUser"
+        lblUser.Size = New Size(0, 20)
+        lblUser.TabIndex = 5
+        ' 
+        ' lblRole
+        ' 
+        lblRole.AutoSize = True
+        lblRole.ForeColor = Color.Black
+        lblRole.Location = New Point(251, 59)
+        lblRole.Name = "lblRole"
+        lblRole.Size = New Size(0, 20)
+        lblRole.TabIndex = 7
+        ' 
+        ' Panel1
+        ' 
+        Panel1.BackColor = Color.Black
+        Panel1.Location = New Point(0, 74)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(1952, 65)
+        Panel1.TabIndex = 2
         ' 
         ' MenuStrip1
         ' 
@@ -193,61 +251,6 @@ Partial Class Form1
         ToolStripMenuItem1.Name = "ToolStripMenuItem1"
         ToolStripMenuItem1.Size = New Size(14, 29)
         ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.BackColor = Color.Transparent
-        Label1.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
-        Label1.ForeColor = Color.Black
-        Label1.Location = New Point(103, 18)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(329, 41)
-        Label1.TabIndex = 3
-        Label1.Text = "INVENTORY GUDANG"
-        ' 
-        ' Timer1
-        ' 
-        ' 
-        ' lblJam
-        ' 
-        lblJam.AutoSize = True
-        lblJam.ForeColor = Color.Black
-        lblJam.Location = New Point(0, 0)
-        lblJam.Name = "lblJam"
-        lblJam.Size = New Size(0, 20)
-        lblJam.TabIndex = 6
-        ' 
-        ' lblUser
-        ' 
-        lblUser.AutoSize = True
-        lblUser.ForeColor = Color.Black
-        lblUser.Location = New Point(251, 60)
-        lblUser.Name = "lblUser"
-        lblUser.Size = New Size(0, 20)
-        lblUser.TabIndex = 5
-        ' 
-        ' lblRole
-        ' 
-        lblRole.AutoSize = True
-        lblRole.ForeColor = Color.Black
-        lblRole.Location = New Point(251, 59)
-        lblRole.Name = "lblRole"
-        lblRole.Size = New Size(0, 20)
-        lblRole.TabIndex = 7
-        ' 
-        ' Panel2
-        ' 
-        Panel2.Controls.Add(PanelGrafik)
-        Panel2.Controls.Add(Panel3)
-        Panel2.Controls.Add(PictureBox1)
-        Panel2.Controls.Add(MenuStrip1)
-        Panel2.Controls.Add(Panel1)
-        Panel2.Dock = DockStyle.Fill
-        Panel2.Location = New Point(0, 0)
-        Panel2.Name = "Panel2"
-        Panel2.Size = New Size(1902, 1033)
-        Panel2.TabIndex = 10
-        ' 
         ' PictureBox1
         ' 
         PictureBox1.BackColor = Color.Transparent
@@ -258,14 +261,6 @@ Partial Class Form1
         PictureBox1.Size = New Size(60, 60)
         PictureBox1.TabIndex = 3
         PictureBox1.TabStop = False
-        ' 
-        ' Panel1
-        ' 
-        Panel1.BackColor = Color.Black
-        Panel1.Location = New Point(0, 74)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(1952, 65)
-        Panel1.TabIndex = 2
         ' 
         ' Panel3
         ' 
@@ -278,30 +273,6 @@ Partial Class Form1
         Panel3.Size = New Size(1880, 140)
         Panel3.TabIndex = 0
         ' 
-        ' Panel4
-        ' 
-        Panel4.BackColor = Color.SeaGreen
-        Panel4.Location = New Point(56, 10)
-        Panel4.Name = "Panel4"
-        Panel4.Size = New Size(420, 120)
-        Panel4.TabIndex = 0
-        ' 
-        ' Panel5
-        ' 
-        Panel5.BackColor = Color.SeaGreen
-        Panel5.Location = New Point(496, 10)
-        Panel5.Name = "Panel5"
-        Panel5.Size = New Size(420, 120)
-        Panel5.TabIndex = 1
-        ' 
-        ' Panel6
-        ' 
-        Panel6.BackColor = Color.IndianRed
-        Panel6.Location = New Point(936, 10)
-        Panel6.Name = "Panel6"
-        Panel6.Size = New Size(420, 120)
-        Panel6.TabIndex = 2
-        ' 
         ' Panel7
         ' 
         Panel7.BackColor = Color.SteelBlue
@@ -311,12 +282,115 @@ Partial Class Form1
         Panel7.Size = New Size(420, 120)
         Panel7.TabIndex = 3
         ' 
+        ' Panel6
+        ' 
+        Panel6.BackColor = Color.IndianRed
+        Panel6.Location = New Point(936, 10)
+        Panel6.Name = "Panel6"
+        Panel6.Size = New Size(420, 120)
+        Panel6.TabIndex = 2
+        ' 
+        ' Panel5
+        ' 
+        Panel5.BackColor = Color.SeaGreen
+        Panel5.Location = New Point(496, 10)
+        Panel5.Name = "Panel5"
+        Panel5.Size = New Size(420, 120)
+        Panel5.TabIndex = 1
+        ' 
+        ' Panel4
+        ' 
+        Panel4.BackColor = Color.SeaGreen
+        Panel4.Location = New Point(56, 10)
+        Panel4.Name = "Panel4"
+        Panel4.Size = New Size(420, 120)
+        Panel4.TabIndex = 0
+        ' 
         ' PanelGrafik
         ' 
-        PanelGrafik.Location = New Point(12, 287)
+        PanelGrafik.Controls.Add(FormsPlot1)
+        PanelGrafik.Location = New Point(12, 271)
         PanelGrafik.Name = "PanelGrafik"
-        PanelGrafik.Size = New Size(1375, 380)
+        PanelGrafik.Size = New Size(1356, 420)
         PanelGrafik.TabIndex = 4
+        ' 
+        ' FormsPlot1
+        ' 
+        FormsPlot1.DisplayScale = 1.25F
+        FormsPlot1.Location = New Point(56, 26)
+        FormsPlot1.Name = "FormsPlot1"
+        FormsPlot1.Size = New Size(1300, 394)
+        FormsPlot1.TabIndex = 0
+        ' 
+        ' Panel8
+        ' 
+        Panel8.BackColor = Color.DarkOrange
+        Panel8.ForeColor = Color.White
+        Panel8.Location = New Point(1388, 291)
+        Panel8.Name = "Panel8"
+        Panel8.Size = New Size(420, 120)
+        Panel8.TabIndex = 4
+        ' 
+        ' Panel9
+        ' 
+        Panel9.BackColor = Color.SteelBlue
+        Panel9.ForeColor = Color.White
+        Panel9.Location = New Point(1388, 431)
+        Panel9.Name = "Panel9"
+        Panel9.Size = New Size(420, 120)
+        Panel9.TabIndex = 5
+        ' 
+        ' Panel2
+        ' 
+        Panel2.Controls.Add(Panel11)
+        Panel2.Controls.Add(PanelTransaksiTerakhir)
+        Panel2.Controls.Add(PanelStokMenipis)
+        Panel2.Controls.Add(Panel10)
+        Panel2.Controls.Add(Panel9)
+        Panel2.Controls.Add(Panel8)
+        Panel2.Controls.Add(PanelGrafik)
+        Panel2.Controls.Add(Panel3)
+        Panel2.Controls.Add(PictureBox1)
+        Panel2.Controls.Add(MenuStrip1)
+        Panel2.Controls.Add(Panel1)
+        Panel2.Dock = DockStyle.Fill
+        Panel2.Location = New Point(0, 0)
+        Panel2.Name = "Panel2"
+        Panel2.Size = New Size(1902, 1033)
+        Panel2.TabIndex = 10
+        ' 
+        ' Panel11
+        ' 
+        Panel11.BackColor = Color.Gainsboro
+        Panel11.Location = New Point(1248, 713)
+        Panel11.Name = "Panel11"
+        Panel11.Size = New Size(560, 260)
+        Panel11.TabIndex = 9
+        ' 
+        ' PanelTransaksiTerakhir
+        ' 
+        PanelTransaksiTerakhir.BackColor = Color.Gainsboro
+        PanelTransaksiTerakhir.Location = New Point(657, 713)
+        PanelTransaksiTerakhir.Name = "PanelTransaksiTerakhir"
+        PanelTransaksiTerakhir.Size = New Size(560, 260)
+        PanelTransaksiTerakhir.TabIndex = 8
+        ' 
+        ' PanelStokMenipis
+        ' 
+        PanelStokMenipis.BackColor = Color.Gainsboro
+        PanelStokMenipis.Location = New Point(68, 713)
+        PanelStokMenipis.Name = "PanelStokMenipis"
+        PanelStokMenipis.Size = New Size(560, 260)
+        PanelStokMenipis.TabIndex = 7
+        ' 
+        ' Panel10
+        ' 
+        Panel10.BackColor = Color.MidnightBlue
+        Panel10.ForeColor = Color.White
+        Panel10.Location = New Point(1388, 571)
+        Panel10.Name = "Panel10"
+        Panel10.Size = New Size(420, 120)
+        Panel10.TabIndex = 6
         ' 
         ' Form1
         ' 
@@ -338,41 +412,40 @@ Partial Class Form1
         Text = "Dashboard"
         MenuStrip1.ResumeLayout(False)
         MenuStrip1.PerformLayout()
-        Panel2.ResumeLayout(False)
-        Panel2.PerformLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel3.ResumeLayout(False)
+        PanelGrafik.ResumeLayout(False)
+        Panel2.ResumeLayout(False)
+        Panel2.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
-
-    Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents LOGINToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents StokBarangToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents TransaksiMasukToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents TransaksiKeluarToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents LaporanMasukKeluarToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents EditStokBarangToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents LogoutToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents datamaster As ToolStripMenuItem
-    Friend WithEvents MasterKategoriToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents MasterSuplierToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents TransferAntarGudangToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents UserManagementToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem3 As ToolStripMenuItem
-    Friend WithEvents usermanagement As ToolStripMenuItem
-    Friend WithEvents MasterBarangToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Label1 As Label
     Public WithEvents Timer1 As Timer
-    Friend WithEvents StockOpnameToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents MasterGudangToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents lblJam As Label
     Friend WithEvents lblUser As Label
     Friend WithEvents lblRole As Label
-    Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents LOGINToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents datamaster As ToolStripMenuItem
+    Friend WithEvents MasterKategoriToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MasterSuplierToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MasterBarangToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MasterGudangToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents StockOpnameToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents StokBarangToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TransaksiMasukToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TransaksiKeluarToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents EditStokBarangToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TransferAntarGudangToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents LaporanMasukKeluarToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents usermanagement As ToolStripMenuItem
+    Friend WithEvents LogoutToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Panel7 As Panel
@@ -380,5 +453,13 @@ Partial Class Form1
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Panel4 As Panel
     Friend WithEvents PanelGrafik As Panel
+    Friend WithEvents FormsPlot1 As ScottPlot.WinForms.FormsPlot
+    Friend WithEvents Panel8 As Panel
+    Friend WithEvents Panel9 As Panel
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Panel10 As Panel
+    Friend WithEvents Panel11 As Panel
+    Friend WithEvents PanelTransaksiTerakhir As Panel
+    Friend WithEvents PanelStokMenipis As Panel
 
 End Class
