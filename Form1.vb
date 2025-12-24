@@ -40,6 +40,7 @@ Public Class Form1
         'Me.AutoScaleDimensions = New SizeF(96.0F, 96.0F)
 
 
+
         lblUser.Text = " " & loggedUser
         Me.BackgroundImageLayout = ImageLayout.Stretch
 
