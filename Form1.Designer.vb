@@ -61,9 +61,11 @@ Partial Class Form1
         PanelTransaksiTerakhir = New Panel()
         PanelStokMenipis = New Panel()
         Panel10 = New Panel()
+        FormsPlot1 = New ScottPlot.WinForms.FormsPlot()
         MenuStrip1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel3.SuspendLayout()
+        PanelGrafik.SuspendLayout()
         Panel2.SuspendLayout()
         SuspendLayout()
         ' 
@@ -306,6 +308,7 @@ Partial Class Form1
         ' 
         ' PanelGrafik
         ' 
+        PanelGrafik.Controls.Add(FormsPlot1)
         PanelGrafik.Location = New Point(12, 271)
         PanelGrafik.Name = "PanelGrafik"
         PanelGrafik.Size = New Size(1356, 420)
@@ -381,6 +384,14 @@ Partial Class Form1
         Panel10.Size = New Size(420, 120)
         Panel10.TabIndex = 6
         ' 
+        ' FormsPlot1
+        ' 
+        FormsPlot1.DisplayScale = 1.25F
+        FormsPlot1.Location = New Point(56, 26)
+        FormsPlot1.Name = "FormsPlot1"
+        FormsPlot1.Size = New Size(1300, 394)
+        FormsPlot1.TabIndex = 0
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -403,6 +414,7 @@ Partial Class Form1
         MenuStrip1.PerformLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel3.ResumeLayout(False)
+        PanelGrafik.ResumeLayout(False)
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
         ResumeLayout(False)
@@ -448,5 +460,6 @@ Partial Class Form1
     Friend WithEvents Panel11 As Panel
     Friend WithEvents PanelTransaksiTerakhir As Panel
     Friend WithEvents PanelStokMenipis As Panel
+    Friend WithEvents FormsPlot1 As ScottPlot.WinForms.FormsPlot
 
 End Class
