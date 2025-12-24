@@ -23,6 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         MenuStrip1 = New MenuStrip()
         LOGINToolStripMenuItem = New ToolStripMenuItem()
         datamaster = New ToolStripMenuItem()
@@ -53,6 +54,7 @@ Partial Class Form1
         Panel5 = New Panel()
         Panel6 = New Panel()
         Panel7 = New Panel()
+        PanelGrafik = New Panel()
         MenuStrip1.SuspendLayout()
         Panel2.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -235,6 +237,7 @@ Partial Class Form1
         ' 
         ' Panel2
         ' 
+        Panel2.Controls.Add(PanelGrafik)
         Panel2.Controls.Add(Panel3)
         Panel2.Controls.Add(PictureBox1)
         Panel2.Controls.Add(MenuStrip1)
@@ -308,6 +311,13 @@ Partial Class Form1
         Panel7.Size = New Size(420, 120)
         Panel7.TabIndex = 3
         ' 
+        ' PanelGrafik
+        ' 
+        PanelGrafik.Location = New Point(12, 287)
+        PanelGrafik.Name = "PanelGrafik"
+        PanelGrafik.Size = New Size(1375, 380)
+        PanelGrafik.TabIndex = 4
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -321,10 +331,11 @@ Partial Class Form1
         Controls.Add(lblUser)
         Controls.Add(Panel2)
         ForeColor = Color.BurlyWood
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MainMenuStrip = MenuStrip1
         Name = "Form1"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "Form1"
+        Text = "Dashboard"
         MenuStrip1.ResumeLayout(False)
         MenuStrip1.PerformLayout()
         Panel2.ResumeLayout(False)
@@ -368,5 +379,6 @@ Partial Class Form1
     Friend WithEvents Panel6 As Panel
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Panel4 As Panel
+    Friend WithEvents PanelGrafik As Panel
 
 End Class
