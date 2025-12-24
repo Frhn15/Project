@@ -277,7 +277,7 @@ Partial Class Form1
         ' 
         Panel7.BackColor = Color.SteelBlue
         Panel7.ForeColor = Color.White
-        Panel7.Location = New Point(1376, 10)
+        Panel7.Location = New Point(1384, 10)
         Panel7.Name = "Panel7"
         Panel7.Size = New Size(420, 120)
         Panel7.TabIndex = 3
@@ -285,7 +285,7 @@ Partial Class Form1
         ' Panel6
         ' 
         Panel6.BackColor = Color.IndianRed
-        Panel6.Location = New Point(936, 10)
+        Panel6.Location = New Point(944, 10)
         Panel6.Name = "Panel6"
         Panel6.Size = New Size(420, 120)
         Panel6.TabIndex = 2
@@ -293,7 +293,7 @@ Partial Class Form1
         ' Panel5
         ' 
         Panel5.BackColor = Color.SeaGreen
-        Panel5.Location = New Point(496, 10)
+        Panel5.Location = New Point(504, 10)
         Panel5.Name = "Panel5"
         Panel5.Size = New Size(420, 120)
         Panel5.TabIndex = 1
@@ -301,7 +301,7 @@ Partial Class Form1
         ' Panel4
         ' 
         Panel4.BackColor = Color.SeaGreen
-        Panel4.Location = New Point(56, 10)
+        Panel4.Location = New Point(64, 10)
         Panel4.Name = "Panel4"
         Panel4.Size = New Size(420, 120)
         Panel4.TabIndex = 0
@@ -311,14 +311,14 @@ Partial Class Form1
         PanelGrafik.Controls.Add(FormsPlot1)
         PanelGrafik.Location = New Point(12, 271)
         PanelGrafik.Name = "PanelGrafik"
-        PanelGrafik.Size = New Size(1356, 420)
+        PanelGrafik.Size = New Size(1378, 420)
         PanelGrafik.TabIndex = 4
         ' 
         ' Panel8
         ' 
         Panel8.BackColor = Color.DarkOrange
         Panel8.ForeColor = Color.White
-        Panel8.Location = New Point(1388, 291)
+        Panel8.Location = New Point(1396, 295)
         Panel8.Name = "Panel8"
         Panel8.Size = New Size(420, 120)
         Panel8.TabIndex = 4
@@ -327,7 +327,7 @@ Partial Class Form1
         ' 
         Panel9.BackColor = Color.SteelBlue
         Panel9.ForeColor = Color.White
-        Panel9.Location = New Point(1388, 431)
+        Panel9.Location = New Point(1396, 435)
         Panel9.Name = "Panel9"
         Panel9.Size = New Size(420, 120)
         Panel9.TabIndex = 5
@@ -354,7 +354,7 @@ Partial Class Form1
         ' Panel11
         ' 
         Panel11.BackColor = Color.Gainsboro
-        Panel11.Location = New Point(1248, 713)
+        Panel11.Location = New Point(1257, 713)
         Panel11.Name = "Panel11"
         Panel11.Size = New Size(560, 260)
         Panel11.TabIndex = 9
@@ -362,7 +362,7 @@ Partial Class Form1
         ' PanelTransaksiTerakhir
         ' 
         PanelTransaksiTerakhir.BackColor = Color.Gainsboro
-        PanelTransaksiTerakhir.Location = New Point(657, 713)
+        PanelTransaksiTerakhir.Location = New Point(666, 713)
         PanelTransaksiTerakhir.Name = "PanelTransaksiTerakhir"
         PanelTransaksiTerakhir.Size = New Size(560, 260)
         PanelTransaksiTerakhir.TabIndex = 8
@@ -370,7 +370,7 @@ Partial Class Form1
         ' PanelStokMenipis
         ' 
         PanelStokMenipis.BackColor = Color.Gainsboro
-        PanelStokMenipis.Location = New Point(68, 713)
+        PanelStokMenipis.Location = New Point(77, 713)
         PanelStokMenipis.Name = "PanelStokMenipis"
         PanelStokMenipis.Size = New Size(560, 260)
         PanelStokMenipis.TabIndex = 7
@@ -379,15 +379,16 @@ Partial Class Form1
         ' 
         Panel10.BackColor = Color.MidnightBlue
         Panel10.ForeColor = Color.White
-        Panel10.Location = New Point(1388, 571)
+        Panel10.Location = New Point(1396, 575)
         Panel10.Name = "Panel10"
         Panel10.Size = New Size(420, 120)
         Panel10.TabIndex = 6
         ' 
         ' FormsPlot1
         ' 
+        FormsPlot1.BackColor = Color.LightGray
         FormsPlot1.DisplayScale = 1.25F
-        FormsPlot1.Location = New Point(56, 26)
+        FormsPlot1.Location = New Point(64, 24)
         FormsPlot1.Name = "FormsPlot1"
         FormsPlot1.Size = New Size(1300, 394)
         FormsPlot1.TabIndex = 0
