@@ -54,7 +54,6 @@ Partial Class Form1
         Panel5 = New Panel()
         Panel4 = New Panel()
         PanelGrafik = New Panel()
-        FormsPlot1 = New ScottPlot.WinForms.FormsPlot()
         Panel8 = New Panel()
         Panel9 = New Panel()
         Panel2 = New Panel()
@@ -65,7 +64,6 @@ Partial Class Form1
         MenuStrip1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel3.SuspendLayout()
-        PanelGrafik.SuspendLayout()
         Panel2.SuspendLayout()
         SuspendLayout()
         ' 
@@ -308,19 +306,10 @@ Partial Class Form1
         ' 
         ' PanelGrafik
         ' 
-        PanelGrafik.Controls.Add(FormsPlot1)
         PanelGrafik.Location = New Point(12, 271)
         PanelGrafik.Name = "PanelGrafik"
         PanelGrafik.Size = New Size(1356, 420)
         PanelGrafik.TabIndex = 4
-        ' 
-        ' FormsPlot1
-        ' 
-        FormsPlot1.DisplayScale = 1.25F
-        FormsPlot1.Location = New Point(56, 26)
-        FormsPlot1.Name = "FormsPlot1"
-        FormsPlot1.Size = New Size(1300, 394)
-        FormsPlot1.TabIndex = 0
         ' 
         ' Panel8
         ' 
@@ -414,7 +403,6 @@ Partial Class Form1
         MenuStrip1.PerformLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel3.ResumeLayout(False)
-        PanelGrafik.ResumeLayout(False)
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
         ResumeLayout(False)
@@ -453,7 +441,6 @@ Partial Class Form1
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Panel4 As Panel
     Friend WithEvents PanelGrafik As Panel
-    Friend WithEvents FormsPlot1 As ScottPlot.WinForms.FormsPlot
     Friend WithEvents Panel8 As Panel
     Friend WithEvents Panel9 As Panel
     Friend WithEvents Panel2 As Panel
