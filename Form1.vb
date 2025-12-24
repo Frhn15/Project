@@ -32,10 +32,12 @@ Public Class Form1
     '===============================
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         KunciMenu()
+        Me.AutoScaleMode = AutoScaleMode.None
         Me.WindowState = FormWindowState.Maximized
-        Me.AutoScaleMode = AutoScaleMode.Dpi
-        Me.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        Me.AutoScaleDimensions = New SizeF(96.0F, 96.0F)
+        'Me.AutoScaleMode = AutoScaleMode.Dpi
+        Me.AutoSizeMode = AutoSizeMode.GrowOnly
+
+        'Me.AutoScaleDimensions = New SizeF(96.0F, 96.0F)
 
 
         lblUser.Text = " " & loggedUser
@@ -150,5 +152,21 @@ Public Class Form1
 
     Private Sub MasterGudangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MasterGudangToolStripMenuItem.Click
         fromMastergudang.Show() : Hide()
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub MenuStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles MenuStrip1.ItemClicked
+
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
     End Sub
 End Class

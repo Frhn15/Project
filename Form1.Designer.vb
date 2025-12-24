@@ -29,6 +29,7 @@ Partial Class Form1
         MasterKategoriToolStripMenuItem = New ToolStripMenuItem()
         MasterSuplierToolStripMenuItem = New ToolStripMenuItem()
         MasterBarangToolStripMenuItem = New ToolStripMenuItem()
+        MasterGudangToolStripMenuItem = New ToolStripMenuItem()
         StockOpnameToolStripMenuItem = New ToolStripMenuItem()
         StokBarangToolStripMenuItem = New ToolStripMenuItem()
         TransaksiMasukToolStripMenuItem = New ToolStripMenuItem()
@@ -39,18 +40,24 @@ Partial Class Form1
         usermanagement = New ToolStripMenuItem()
         LogoutToolStripMenuItem1 = New ToolStripMenuItem()
         ToolStripMenuItem1 = New ToolStripMenuItem()
-        ToolStripMenuItem2 = New ToolStripMenuItem()
-        ToolStripMenuItem3 = New ToolStripMenuItem()
-        PictureBox1 = New PictureBox()
         Label1 = New Label()
-        Label2 = New Label()
-        lblUser = New Label()
         Timer1 = New Timer(components)
+        Panel1 = New Panel()
         lblJam = New Label()
+        lblUser = New Label()
         lblRole = New Label()
-        MasterGudangToolStripMenuItem = New ToolStripMenuItem()
+        PictureBox1 = New PictureBox()
+        Panel2 = New Panel()
+        Panel3 = New Panel()
+        Panel4 = New Panel()
+        Panel5 = New Panel()
+        Panel6 = New Panel()
+        Panel7 = New Panel()
         MenuStrip1.SuspendLayout()
+        Panel1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        Panel2.SuspendLayout()
+        Panel3.SuspendLayout()
         SuspendLayout()
         ' 
         ' MenuStrip1
@@ -58,30 +65,31 @@ Partial Class Form1
         MenuStrip1.BackColor = Color.Transparent
         MenuStrip1.BackgroundImageLayout = ImageLayout.Stretch
         MenuStrip1.Dock = DockStyle.None
-        MenuStrip1.Font = New Font("Segoe UI", 10.8F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
+        MenuStrip1.Font = New Font("Segoe UI", 10.8F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, 0)
         MenuStrip1.ImageScalingSize = New Size(20, 20)
-        MenuStrip1.Items.AddRange(New ToolStripItem() {LOGINToolStripMenuItem, datamaster, StokBarangToolStripMenuItem, TransaksiMasukToolStripMenuItem, TransaksiKeluarToolStripMenuItem, EditStokBarangToolStripMenuItem, TransferAntarGudangToolStripMenuItem, LaporanMasukKeluarToolStripMenuItem, usermanagement, LogoutToolStripMenuItem1, ToolStripMenuItem1, ToolStripMenuItem2, ToolStripMenuItem3})
-        MenuStrip1.Location = New Point(169, 101)
+        MenuStrip1.Items.AddRange(New ToolStripItem() {LOGINToolStripMenuItem, datamaster, StokBarangToolStripMenuItem, TransaksiMasukToolStripMenuItem, TransaksiKeluarToolStripMenuItem, EditStokBarangToolStripMenuItem, TransferAntarGudangToolStripMenuItem, LaporanMasukKeluarToolStripMenuItem, usermanagement, LogoutToolStripMenuItem1, ToolStripMenuItem1})
+        MenuStrip1.Location = New Point(125, 16)
         MenuStrip1.Name = "MenuStrip1"
         MenuStrip1.Padding = New Padding(12, 0, 6, 0)
         MenuStrip1.RenderMode = ToolStripRenderMode.Professional
-        MenuStrip1.Size = New Size(1814, 29)
+        MenuStrip1.Size = New Size(1627, 29)
         MenuStrip1.TabIndex = 1
         MenuStrip1.Text = "MenuStrip1"
         ' 
         ' LOGINToolStripMenuItem
         ' 
         LOGINToolStripMenuItem.BackgroundImageLayout = ImageLayout.Stretch
-        LOGINToolStripMenuItem.ForeColor = Color.RoyalBlue
+        LOGINToolStripMenuItem.ForeColor = Color.Black
         LOGINToolStripMenuItem.Margin = New Padding(5, 0, 5, 0)
         LOGINToolStripMenuItem.Name = "LOGINToolStripMenuItem"
         LOGINToolStripMenuItem.Padding = New Padding(10, 0, 4, 0)
-        LOGINToolStripMenuItem.Size = New Size(86, 29)
-        LOGINToolStripMenuItem.Text = "LOGIN"
+        LOGINToolStripMenuItem.Size = New Size(77, 29)
+        LOGINToolStripMenuItem.Text = "Login"
         ' 
         ' datamaster
         ' 
         datamaster.DropDownItems.AddRange(New ToolStripItem() {MasterKategoriToolStripMenuItem, MasterSuplierToolStripMenuItem, MasterBarangToolStripMenuItem, MasterGudangToolStripMenuItem, StockOpnameToolStripMenuItem})
+        datamaster.ForeColor = Color.Black
         datamaster.Name = "datamaster"
         datamaster.Size = New Size(130, 29)
         datamaster.Text = "Data Master"
@@ -104,6 +112,12 @@ Partial Class Form1
         MasterBarangToolStripMenuItem.Size = New Size(235, 30)
         MasterBarangToolStripMenuItem.Text = "Master barang"
         ' 
+        ' MasterGudangToolStripMenuItem
+        ' 
+        MasterGudangToolStripMenuItem.Name = "MasterGudangToolStripMenuItem"
+        MasterGudangToolStripMenuItem.Size = New Size(235, 30)
+        MasterGudangToolStripMenuItem.Text = "Master Gudang"
+        ' 
         ' StockOpnameToolStripMenuItem
         ' 
         StockOpnameToolStripMenuItem.Name = "StockOpnameToolStripMenuItem"
@@ -113,6 +127,7 @@ Partial Class Form1
         ' StokBarangToolStripMenuItem
         ' 
         StokBarangToolStripMenuItem.BackgroundImageLayout = ImageLayout.Stretch
+        StokBarangToolStripMenuItem.ForeColor = Color.Black
         StokBarangToolStripMenuItem.Name = "StokBarangToolStripMenuItem"
         StokBarangToolStripMenuItem.Size = New Size(130, 29)
         StokBarangToolStripMenuItem.Text = "Stok Barang"
@@ -120,6 +135,7 @@ Partial Class Form1
         ' TransaksiMasukToolStripMenuItem
         ' 
         TransaksiMasukToolStripMenuItem.BackgroundImageLayout = ImageLayout.Stretch
+        TransaksiMasukToolStripMenuItem.ForeColor = Color.Black
         TransaksiMasukToolStripMenuItem.Name = "TransaksiMasukToolStripMenuItem"
         TransaksiMasukToolStripMenuItem.Size = New Size(166, 29)
         TransaksiMasukToolStripMenuItem.Text = "Transaksi Masuk"
@@ -127,6 +143,7 @@ Partial Class Form1
         ' TransaksiKeluarToolStripMenuItem
         ' 
         TransaksiKeluarToolStripMenuItem.BackgroundImageLayout = ImageLayout.Stretch
+        TransaksiKeluarToolStripMenuItem.ForeColor = Color.Black
         TransaksiKeluarToolStripMenuItem.Name = "TransaksiKeluarToolStripMenuItem"
         TransaksiKeluarToolStripMenuItem.Size = New Size(165, 29)
         TransaksiKeluarToolStripMenuItem.Text = "Transaksi Keluar"
@@ -134,12 +151,14 @@ Partial Class Form1
         ' EditStokBarangToolStripMenuItem
         ' 
         EditStokBarangToolStripMenuItem.BackgroundImageLayout = ImageLayout.Stretch
+        EditStokBarangToolStripMenuItem.ForeColor = Color.Black
         EditStokBarangToolStripMenuItem.Name = "EditStokBarangToolStripMenuItem"
         EditStokBarangToolStripMenuItem.Size = New Size(168, 29)
         EditStokBarangToolStripMenuItem.Text = "Edit Stok Barang"
         ' 
         ' TransferAntarGudangToolStripMenuItem
         ' 
+        TransferAntarGudangToolStripMenuItem.ForeColor = Color.Black
         TransferAntarGudangToolStripMenuItem.Name = "TransferAntarGudangToolStripMenuItem"
         TransferAntarGudangToolStripMenuItem.Size = New Size(221, 29)
         TransferAntarGudangToolStripMenuItem.Text = "Transfer Antar Gudang"
@@ -147,12 +166,14 @@ Partial Class Form1
         ' LaporanMasukKeluarToolStripMenuItem
         ' 
         LaporanMasukKeluarToolStripMenuItem.BackgroundImageLayout = ImageLayout.Stretch
+        LaporanMasukKeluarToolStripMenuItem.ForeColor = Color.Black
         LaporanMasukKeluarToolStripMenuItem.Name = "LaporanMasukKeluarToolStripMenuItem"
         LaporanMasukKeluarToolStripMenuItem.Size = New Size(253, 29)
         LaporanMasukKeluarToolStripMenuItem.Text = "Laporan Masuk dan Keluar"
         ' 
         ' usermanagement
         ' 
+        usermanagement.ForeColor = Color.Black
         usermanagement.Name = "usermanagement"
         usermanagement.Size = New Size(182, 29)
         usermanagement.Text = "User Management"
@@ -171,63 +192,29 @@ Partial Class Form1
         ToolStripMenuItem1.Name = "ToolStripMenuItem1"
         ToolStripMenuItem1.Size = New Size(14, 29)
         ' 
-        ' ToolStripMenuItem2
-        ' 
-        ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        ToolStripMenuItem2.Size = New Size(14, 29)
-        ' 
-        ' ToolStripMenuItem3
-        ' 
-        ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        ToolStripMenuItem3.Size = New Size(14, 29)
-        ' 
-        ' PictureBox1
-        ' 
-        PictureBox1.BackColor = Color.Transparent
-        PictureBox1.Dock = DockStyle.Bottom
-        PictureBox1.Image = My.Resources.Resources.Logo_Kelompok_3_Sistem_Inventory
-        PictureBox1.Location = New Point(0, 203)
-        PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(1539, 250)
-        PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
-        PictureBox1.TabIndex = 2
-        PictureBox1.TabStop = False
-        ' 
         ' Label1
         ' 
         Label1.AutoSize = True
         Label1.BackColor = Color.Transparent
-        Label1.Font = New Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.ForeColor = Color.Indigo
-        Label1.Location = New Point(709, 18)
+        Label1.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
+        Label1.ForeColor = Color.Black
+        Label1.Location = New Point(100, 25)
         Label1.Name = "Label1"
-        Label1.Size = New Size(306, 38)
+        Label1.Size = New Size(329, 41)
         Label1.TabIndex = 3
         Label1.Text = "INVENTORY GUDANG"
         ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.BackColor = Color.Transparent
-        Label2.Font = New Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label2.ForeColor = Color.Black
-        Label2.Location = New Point(78, 50)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(179, 25)
-        Label2.TabIndex = 4
-        Label2.Text = "SELAMAT DATANG,"
-        ' 
-        ' lblUser
-        ' 
-        lblUser.AutoSize = True
-        lblUser.ForeColor = Color.Black
-        lblUser.Location = New Point(247, 50)
-        lblUser.Name = "lblUser"
-        lblUser.Size = New Size(0, 20)
-        lblUser.TabIndex = 5
-        ' 
         ' Timer1
         ' 
+        ' 
+        ' Panel1
+        ' 
+        Panel1.BackColor = Color.Gainsboro
+        Panel1.Controls.Add(MenuStrip1)
+        Panel1.Location = New Point(0, 78)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(1920, 57)
+        Panel1.TabIndex = 8
         ' 
         ' lblJam
         ' 
@@ -238,36 +225,100 @@ Partial Class Form1
         lblJam.Size = New Size(0, 20)
         lblJam.TabIndex = 6
         ' 
+        ' lblUser
+        ' 
+        lblUser.AutoSize = True
+        lblUser.ForeColor = Color.Black
+        lblUser.Location = New Point(251, 60)
+        lblUser.Name = "lblUser"
+        lblUser.Size = New Size(0, 20)
+        lblUser.TabIndex = 5
+        ' 
         ' lblRole
         ' 
         lblRole.AutoSize = True
         lblRole.ForeColor = Color.Black
-        lblRole.Location = New Point(247, 49)
+        lblRole.Location = New Point(251, 59)
         lblRole.Name = "lblRole"
         lblRole.Size = New Size(0, 20)
         lblRole.TabIndex = 7
         ' 
-        ' MasterGudangToolStripMenuItem
+        ' PictureBox1
         ' 
-        MasterGudangToolStripMenuItem.Name = "MasterGudangToolStripMenuItem"
-        MasterGudangToolStripMenuItem.Size = New Size(235, 30)
-        MasterGudangToolStripMenuItem.Text = "Master Gudang"
+        PictureBox1.Image = My.Resources.Resources.logo_hitam_60x60
+        PictureBox1.Location = New Point(44, 12)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(60, 60)
+        PictureBox1.TabIndex = 9
+        PictureBox1.TabStop = False
+        ' 
+        ' Panel2
+        ' 
+        Panel2.Controls.Add(Panel3)
+        Panel2.Dock = DockStyle.Fill
+        Panel2.Location = New Point(0, 0)
+        Panel2.Name = "Panel2"
+        Panel2.Size = New Size(1902, 1033)
+        Panel2.TabIndex = 10
+        ' 
+        ' Panel3
+        ' 
+        Panel3.Controls.Add(Panel7)
+        Panel3.Controls.Add(Panel6)
+        Panel3.Controls.Add(Panel5)
+        Panel3.Controls.Add(Panel4)
+        Panel3.Location = New Point(12, 141)
+        Panel3.Name = "Panel3"
+        Panel3.Size = New Size(1880, 140)
+        Panel3.TabIndex = 0
+        ' 
+        ' Panel4
+        ' 
+        Panel4.BackColor = Color.SeaGreen
+        Panel4.Location = New Point(56, 10)
+        Panel4.Name = "Panel4"
+        Panel4.Size = New Size(420, 120)
+        Panel4.TabIndex = 0
+        ' 
+        ' Panel5
+        ' 
+        Panel5.BackColor = Color.SeaGreen
+        Panel5.Location = New Point(496, 10)
+        Panel5.Name = "Panel5"
+        Panel5.Size = New Size(420, 120)
+        Panel5.TabIndex = 1
+        ' 
+        ' Panel6
+        ' 
+        Panel6.BackColor = Color.IndianRed
+        Panel6.Location = New Point(936, 10)
+        Panel6.Name = "Panel6"
+        Panel6.Size = New Size(420, 120)
+        Panel6.TabIndex = 2
+        ' 
+        ' Panel7
+        ' 
+        Panel7.BackColor = Color.SteelBlue
+        Panel7.ForeColor = Color.White
+        Panel7.Location = New Point(1376, 10)
+        Panel7.Name = "Panel7"
+        Panel7.Size = New Size(420, 120)
+        Panel7.TabIndex = 3
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.WhiteSmoke
-        BackgroundImage = My.Resources.Resources.assd
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(1539, 453)
+        ClientSize = New Size(1902, 1033)
+        Controls.Add(PictureBox1)
         Controls.Add(lblRole)
+        Controls.Add(Label1)
         Controls.Add(lblJam)
         Controls.Add(lblUser)
-        Controls.Add(Label2)
-        Controls.Add(Label1)
-        Controls.Add(PictureBox1)
-        Controls.Add(MenuStrip1)
+        Controls.Add(Panel1)
+        Controls.Add(Panel2)
         ForeColor = Color.BurlyWood
         MainMenuStrip = MenuStrip1
         Name = "Form1"
@@ -275,7 +326,11 @@ Partial Class Form1
         Text = "Form1"
         MenuStrip1.ResumeLayout(False)
         MenuStrip1.PerformLayout()
+        Panel1.ResumeLayout(False)
+        Panel1.PerformLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        Panel2.ResumeLayout(False)
+        Panel3.ResumeLayout(False)
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -288,7 +343,6 @@ Partial Class Form1
     Friend WithEvents LaporanMasukKeluarToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EditStokBarangToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents LogoutToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents datamaster As ToolStripMenuItem
     Friend WithEvents MasterKategoriToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents MasterSuplierToolStripMenuItem As ToolStripMenuItem
@@ -300,12 +354,19 @@ Partial Class Form1
     Friend WithEvents usermanagement As ToolStripMenuItem
     Friend WithEvents MasterBarangToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents lblUser As Label
-    Friend WithEvents lblJam As Label
-    Friend WithEvents lblRole As Label
     Public WithEvents Timer1 As Timer
     Friend WithEvents StockOpnameToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents MasterGudangToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents lblJam As Label
+    Friend WithEvents lblUser As Label
+    Friend WithEvents lblRole As Label
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Panel4 As Panel
+    Friend WithEvents Panel6 As Panel
+    Friend WithEvents Panel5 As Panel
+    Friend WithEvents Panel7 As Panel
 
 End Class
