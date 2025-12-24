@@ -171,15 +171,11 @@ Public Class Form1
 
     End Sub
 
-    Private Sub formsPlot1_Load(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub FormsPlot1_Load_1(sender As Object, e As EventArgs) Handles FormsPlot1.Load
-
-    End Sub
-
     Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
+
+    End Sub
+
+    Private Sub PanelGrafik_Paint(sender As Object, e As PaintEventArgs) Handles PanelGrafik.Paint
 
     End Sub
 End Class
