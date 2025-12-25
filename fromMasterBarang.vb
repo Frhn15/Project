@@ -94,10 +94,7 @@ Public Class fromMasterBarang
     '==========================================
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
-        If txtID.Text = "" Then
-            MsgBox("Pilih data terlebih dahulu!", vbExclamation)
-            Exit Sub
-        End If
+
 
         Dim idKategori As Integer = Val(Split(ComboBox1.Text, " - ")(0))
 
@@ -117,7 +114,7 @@ Public Class fromMasterBarang
             cmd.Parameters.AddWithValue("@sat", TextBox3.Text)
             cmd.Parameters.AddWithValue("@lok", TextBox4.Text)
             cmd.Parameters.AddWithValue("@stok", NumericUpDown1.Value)
-            cmd.Parameters.AddWithValue("@id", txtID.Text)
+
 
             cmd.ExecuteNonQuery()
             MsgBox("Data berhasil diperbarui!", vbInformation)
@@ -136,10 +133,7 @@ Public Class fromMasterBarang
     '==========================================
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
 
-        If txtID.Text = "" Then
-            MsgBox("Pilih baris yang akan dihapus!", vbExclamation)
-            Exit Sub
-        End If
+
 
         If MsgBox("Yakin ingin menghapus?", vbYesNo + vbQuestion) = vbNo Then Exit Sub
 

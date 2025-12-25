@@ -9,8 +9,12 @@ Module ModuleKoneksi
     Public dr As MySqlDataReader
 
     Public Sub Koneksi()
-        conn = New MySqlConnection("server=localhost;user id=root;password=;database=inventory;")
-       
+        Try
+            conn = New MySqlConnection("server=localhost;user id=root;password=;database=inventory;")
+            conn.Open() ' <-- WAJIB!
+        Catch ex As Exception
+            MsgBox("Koneksi gagal: " & ex.Message, vbCritical)
+        End Try
     End Sub
 
 End Module
