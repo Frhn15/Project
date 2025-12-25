@@ -24,16 +24,16 @@ Partial Class formMasterSuplier
     Private Sub InitializeComponent()
         Label1 = New Label()
         Label2 = New Label()
-        TextBox1 = New TextBox()
-        Button1 = New Button()
-        MaskedTextBox1 = New MaskedTextBox()
-        TextBox2 = New TextBox()
+        Txkodesupplier = New TextBox()
+        Btnedit = New Button()
+        Mtnotelepon = New MaskedTextBox()
+        Txnamasupplier = New TextBox()
         Label3 = New Label()
-        TextBox3 = New TextBox()
+        Txalamatsupplier = New TextBox()
         Label4 = New Label()
         Label5 = New Label()
-        Button2 = New Button()
-        Button3 = New Button()
+        Btnsimpan = New Button()
+        Btnhapus = New Button()
         PictureBox1 = New PictureBox()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -41,8 +41,9 @@ Partial Class formMasterSuplier
         ' Label1
         ' 
         Label1.AutoSize = True
+        Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(641, 77)
+        Label1.Location = New Point(493, 42)
         Label1.Name = "Label1"
         Label1.Size = New Size(303, 45)
         Label1.TabIndex = 18
@@ -51,93 +52,118 @@ Partial Class formMasterSuplier
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(459, 207)
+        Label2.BackColor = Color.Transparent
+        Label2.Location = New Point(275, 147)
         Label2.Name = "Label2"
-        Label2.Size = New Size(63, 25)
+        Label2.Size = New Size(123, 25)
         Label2.TabIndex = 19
-        Label2.Text = "Label2"
+        Label2.Text = "Kode Supplier"
         ' 
-        ' TextBox1
+        ' Txkodesupplier
         ' 
-        TextBox1.Location = New Point(655, 201)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(570, 31)
-        TextBox1.TabIndex = 20
+        Txkodesupplier.BackColor = Color.LightGray
+        Txkodesupplier.BorderStyle = BorderStyle.FixedSingle
+        Txkodesupplier.Location = New Point(471, 148)
+        Txkodesupplier.Margin = New Padding(4)
+        Txkodesupplier.Name = "Txkodesupplier"
+        Txkodesupplier.Size = New Size(570, 31)
+        Txkodesupplier.TabIndex = 20
         ' 
-        ' Button1
+        ' Btnedit
         ' 
-        Button1.Location = New Point(655, 652)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(112, 34)
-        Button1.TabIndex = 21
-        Button1.Text = "Button1"
-        Button1.UseVisualStyleBackColor = True
+        Btnedit.BackColor = Color.DimGray
+        Btnedit.ForeColor = Color.White
+        Btnedit.Location = New Point(471, 482)
+        Btnedit.Margin = New Padding(4)
+        Btnedit.Name = "Btnedit"
+        Btnedit.Size = New Size(112, 34)
+        Btnedit.TabIndex = 21
+        Btnedit.Text = "Edit"
+        Btnedit.UseVisualStyleBackColor = False
         ' 
-        ' MaskedTextBox1
+        ' Mtnotelepon
         ' 
-        MaskedTextBox1.Location = New Point(655, 539)
-        MaskedTextBox1.Name = "MaskedTextBox1"
-        MaskedTextBox1.Size = New Size(570, 31)
-        MaskedTextBox1.TabIndex = 22
+        Mtnotelepon.BackColor = Color.LightGray
+        Mtnotelepon.BorderStyle = BorderStyle.FixedSingle
+        Mtnotelepon.Location = New Point(471, 397)
+        Mtnotelepon.Margin = New Padding(4)
+        Mtnotelepon.Name = "Mtnotelepon"
+        Mtnotelepon.Size = New Size(570, 31)
+        Mtnotelepon.TabIndex = 22
         ' 
-        ' TextBox2
+        ' Txnamasupplier
         ' 
-        TextBox2.Location = New Point(655, 311)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(570, 31)
-        TextBox2.TabIndex = 24
+        Txnamasupplier.BackColor = Color.LightGray
+        Txnamasupplier.BorderStyle = BorderStyle.FixedSingle
+        Txnamasupplier.Location = New Point(471, 229)
+        Txnamasupplier.Margin = New Padding(4)
+        Txnamasupplier.Name = "Txnamasupplier"
+        Txnamasupplier.Size = New Size(570, 31)
+        Txnamasupplier.TabIndex = 24
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(459, 317)
+        Label3.BackColor = Color.Transparent
+        Label3.Location = New Point(275, 228)
         Label3.Name = "Label3"
-        Label3.Size = New Size(63, 25)
+        Label3.Size = New Size(129, 25)
         Label3.TabIndex = 23
-        Label3.Text = "Label3"
+        Label3.Text = "Nama Supplier"
         ' 
-        ' TextBox3
+        ' Txalamatsupplier
         ' 
-        TextBox3.Location = New Point(655, 427)
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(570, 31)
-        TextBox3.TabIndex = 26
+        Txalamatsupplier.BackColor = Color.LightGray
+        Txalamatsupplier.BorderStyle = BorderStyle.FixedSingle
+        Txalamatsupplier.Location = New Point(471, 309)
+        Txalamatsupplier.Margin = New Padding(4)
+        Txalamatsupplier.Name = "Txalamatsupplier"
+        Txalamatsupplier.Size = New Size(570, 31)
+        Txalamatsupplier.TabIndex = 26
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(459, 433)
+        Label4.BackColor = Color.Transparent
+        Label4.Location = New Point(275, 308)
         Label4.Name = "Label4"
-        Label4.Size = New Size(63, 25)
+        Label4.Size = New Size(68, 25)
         Label4.TabIndex = 25
-        Label4.Text = "Label4"
+        Label4.Text = "Alamat"
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(459, 545)
+        Label5.BackColor = Color.Transparent
+        Label5.Location = New Point(275, 396)
         Label5.Name = "Label5"
-        Label5.Size = New Size(63, 25)
+        Label5.Size = New Size(102, 25)
         Label5.TabIndex = 27
-        Label5.Text = "Label5"
+        Label5.Text = "No Telepon"
         ' 
-        ' Button2
+        ' Btnsimpan
         ' 
-        Button2.Location = New Point(1113, 652)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(112, 34)
-        Button2.TabIndex = 28
-        Button2.Text = "Button2"
-        Button2.UseVisualStyleBackColor = True
+        Btnsimpan.BackColor = Color.DimGray
+        Btnsimpan.ForeColor = Color.White
+        Btnsimpan.Location = New Point(929, 482)
+        Btnsimpan.Margin = New Padding(4)
+        Btnsimpan.Name = "Btnsimpan"
+        Btnsimpan.Size = New Size(112, 34)
+        Btnsimpan.TabIndex = 28
+        Btnsimpan.Text = "Simpan"
+        Btnsimpan.UseVisualStyleBackColor = False
         ' 
-        ' Button3
+        ' Btnhapus
         ' 
-        Button3.Location = New Point(888, 652)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(112, 34)
-        Button3.TabIndex = 29
-        Button3.Text = "Button3"
-        Button3.UseVisualStyleBackColor = True
+        Btnhapus.BackColor = Color.DimGray
+        Btnhapus.ForeColor = Color.White
+        Btnhapus.Location = New Point(704, 482)
+        Btnhapus.Margin = New Padding(4)
+        Btnhapus.Name = "Btnhapus"
+        Btnhapus.Size = New Size(112, 34)
+        Btnhapus.TabIndex = 29
+        Btnhapus.Text = "Hapus"
+        Btnhapus.UseVisualStyleBackColor = False
         ' 
         ' PictureBox1
         ' 
@@ -145,10 +171,10 @@ Partial Class formMasterSuplier
         PictureBox1.BackgroundImage = My.Resources.Resources.Logo_Kelompok_3_Sistem_Inventory
         PictureBox1.BackgroundImageLayout = ImageLayout.Zoom
         PictureBox1.Dock = DockStyle.Bottom
-        PictureBox1.Location = New Point(0, 687)
+        PictureBox1.Location = New Point(0, 510)
         PictureBox1.Margin = New Padding(4)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(1578, 154)
+        PictureBox1.Size = New Size(1258, 154)
         PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox1.TabIndex = 30
         PictureBox1.TabStop = False
@@ -157,22 +183,22 @@ Partial Class formMasterSuplier
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        BackgroundImage = My.Resources.Resources.assd
+        BackColor = Color.White
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(1578, 841)
-        Controls.Add(PictureBox1)
-        Controls.Add(Button3)
-        Controls.Add(Button2)
+        ClientSize = New Size(1258, 664)
+        Controls.Add(Btnhapus)
+        Controls.Add(Btnsimpan)
         Controls.Add(Label5)
-        Controls.Add(TextBox3)
+        Controls.Add(Txalamatsupplier)
         Controls.Add(Label4)
-        Controls.Add(TextBox2)
+        Controls.Add(Txnamasupplier)
         Controls.Add(Label3)
-        Controls.Add(MaskedTextBox1)
-        Controls.Add(Button1)
-        Controls.Add(TextBox1)
+        Controls.Add(Mtnotelepon)
+        Controls.Add(Btnedit)
+        Controls.Add(Txkodesupplier)
         Controls.Add(Label2)
         Controls.Add(Label1)
+        Controls.Add(PictureBox1)
         Margin = New Padding(4)
         Name = "formMasterSuplier"
         Text = "formMasterSuplier"
@@ -182,15 +208,15 @@ Partial Class formMasterSuplier
     End Sub
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents MaskedTextBox1 As MaskedTextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Txkodesupplier As TextBox
+    Friend WithEvents Btnedit As Button
+    Friend WithEvents Mtnotelepon As MaskedTextBox
+    Friend WithEvents Txnamasupplier As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents Txalamatsupplier As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents Btnsimpan As Button
+    Friend WithEvents Btnhapus As Button
     Friend WithEvents PictureBox1 As PictureBox
 End Class

@@ -13,6 +13,9 @@
     <Compile Update="FormStokBarang.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="formStokGudang.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormTransaksiMasuk.vb">
       <SubType>Form</SubType>
     </Compile>
