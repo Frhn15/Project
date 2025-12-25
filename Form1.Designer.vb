@@ -53,7 +53,6 @@ Partial Class Form1
         Panel6 = New Panel()
         Panel5 = New Panel()
         Panel4 = New Panel()
-        PanelGrafik = New Panel()
         Panel8 = New Panel()
         Panel9 = New Panel()
         Panel2 = New Panel()
@@ -273,7 +272,7 @@ Partial Class Form1
         ' 
         ' Panel7
         ' 
-        Panel7.BackColor = Color.SteelBlue
+        Panel7.BackColor = Color.LightGray
         Panel7.ForeColor = Color.White
         Panel7.Location = New Point(1384, 10)
         Panel7.Name = "Panel7"
@@ -282,7 +281,7 @@ Partial Class Form1
         ' 
         ' Panel6
         ' 
-        Panel6.BackColor = Color.IndianRed
+        Panel6.BackColor = Color.LightGray
         Panel6.Location = New Point(944, 10)
         Panel6.Name = "Panel6"
         Panel6.Size = New Size(420, 120)
@@ -290,7 +289,7 @@ Partial Class Form1
         ' 
         ' Panel5
         ' 
-        Panel5.BackColor = Color.SeaGreen
+        Panel5.BackColor = Color.LightGray
         Panel5.Location = New Point(504, 10)
         Panel5.Name = "Panel5"
         Panel5.Size = New Size(420, 120)
@@ -298,22 +297,16 @@ Partial Class Form1
         ' 
         ' Panel4
         ' 
-        Panel4.BackColor = Color.SeaGreen
+        Panel4.BackColor = Color.LightGray
+        Panel4.ForeColor = Color.Black
         Panel4.Location = New Point(64, 10)
         Panel4.Name = "Panel4"
         Panel4.Size = New Size(420, 120)
         Panel4.TabIndex = 0
         ' 
-        ' PanelGrafik
-        ' 
-        PanelGrafik.Location = New Point(12, 271)
-        PanelGrafik.Name = "PanelGrafik"
-        PanelGrafik.Size = New Size(1378, 420)
-        PanelGrafik.TabIndex = 4
-        ' 
         ' Panel8
         ' 
-        Panel8.BackColor = Color.DarkOrange
+        Panel8.BackColor = Color.LightGray
         Panel8.ForeColor = Color.White
         Panel8.Location = New Point(1396, 295)
         Panel8.Name = "Panel8"
@@ -322,7 +315,7 @@ Partial Class Form1
         ' 
         ' Panel9
         ' 
-        Panel9.BackColor = Color.SteelBlue
+        Panel9.BackColor = Color.LightGray
         Panel9.ForeColor = Color.White
         Panel9.Location = New Point(1396, 435)
         Panel9.Name = "Panel9"
@@ -337,7 +330,6 @@ Partial Class Form1
         Panel2.Controls.Add(Panel10)
         Panel2.Controls.Add(Panel9)
         Panel2.Controls.Add(Panel8)
-        Panel2.Controls.Add(PanelGrafik)
         Panel2.Controls.Add(Panel3)
         Panel2.Controls.Add(PictureBox1)
         Panel2.Controls.Add(MenuStrip1)
@@ -350,7 +342,7 @@ Partial Class Form1
         ' 
         ' Panel11
         ' 
-        Panel11.BackColor = Color.Gainsboro
+        Panel11.BackColor = Color.LightGray
         Panel11.Location = New Point(1257, 713)
         Panel11.Name = "Panel11"
         Panel11.Size = New Size(560, 260)
@@ -358,7 +350,7 @@ Partial Class Form1
         ' 
         ' PanelTransaksiTerakhir
         ' 
-        PanelTransaksiTerakhir.BackColor = Color.Gainsboro
+        PanelTransaksiTerakhir.BackColor = Color.LightGray
         PanelTransaksiTerakhir.Location = New Point(666, 713)
         PanelTransaksiTerakhir.Name = "PanelTransaksiTerakhir"
         PanelTransaksiTerakhir.Size = New Size(560, 260)
@@ -366,7 +358,7 @@ Partial Class Form1
         ' 
         ' PanelStokMenipis
         ' 
-        PanelStokMenipis.BackColor = Color.Gainsboro
+        PanelStokMenipis.BackColor = Color.LightGray
         PanelStokMenipis.Location = New Point(77, 713)
         PanelStokMenipis.Name = "PanelStokMenipis"
         PanelStokMenipis.Size = New Size(560, 260)
@@ -374,7 +366,7 @@ Partial Class Form1
         ' 
         ' Panel10
         ' 
-        Panel10.BackColor = Color.MidnightBlue
+        Panel10.BackColor = Color.LightGray
         Panel10.ForeColor = Color.White
         Panel10.Location = New Point(1396, 575)
         Panel10.Name = "Panel10"
@@ -385,7 +377,7 @@ Partial Class Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.WhiteSmoke
+        BackColor = Color.Snow
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1902, 1033)
         Controls.Add(lblRole)
@@ -393,7 +385,7 @@ Partial Class Form1
         Controls.Add(lblJam)
         Controls.Add(lblUser)
         Controls.Add(Panel2)
-        ForeColor = Color.BurlyWood
+        ForeColor = Color.Blue
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MainMenuStrip = MenuStrip1
         Name = "Form1"
@@ -440,7 +432,6 @@ Partial Class Form1
     Friend WithEvents Panel6 As Panel
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Panel4 As Panel
-    Friend WithEvents PanelGrafik As Panel
     Friend WithEvents Panel8 As Panel
     Friend WithEvents Panel9 As Panel
     Friend WithEvents Panel2 As Panel

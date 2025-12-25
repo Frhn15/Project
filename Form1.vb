@@ -175,7 +175,7 @@ Public Class Form1
 
     End Sub
 
-    Private Sub PanelGrafik_Paint(sender As Object, e As PaintEventArgs) Handles PanelGrafik.Paint
+    Private Sub PanelGrafik_Paint(sender As Object, e As PaintEventArgs)
 
     End Sub
 End Class

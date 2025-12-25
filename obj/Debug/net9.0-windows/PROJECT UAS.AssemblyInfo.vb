@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("PROJECT UAS"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d34f7f5ea1532ab93e9bb05cda8a2a239c94dcbb"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb3e0eb1ca19fbc9f451b75a820097d7caa78bdb"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("PROJECT UAS"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("PROJECT UAS"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _
