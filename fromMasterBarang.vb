@@ -4,6 +4,7 @@ Public Class fromMasterBarang
     Private Sub fromMasterBarang_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.WindowState = FormWindowState.Maximized
         Me.BackgroundImageLayout = ImageLayout.Stretch
+        Me.BackColor = Color.FromArgb(248, 244, 238)
         Koneksi()
         TampilKategori()
         TampilDataBarang()

@@ -224,8 +224,7 @@ Partial Class fromMasterBarang
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.White
-        BackgroundImage = My.Resources.Resources.assd1
+        BackColor = Color.Gainsboro
         ClientSize = New Size(1262, 673)
         Controls.Add(DataGridView1)
         Controls.Add(Button4)
