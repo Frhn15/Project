@@ -194,6 +194,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property Tambah_Transaksi() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Tambah Transaksi", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Total_Barang() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Total Barang", resourceCulture)
@@ -217,6 +227,16 @@ Namespace My.Resources
         Friend ReadOnly Property Transfer_antar_gudang() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Transfer antar gudang", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Untitled_3() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Untitled-3", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
