@@ -1521,23 +1521,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Hp\\.nuget\\packages\\": {},
+    "C:\\Users\\Hype JKT\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hp\\Source\\Repos\\Project\\PROJECT UAS.vbproj",
+      "projectUniqueName": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Gudang\\PROJECT UAS.vbproj",
       "projectName": "PROJECT UAS",
-      "projectPath": "C:\\Users\\Hp\\Source\\Repos\\Project\\PROJECT UAS.vbproj",
-      "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hp\\Source\\Repos\\Project\\obj\\",
+      "projectPath": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Gudang\\PROJECT UAS.vbproj",
+      "packagesPath": "C:\\Users\\Hype JKT\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Hype JKT\\Documents\\Semester 5\\New folder\\Gudang\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Hype JKT\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
