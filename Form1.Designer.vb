@@ -56,29 +56,48 @@ Partial Class Form1
         Panel8 = New Panel()
         Panel9 = New Panel()
         Panel2 = New Panel()
+        Panel13 = New Panel()
+        Button4 = New Button()
+        Button3 = New Button()
+        Button2 = New Button()
+        Button1 = New Button()
         Panel11 = New Panel()
+        Panel14 = New Panel()
         PanelTransaksiTerakhir = New Panel()
-        Panel10 = New Panel()
-        Panel12 = New Panel()
+        DataGridView2 = New DataGridView()
         PanelStokMenipis = New Panel()
         DataGridView1 = New DataGridView()
-        DataGridView2 = New DataGridView()
-        Panel13 = New Panel()
-        Panel14 = New Panel()
-        Button1 = New Button()
-        Button2 = New Button()
-        Button3 = New Button()
-        Button4 = New Button()
+        Panel10 = New Panel()
+        Panel12 = New Panel()
+        PictureBox2 = New PictureBox()
+        TotalBarang = New Label()
+        PictureBox3 = New PictureBox()
+        PictureBox4 = New PictureBox()
+        PictureBox5 = New PictureBox()
+        PictureBox6 = New PictureBox()
+        PictureBox7 = New PictureBox()
         MenuStrip1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel3.SuspendLayout()
+        Panel7.SuspendLayout()
+        Panel6.SuspendLayout()
+        Panel5.SuspendLayout()
+        Panel4.SuspendLayout()
+        Panel8.SuspendLayout()
+        Panel9.SuspendLayout()
         Panel2.SuspendLayout()
+        Panel13.SuspendLayout()
         Panel11.SuspendLayout()
         PanelTransaksiTerakhir.SuspendLayout()
+        CType(DataGridView2, ComponentModel.ISupportInitialize).BeginInit()
         PanelStokMenipis.SuspendLayout()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(DataGridView2, ComponentModel.ISupportInitialize).BeginInit()
-        Panel13.SuspendLayout()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Label1
@@ -125,7 +144,7 @@ Partial Class Form1
         ' 
         ' Panel1
         ' 
-        Panel1.BackColor = Color.Black
+        Panel1.BackColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
         Panel1.Location = New Point(0, 74)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(1952, 65)
@@ -133,7 +152,7 @@ Partial Class Form1
         ' 
         ' MenuStrip1
         ' 
-        MenuStrip1.BackColor = Color.Black
+        MenuStrip1.BackColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
         MenuStrip1.BackgroundImageLayout = ImageLayout.Stretch
         MenuStrip1.Dock = DockStyle.None
         MenuStrip1.Font = New Font("Segoe UI", 10.8F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
@@ -288,6 +307,7 @@ Partial Class Form1
         ' Panel7
         ' 
         Panel7.BackColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
+        Panel7.Controls.Add(PictureBox4)
         Panel7.ForeColor = Color.White
         Panel7.Location = New Point(1384, 10)
         Panel7.Name = "Panel7"
@@ -297,6 +317,7 @@ Partial Class Form1
         ' Panel6
         ' 
         Panel6.BackColor = Color.FromArgb(CByte(69), CByte(69), CByte(69))
+        Panel6.Controls.Add(PictureBox6)
         Panel6.Location = New Point(944, 10)
         Panel6.Name = "Panel6"
         Panel6.Size = New Size(420, 120)
@@ -305,6 +326,7 @@ Partial Class Form1
         ' Panel5
         ' 
         Panel5.BackColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
+        Panel5.Controls.Add(PictureBox3)
         Panel5.Location = New Point(504, 10)
         Panel5.Name = "Panel5"
         Panel5.Size = New Size(420, 120)
@@ -313,6 +335,8 @@ Partial Class Form1
         ' Panel4
         ' 
         Panel4.BackColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
+        Panel4.Controls.Add(TotalBarang)
+        Panel4.Controls.Add(PictureBox2)
         Panel4.ForeColor = Color.Black
         Panel4.Location = New Point(64, 10)
         Panel4.Name = "Panel4"
@@ -322,6 +346,7 @@ Partial Class Form1
         ' Panel8
         ' 
         Panel8.BackColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
+        Panel8.Controls.Add(PictureBox5)
         Panel8.ForeColor = Color.White
         Panel8.Location = New Point(1396, 292)
         Panel8.Name = "Panel8"
@@ -331,6 +356,7 @@ Partial Class Form1
         ' Panel9
         ' 
         Panel9.BackColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
+        Panel9.Controls.Add(PictureBox7)
         Panel9.ForeColor = Color.White
         Panel9.Location = New Point(1396, 432)
         Panel9.Name = "Panel9"
@@ -358,6 +384,58 @@ Partial Class Form1
         Panel2.Size = New Size(1902, 1033)
         Panel2.TabIndex = 10
         ' 
+        ' Panel13
+        ' 
+        Panel13.BackColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
+        Panel13.Controls.Add(Button4)
+        Panel13.Controls.Add(Button3)
+        Panel13.Controls.Add(Button2)
+        Panel13.Controls.Add(Button1)
+        Panel13.Location = New Point(1396, 938)
+        Panel13.Name = "Panel13"
+        Panel13.Size = New Size(421, 74)
+        Panel13.TabIndex = 10
+        ' 
+        ' Button4
+        ' 
+        Button4.FlatStyle = FlatStyle.Flat
+        Button4.Location = New Point(312, 9)
+        Button4.Name = "Button4"
+        Button4.Size = New Size(94, 56)
+        Button4.TabIndex = 3
+        Button4.Text = "Button4"
+        Button4.UseVisualStyleBackColor = True
+        ' 
+        ' Button3
+        ' 
+        Button3.FlatStyle = FlatStyle.Flat
+        Button3.Location = New Point(210, 9)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(94, 56)
+        Button3.TabIndex = 2
+        Button3.Text = "Button3"
+        Button3.UseVisualStyleBackColor = True
+        ' 
+        ' Button2
+        ' 
+        Button2.FlatStyle = FlatStyle.Flat
+        Button2.Location = New Point(110, 9)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(94, 56)
+        Button2.TabIndex = 1
+        Button2.Text = "Button2"
+        Button2.UseVisualStyleBackColor = True
+        ' 
+        ' Button1
+        ' 
+        Button1.FlatStyle = FlatStyle.Flat
+        Button1.Location = New Point(10, 9)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(94, 56)
+        Button1.TabIndex = 0
+        Button1.Text = "Button1"
+        Button1.UseVisualStyleBackColor = True
+        ' 
         ' Panel11
         ' 
         Panel11.BackColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
@@ -366,6 +444,14 @@ Partial Class Form1
         Panel11.Name = "Panel11"
         Panel11.Size = New Size(421, 205)
         Panel11.TabIndex = 9
+        ' 
+        ' Panel14
+        ' 
+        Panel14.BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
+        Panel14.Location = New Point(15, 64)
+        Panel14.Name = "Panel14"
+        Panel14.Size = New Size(391, 125)
+        Panel14.TabIndex = 0
         ' 
         ' PanelTransaksiTerakhir
         ' 
@@ -376,22 +462,17 @@ Partial Class Form1
         PanelTransaksiTerakhir.Size = New Size(635, 262)
         PanelTransaksiTerakhir.TabIndex = 8
         ' 
-        ' Panel10
+        ' DataGridView2
         ' 
-        Panel10.BackColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
-        Panel10.ForeColor = Color.White
-        Panel10.Location = New Point(1396, 572)
-        Panel10.Name = "Panel10"
-        Panel10.Size = New Size(420, 120)
-        Panel10.TabIndex = 6
-        ' 
-        ' Panel12
-        ' 
-        Panel12.BackColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
-        Panel12.Location = New Point(0, 0)
-        Panel12.Name = "Panel12"
-        Panel12.Size = New Size(1902, 75)
-        Panel12.TabIndex = 10
+        DataGridView2.BackgroundColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
+        DataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridView2.EnableHeadersVisualStyles = False
+        DataGridView2.GridColor = Color.FromArgb(CByte(167), CByte(165), CByte(156))
+        DataGridView2.Location = New Point(0, 59)
+        DataGridView2.Name = "DataGridView2"
+        DataGridView2.RowHeadersWidth = 51
+        DataGridView2.Size = New Size(635, 203)
+        DataGridView2.TabIndex = 0
         ' 
         ' PanelStokMenipis
         ' 
@@ -414,73 +495,87 @@ Partial Class Form1
         DataGridView1.Size = New Size(635, 203)
         DataGridView1.TabIndex = 0
         ' 
-        ' DataGridView2
+        ' Panel10
         ' 
-        DataGridView2.BackgroundColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
-        DataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView2.EnableHeadersVisualStyles = False
-        DataGridView2.GridColor = Color.FromArgb(CByte(167), CByte(165), CByte(156))
-        DataGridView2.Location = New Point(0, 59)
-        DataGridView2.Name = "DataGridView2"
-        DataGridView2.RowHeadersWidth = 51
-        DataGridView2.Size = New Size(635, 203)
-        DataGridView2.TabIndex = 0
+        Panel10.BackColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
+        Panel10.ForeColor = Color.White
+        Panel10.Location = New Point(1396, 572)
+        Panel10.Name = "Panel10"
+        Panel10.Size = New Size(420, 120)
+        Panel10.TabIndex = 6
         ' 
-        ' Panel13
+        ' Panel12
         ' 
-        Panel13.BackColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
-        Panel13.Controls.Add(Button4)
-        Panel13.Controls.Add(Button3)
-        Panel13.Controls.Add(Button2)
-        Panel13.Controls.Add(Button1)
-        Panel13.Location = New Point(1396, 938)
-        Panel13.Name = "Panel13"
-        Panel13.Size = New Size(421, 74)
-        Panel13.TabIndex = 10
+        Panel12.BackColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
+        Panel12.Location = New Point(0, 0)
+        Panel12.Name = "Panel12"
+        Panel12.Size = New Size(1952, 75)
+        Panel12.TabIndex = 10
         ' 
-        ' Panel14
+        ' PictureBox2
         ' 
-        Panel14.BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
-        Panel14.Location = New Point(15, 64)
-        Panel14.Name = "Panel14"
-        Panel14.Size = New Size(391, 125)
-        Panel14.TabIndex = 0
+        PictureBox2.Image = My.Resources.Resources.Total_Barang1
+        PictureBox2.Location = New Point(18, 20)
+        PictureBox2.Name = "PictureBox2"
+        PictureBox2.Size = New Size(80, 80)
+        PictureBox2.TabIndex = 0
+        PictureBox2.TabStop = False
         ' 
-        ' Button1
+        ' TotalBarang
         ' 
-        Button1.Location = New Point(10, 9)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(94, 56)
-        Button1.TabIndex = 0
-        Button1.Text = "Button1"
-        Button1.UseVisualStyleBackColor = True
+        TotalBarang.AutoSize = True
+        TotalBarang.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        TotalBarang.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
+        TotalBarang.Location = New Point(109, 20)
+        TotalBarang.Name = "TotalBarang"
+        TotalBarang.Size = New Size(118, 31)
+        TotalBarang.TabIndex = 1
+        TotalBarang.Text = "Total Item"
         ' 
-        ' Button2
+        ' PictureBox3
         ' 
-        Button2.Location = New Point(110, 9)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(94, 56)
-        Button2.TabIndex = 1
-        Button2.Text = "Button2"
-        Button2.UseVisualStyleBackColor = True
+        PictureBox3.Image = My.Resources.Resources.Stok_Aman
+        PictureBox3.Location = New Point(19, 20)
+        PictureBox3.Name = "PictureBox3"
+        PictureBox3.Size = New Size(80, 80)
+        PictureBox3.TabIndex = 2
+        PictureBox3.TabStop = False
         ' 
-        ' Button3
+        ' PictureBox4
         ' 
-        Button3.Location = New Point(210, 9)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(94, 56)
-        Button3.TabIndex = 2
-        Button3.Text = "Button3"
-        Button3.UseVisualStyleBackColor = True
+        PictureBox4.Image = My.Resources.Resources.Barang_Masuk
+        PictureBox4.Location = New Point(17, 19)
+        PictureBox4.Name = "PictureBox4"
+        PictureBox4.Size = New Size(80, 80)
+        PictureBox4.TabIndex = 3
+        PictureBox4.TabStop = False
         ' 
-        ' Button4
+        ' PictureBox5
         ' 
-        Button4.Location = New Point(312, 9)
-        Button4.Name = "Button4"
-        Button4.Size = New Size(94, 56)
-        Button4.TabIndex = 3
-        Button4.Text = "Button4"
-        Button4.UseVisualStyleBackColor = True
+        PictureBox5.Image = My.Resources.Resources.Barang_Keluar
+        PictureBox5.Location = New Point(17, 20)
+        PictureBox5.Name = "PictureBox5"
+        PictureBox5.Size = New Size(80, 80)
+        PictureBox5.TabIndex = 4
+        PictureBox5.TabStop = False
+        ' 
+        ' PictureBox6
+        ' 
+        PictureBox6.Image = My.Resources.Resources.warning
+        PictureBox6.Location = New Point(18, 19)
+        PictureBox6.Name = "PictureBox6"
+        PictureBox6.Size = New Size(80, 80)
+        PictureBox6.TabIndex = 3
+        PictureBox6.TabStop = False
+        ' 
+        ' PictureBox7
+        ' 
+        PictureBox7.Image = My.Resources.Resources.Transfer_antar_gudang
+        PictureBox7.Location = New Point(17, 20)
+        PictureBox7.Name = "PictureBox7"
+        PictureBox7.Size = New Size(80, 80)
+        PictureBox7.TabIndex = 5
+        PictureBox7.TabStop = False
         ' 
         ' Form1
         ' 
@@ -504,14 +599,27 @@ Partial Class Form1
         MenuStrip1.PerformLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel3.ResumeLayout(False)
+        Panel7.ResumeLayout(False)
+        Panel6.ResumeLayout(False)
+        Panel5.ResumeLayout(False)
+        Panel4.ResumeLayout(False)
+        Panel4.PerformLayout()
+        Panel8.ResumeLayout(False)
+        Panel9.ResumeLayout(False)
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
+        Panel13.ResumeLayout(False)
         Panel11.ResumeLayout(False)
         PanelTransaksiTerakhir.ResumeLayout(False)
+        CType(DataGridView2, ComponentModel.ISupportInitialize).EndInit()
         PanelStokMenipis.ResumeLayout(False)
         CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
-        CType(DataGridView2, ComponentModel.ISupportInitialize).EndInit()
-        Panel13.ResumeLayout(False)
+        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox6, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox7, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -563,5 +671,12 @@ Partial Class Form1
     Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents TotalBarang As Label
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents PictureBox7 As PictureBox
 
 End Class
