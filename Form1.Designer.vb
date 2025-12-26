@@ -80,7 +80,12 @@ Partial Class Form1
         DataGridView2 = New DataGridView()
         PanelStokMenipis = New Panel()
         DataGridView1 = New DataGridView()
-        Panel12 = New Panel()
+        Panel10 = New Panel()
+        Label7 = New Label()
+        Label8 = New Label()
+        Label9 = New Label()
+        Label10 = New Label()
+        Label11 = New Label()
         MenuStrip1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel3.SuspendLayout()
@@ -104,12 +109,13 @@ Partial Class Form1
         CType(DataGridView2, ComponentModel.ISupportInitialize).BeginInit()
         PanelStokMenipis.SuspendLayout()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
+        Panel10.SuspendLayout()
         SuspendLayout()
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.BackColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
+        Label1.BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
         Label1.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
         Label1.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
         Label1.Location = New Point(103, 18)
@@ -290,7 +296,7 @@ Partial Class Form1
         ' 
         ' PictureBox1
         ' 
-        PictureBox1.BackColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
+        PictureBox1.BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
         PictureBox1.ErrorImage = Nothing
         PictureBox1.Image = My.Resources.Resources.logo_hitam_60x60
         PictureBox1.Location = New Point(29, 8)
@@ -508,7 +514,7 @@ Partial Class Form1
         Panel2.Controls.Add(PictureBox1)
         Panel2.Controls.Add(MenuStrip1)
         Panel2.Controls.Add(Panel1)
-        Panel2.Controls.Add(Panel12)
+        Panel2.Controls.Add(Panel10)
         Panel2.Dock = DockStyle.Fill
         Panel2.Location = New Point(0, 0)
         Panel2.Name = "Panel2"
@@ -573,33 +579,36 @@ Partial Class Form1
         ' Panel11
         ' 
         Panel11.BackColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
+        Panel11.Controls.Add(Label9)
+        Panel11.Controls.Add(Label8)
         Panel11.Controls.Add(PictureBox8)
         Panel11.Controls.Add(Panel14)
-        Panel11.Location = New Point(1396, 570)
+        Panel11.Location = New Point(1396, 632)
         Panel11.Name = "Panel11"
-        Panel11.Size = New Size(421, 309)
+        Panel11.Size = New Size(421, 247)
         Panel11.TabIndex = 9
         ' 
         ' PictureBox8
         ' 
-        PictureBox8.Image = My.Resources.Resources.Barang_Keluar
-        PictureBox8.Location = New Point(17, 41)
+        PictureBox8.Image = My.Resources.Resources.user
+        PictureBox8.Location = New Point(19, 10)
         PictureBox8.Name = "PictureBox8"
-        PictureBox8.Size = New Size(80, 80)
+        PictureBox8.Size = New Size(60, 60)
         PictureBox8.TabIndex = 5
         PictureBox8.TabStop = False
         ' 
         ' Panel14
         ' 
         Panel14.BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
-        Panel14.Location = New Point(17, 128)
+        Panel14.Location = New Point(17, 80)
         Panel14.Name = "Panel14"
-        Panel14.Size = New Size(387, 163)
+        Panel14.Size = New Size(387, 154)
         Panel14.TabIndex = 0
         ' 
         ' PanelTransaksiTerakhir
         ' 
         PanelTransaksiTerakhir.BackColor = Color.FromArgb(CByte(69), CByte(69), CByte(69))
+        PanelTransaksiTerakhir.Controls.Add(Label11)
         PanelTransaksiTerakhir.Controls.Add(DataGridView2)
         PanelTransaksiTerakhir.Location = New Point(741, 750)
         PanelTransaksiTerakhir.Name = "PanelTransaksiTerakhir"
@@ -621,6 +630,7 @@ Partial Class Form1
         ' PanelStokMenipis
         ' 
         PanelStokMenipis.BackColor = Color.FromArgb(CByte(69), CByte(69), CByte(69))
+        PanelStokMenipis.Controls.Add(Label10)
         PanelStokMenipis.Controls.Add(DataGridView1)
         PanelStokMenipis.Location = New Point(85, 750)
         PanelStokMenipis.Name = "PanelStokMenipis"
@@ -639,13 +649,69 @@ Partial Class Form1
         DataGridView1.Size = New Size(635, 203)
         DataGridView1.TabIndex = 0
         ' 
-        ' Panel12
+        ' Panel10
         ' 
-        Panel12.BackColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
-        Panel12.Location = New Point(0, 0)
-        Panel12.Name = "Panel12"
-        Panel12.Size = New Size(1952, 75)
-        Panel12.TabIndex = 10
+        Panel10.BackColor = Color.FromArgb(CByte(69), CByte(69), CByte(69))
+        Panel10.Controls.Add(Label7)
+        Panel10.Location = New Point(1396, 572)
+        Panel10.Name = "Panel10"
+        Panel10.Size = New Size(421, 82)
+        Panel10.TabIndex = 11
+        ' 
+        ' Label7
+        ' 
+        Label7.AutoSize = True
+        Label7.Font = New Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold)
+        Label7.ForeColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
+        Label7.Location = New Point(10, 16)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(140, 29)
+        Label7.TabIndex = 6
+        Label7.Text = "User Login"
+        ' 
+        ' Label8
+        ' 
+        Label8.AutoSize = True
+        Label8.Font = New Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold)
+        Label8.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
+        Label8.Location = New Point(84, 13)
+        Label8.Name = "Label8"
+        Label8.Size = New Size(130, 29)
+        Label8.TabIndex = 6
+        Label8.Text = "Role User"
+        ' 
+        ' Label9
+        ' 
+        Label9.AutoSize = True
+        Label9.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label9.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
+        Label9.Location = New Point(85, 36)
+        Label9.Name = "Label9"
+        Label9.Size = New Size(145, 28)
+        Label9.TabIndex = 7
+        Label9.Text = "Gudang Utama"
+        ' 
+        ' Label10
+        ' 
+        Label10.AutoSize = True
+        Label10.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label10.ForeColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
+        Label10.Location = New Point(18, 14)
+        Label10.Name = "Label10"
+        Label10.Size = New Size(148, 31)
+        Label10.TabIndex = 6
+        Label10.Text = "Stok Menipis"
+        ' 
+        ' Label11
+        ' 
+        Label11.AutoSize = True
+        Label11.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label11.ForeColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
+        Label11.Location = New Point(24, 14)
+        Label11.Name = "Label11"
+        Label11.Size = New Size(199, 31)
+        Label11.TabIndex = 7
+        Label11.Text = "Transaksi Terakhir"
         ' 
         ' Form1
         ' 
@@ -691,11 +757,16 @@ Partial Class Form1
         Panel2.PerformLayout()
         Panel13.ResumeLayout(False)
         Panel11.ResumeLayout(False)
+        Panel11.PerformLayout()
         CType(PictureBox8, ComponentModel.ISupportInitialize).EndInit()
         PanelTransaksiTerakhir.ResumeLayout(False)
+        PanelTransaksiTerakhir.PerformLayout()
         CType(DataGridView2, ComponentModel.ISupportInitialize).EndInit()
         PanelStokMenipis.ResumeLayout(False)
+        PanelStokMenipis.PerformLayout()
         CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
+        Panel10.ResumeLayout(False)
+        Panel10.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -736,7 +807,6 @@ Partial Class Form1
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel11 As Panel
     Friend WithEvents PanelTransaksiTerakhir As Panel
-    Friend WithEvents Panel12 As Panel
     Friend WithEvents PanelStokMenipis As Panel
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents DataGridView2 As DataGridView
@@ -759,5 +829,11 @@ Partial Class Form1
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents PictureBox8 As PictureBox
+    Friend WithEvents Panel10 As Panel
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label7 As Label
 
 End Class
