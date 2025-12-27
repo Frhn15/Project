@@ -69,6 +69,10 @@ Partial Class Form1
         PictureBox7 = New PictureBox()
         Panel2 = New Panel()
         Panel13 = New Panel()
+        Label15 = New Label()
+        Label14 = New Label()
+        Label13 = New Label()
+        Label12 = New Label()
         Button4 = New Button()
         Button3 = New Button()
         Button2 = New Button()
@@ -86,10 +90,6 @@ Partial Class Form1
         DataGridView1 = New DataGridView()
         Panel10 = New Panel()
         Label7 = New Label()
-        Label12 = New Label()
-        Label13 = New Label()
-        Label14 = New Label()
-        Label15 = New Label()
         MenuStrip1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel3.SuspendLayout()
@@ -542,10 +542,54 @@ Partial Class Form1
         Panel13.Size = New Size(421, 120)
         Panel13.TabIndex = 10
         ' 
+        ' Label15
+        ' 
+        Label15.AutoSize = True
+        Label15.Font = New Font("Segoe UI Semibold", 8F, FontStyle.Bold)
+        Label15.Location = New Point(330, 74)
+        Label15.Name = "Label15"
+        Label15.Size = New Size(59, 19)
+        Label15.TabIndex = 15
+        Label15.Text = "Laporan"
+        Label15.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' Label14
+        ' 
+        Label14.AutoSize = True
+        Label14.Font = New Font("Segoe UI Semibold", 8F, FontStyle.Bold)
+        Label14.Location = New Point(228, 74)
+        Label14.Name = "Label14"
+        Label14.Size = New Size(52, 38)
+        Label14.TabIndex = 14
+        Label14.Text = "Stok" & vbCrLf & "Barang"
+        Label14.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' Label13
+        ' 
+        Label13.AutoSize = True
+        Label13.Font = New Font("Segoe UI Semibold", 8F, FontStyle.Bold)
+        Label13.Location = New Point(129, 74)
+        Label13.Name = "Label13"
+        Label13.Size = New Size(66, 38)
+        Label13.TabIndex = 13
+        Label13.Text = "Transaksi" & vbCrLf & "Keluar"
+        Label13.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' Label12
+        ' 
+        Label12.AutoSize = True
+        Label12.Font = New Font("Segoe UI Semibold", 8F, FontStyle.Bold)
+        Label12.Location = New Point(33, 74)
+        Label12.Name = "Label12"
+        Label12.Size = New Size(66, 38)
+        Label12.TabIndex = 12
+        Label12.Text = "Transaksi" & vbCrLf & "Masuk"
+        Label12.TextAlign = ContentAlignment.MiddleCenter
+        ' 
         ' Button4
         ' 
         Button4.FlatStyle = FlatStyle.Flat
-        Button4.Image = My.Resources.Resources.laporan
+        Button4.Image = My.Resources.Resources.LAPORAN_2
         Button4.Location = New Point(314, 9)
         Button4.Name = "Button4"
         Button4.Size = New Size(91, 62)
@@ -721,50 +765,6 @@ Partial Class Form1
         Label7.Size = New Size(140, 29)
         Label7.TabIndex = 6
         Label7.Text = "User Login"
-        ' 
-        ' Label12
-        ' 
-        Label12.AutoSize = True
-        Label12.Font = New Font("Segoe UI Semibold", 8F, FontStyle.Bold)
-        Label12.Location = New Point(33, 74)
-        Label12.Name = "Label12"
-        Label12.Size = New Size(66, 38)
-        Label12.TabIndex = 12
-        Label12.Text = "Transaksi" & vbCrLf & "Masuk"
-        Label12.TextAlign = ContentAlignment.MiddleCenter
-        ' 
-        ' Label13
-        ' 
-        Label13.AutoSize = True
-        Label13.Font = New Font("Segoe UI Semibold", 8F, FontStyle.Bold)
-        Label13.Location = New Point(129, 74)
-        Label13.Name = "Label13"
-        Label13.Size = New Size(66, 38)
-        Label13.TabIndex = 13
-        Label13.Text = "Transaksi" & vbCrLf & "Keluar"
-        Label13.TextAlign = ContentAlignment.MiddleCenter
-        ' 
-        ' Label14
-        ' 
-        Label14.AutoSize = True
-        Label14.Font = New Font("Segoe UI Semibold", 8F, FontStyle.Bold)
-        Label14.Location = New Point(228, 74)
-        Label14.Name = "Label14"
-        Label14.Size = New Size(52, 38)
-        Label14.TabIndex = 14
-        Label14.Text = "Stok" & vbCrLf & "Barang"
-        Label14.TextAlign = ContentAlignment.MiddleCenter
-        ' 
-        ' Label15
-        ' 
-        Label15.AutoSize = True
-        Label15.Font = New Font("Segoe UI Semibold", 8F, FontStyle.Bold)
-        Label15.Location = New Point(330, 74)
-        Label15.Name = "Label15"
-        Label15.Size = New Size(59, 19)
-        Label15.TabIndex = 15
-        Label15.Text = "Laporan"
-        Label15.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Form1
         ' 

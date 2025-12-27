@@ -103,6 +103,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property back_50x50() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("back 50x50", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Barang_Keluar() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Barang Keluar", resourceCulture)
@@ -116,6 +126,16 @@ Namespace My.Resources
         Friend ReadOnly Property Barang_Masuk() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Barang Masuk", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property button_Login() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("button Login", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -167,6 +187,16 @@ Namespace My.Resources
         Friend ReadOnly Property laporan() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("laporan", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property LAPORAN_2() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("LAPORAN 2", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
