@@ -4,7 +4,6 @@ Public Class fromMasterBarang
     Private Sub fromMasterBarang_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.WindowState = FormWindowState.Maximized
         Me.BackgroundImageLayout = ImageLayout.Stretch
-        Me.BackColor = Color.FromArgb(248, 244, 238)
         Koneksi()
         TampilKategori()
         TampilDataBarang()
@@ -196,6 +195,22 @@ Public Class fromMasterBarang
     End Sub
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
+
+    End Sub
+
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+
+    End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
     End Sub
 End Class
