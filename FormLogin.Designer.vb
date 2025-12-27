@@ -46,39 +46,40 @@ Partial Class FormLogin
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.FromArgb(CByte(69), CByte(69), CByte(69))
-        Label1.Location = New Point(99, 195)
+        Label1.Location = New Point(65, 168)
         Label1.Name = "Label1"
-        Label1.Size = New Size(80, 20)
+        Label1.Size = New Size(87, 23)
         Label1.TabIndex = 10
         Label1.Text = "Username"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.FromArgb(CByte(69), CByte(69), CByte(69))
-        Label2.Location = New Point(99, 265)
+        Label2.Location = New Point(64, 243)
         Label2.Name = "Label2"
-        Label2.Size = New Size(76, 20)
+        Label2.Size = New Size(82, 23)
         Label2.TabIndex = 1
         Label2.Text = "Password"
         ' 
         ' txtUsername
         ' 
-        txtUsername.Font = New Font("Palatino Linotype", 9F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        txtUsername.Location = New Point(99, 218)
+        txtUsername.Font = New Font("Times New Roman", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtUsername.Location = New Point(64, 192)
         txtUsername.Name = "txtUsername"
-        txtUsername.Size = New Size(300, 28)
+        txtUsername.Size = New Size(369, 36)
         txtUsername.TabIndex = 2
         ' 
         ' txtPassword
         ' 
-        txtPassword.Location = New Point(99, 288)
+        txtPassword.Font = New Font("Segoe UI", 15F)
+        txtPassword.Location = New Point(64, 268)
         txtPassword.Name = "txtPassword"
         txtPassword.PasswordChar = "*"c
-        txtPassword.Size = New Size(300, 27)
+        txtPassword.Size = New Size(369, 41)
         txtPassword.TabIndex = 3
         ' 
         ' btnLogin
@@ -88,7 +89,7 @@ Partial Class FormLogin
         btnLogin.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnLogin.ForeColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
         btnLogin.Image = CType(resources.GetObject("btnLogin.Image"), Image)
-        btnLogin.Location = New Point(87, 321)
+        btnLogin.Location = New Point(82, 324)
         btnLogin.Name = "btnLogin"
         btnLogin.Size = New Size(332, 75)
         btnLogin.TabIndex = 4
@@ -99,7 +100,7 @@ Partial Class FormLogin
         btnBack.BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
         btnBack.FlatStyle = FlatStyle.Flat
         btnBack.ForeColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
-        btnBack.Image = CType(resources.GetObject("btnBack.Image"), Image)
+        btnBack.Image = My.Resources.Resources.back_50x501
         btnBack.Location = New Point(428, 23)
         btnBack.Margin = New Padding(2)
         btnBack.Name = "btnBack"
@@ -190,12 +191,12 @@ Partial Class FormLogin
         ' Label8
         ' 
         Label8.AutoSize = True
-        Label8.Font = New Font("Segoe UI Semibold", 13F, FontStyle.Bold)
+        Label8.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label8.ForeColor = Color.FromArgb(CByte(69), CByte(69), CByte(69))
-        Label8.Location = New Point(99, 131)
+        Label8.Location = New Point(91, 102)
         Label8.Margin = New Padding(2, 0, 2, 0)
         Label8.Name = "Label8"
-        Label8.Size = New Size(290, 30)
+        Label8.Size = New Size(310, 31)
         Label8.TabIndex = 9
         Label8.Text = "INVENTORY SYSTEM LOGIN"
         ' 
@@ -204,7 +205,7 @@ Partial Class FormLogin
         Label5.AutoSize = True
         Label5.Font = New Font("Segoe UI", 7.20000029F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label5.ForeColor = Color.Black
-        Label5.Location = New Point(123, 399)
+        Label5.Location = New Point(118, 402)
         Label5.Name = "Label5"
         Label5.Size = New Size(254, 17)
         Label5.TabIndex = 8
@@ -224,7 +225,7 @@ Partial Class FormLogin
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
+        BackColor = Color.White
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1262, 673)
         Controls.Add(PanelLogin)
