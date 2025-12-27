@@ -589,6 +589,7 @@ Partial Class Form1
         ' Button4
         ' 
         Button4.FlatStyle = FlatStyle.Flat
+        Button4.ForeColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
         Button4.Image = My.Resources.Resources.LAPORAN_2
         Button4.Location = New Point(314, 9)
         Button4.Name = "Button4"
@@ -599,6 +600,7 @@ Partial Class Form1
         ' Button3
         ' 
         Button3.FlatStyle = FlatStyle.Flat
+        Button3.ForeColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
         Button3.Image = My.Resources.Resources.Stok_Barang1
         Button3.Location = New Point(214, 9)
         Button3.Name = "Button3"
@@ -609,7 +611,7 @@ Partial Class Form1
         ' Button2
         ' 
         Button2.FlatStyle = FlatStyle.Flat
-        Button2.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
+        Button2.ForeColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
         Button2.Image = My.Resources.Resources.Transaksi_keluar
         Button2.Location = New Point(114, 9)
         Button2.Name = "Button2"
@@ -621,7 +623,7 @@ Partial Class Form1
         ' 
         Button1.BackColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
         Button1.FlatStyle = FlatStyle.Flat
-        Button1.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
+        Button1.ForeColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
         Button1.Image = My.Resources.Resources.tambah_transaksi_new
         Button1.Location = New Point(17, 9)
         Button1.Name = "Button1"

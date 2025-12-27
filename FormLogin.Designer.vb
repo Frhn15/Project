@@ -86,7 +86,7 @@ Partial Class FormLogin
         btnLogin.BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
         btnLogin.FlatStyle = FlatStyle.Flat
         btnLogin.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnLogin.ForeColor = SystemColors.ButtonHighlight
+        btnLogin.ForeColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
         btnLogin.Image = CType(resources.GetObject("btnLogin.Image"), Image)
         btnLogin.Location = New Point(87, 321)
         btnLogin.Name = "btnLogin"
@@ -98,7 +98,7 @@ Partial Class FormLogin
         ' 
         btnBack.BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
         btnBack.FlatStyle = FlatStyle.Flat
-        btnBack.ForeColor = Color.Transparent
+        btnBack.ForeColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
         btnBack.Image = CType(resources.GetObject("btnBack.Image"), Image)
         btnBack.Location = New Point(428, 23)
         btnBack.Margin = New Padding(2)
