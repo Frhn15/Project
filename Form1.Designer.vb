@@ -74,18 +74,22 @@ Partial Class Form1
         Button2 = New Button()
         Button1 = New Button()
         Panel11 = New Panel()
+        Label9 = New Label()
+        Label8 = New Label()
         PictureBox8 = New PictureBox()
         Panel14 = New Panel()
         PanelTransaksiTerakhir = New Panel()
+        Label11 = New Label()
         DataGridView2 = New DataGridView()
         PanelStokMenipis = New Panel()
+        Label10 = New Label()
         DataGridView1 = New DataGridView()
         Panel10 = New Panel()
         Label7 = New Label()
-        Label8 = New Label()
-        Label9 = New Label()
-        Label10 = New Label()
-        Label11 = New Label()
+        Label12 = New Label()
+        Label13 = New Label()
+        Label14 = New Label()
+        Label15 = New Label()
         MenuStrip1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel3.SuspendLayout()
@@ -494,7 +498,7 @@ Partial Class Form1
         ' 
         ' PictureBox7
         ' 
-        PictureBox7.Image = My.Resources.Resources.Transfer_antar_gudang
+        PictureBox7.Image = My.Resources.Resources.Transfer_antar_gudang_new
         PictureBox7.Location = New Point(17, 20)
         PictureBox7.Name = "PictureBox7"
         PictureBox7.Size = New Size(80, 80)
@@ -516,6 +520,7 @@ Partial Class Form1
         Panel2.Controls.Add(Panel1)
         Panel2.Controls.Add(Panel10)
         Panel2.Dock = DockStyle.Fill
+        Panel2.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
         Panel2.Location = New Point(0, 0)
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(1902, 1033)
@@ -524,6 +529,10 @@ Partial Class Form1
         ' Panel13
         ' 
         Panel13.BackColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
+        Panel13.Controls.Add(Label15)
+        Panel13.Controls.Add(Label14)
+        Panel13.Controls.Add(Label13)
+        Panel13.Controls.Add(Label12)
         Panel13.Controls.Add(Button4)
         Panel13.Controls.Add(Button3)
         Panel13.Controls.Add(Button2)
@@ -536,28 +545,28 @@ Partial Class Form1
         ' Button4
         ' 
         Button4.FlatStyle = FlatStyle.Flat
+        Button4.Image = My.Resources.Resources.laporan
         Button4.Location = New Point(314, 9)
         Button4.Name = "Button4"
-        Button4.Size = New Size(90, 60)
+        Button4.Size = New Size(91, 62)
         Button4.TabIndex = 3
-        Button4.Text = "Button4"
         Button4.UseVisualStyleBackColor = True
         ' 
         ' Button3
         ' 
         Button3.FlatStyle = FlatStyle.Flat
+        Button3.Image = My.Resources.Resources.Stok_Barang1
         Button3.Location = New Point(214, 9)
         Button3.Name = "Button3"
-        Button3.Size = New Size(90, 60)
+        Button3.Size = New Size(91, 62)
         Button3.TabIndex = 2
-        Button3.Text = "Button3"
         Button3.UseVisualStyleBackColor = True
         ' 
         ' Button2
         ' 
-        Button2.BackgroundImage = My.Resources.Resources.Untitled_3
         Button2.FlatStyle = FlatStyle.Flat
         Button2.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
+        Button2.Image = My.Resources.Resources.Transaksi_keluar
         Button2.Location = New Point(114, 9)
         Button2.Name = "Button2"
         Button2.Size = New Size(91, 62)
@@ -566,10 +575,10 @@ Partial Class Form1
         ' 
         ' Button1
         ' 
-        Button1.BackColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
-        Button1.BackgroundImage = My.Resources.Resources.Tambah_Transaksi
+        Button1.BackColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
         Button1.FlatStyle = FlatStyle.Flat
         Button1.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
+        Button1.Image = My.Resources.Resources.tambah_transaksi_new
         Button1.Location = New Point(17, 9)
         Button1.Name = "Button1"
         Button1.Size = New Size(91, 62)
@@ -587,6 +596,28 @@ Partial Class Form1
         Panel11.Name = "Panel11"
         Panel11.Size = New Size(421, 247)
         Panel11.TabIndex = 9
+        ' 
+        ' Label9
+        ' 
+        Label9.AutoSize = True
+        Label9.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label9.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
+        Label9.Location = New Point(85, 36)
+        Label9.Name = "Label9"
+        Label9.Size = New Size(145, 28)
+        Label9.TabIndex = 7
+        Label9.Text = "Gudang Utama"
+        ' 
+        ' Label8
+        ' 
+        Label8.AutoSize = True
+        Label8.Font = New Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold)
+        Label8.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
+        Label8.Location = New Point(84, 13)
+        Label8.Name = "Label8"
+        Label8.Size = New Size(130, 29)
+        Label8.TabIndex = 6
+        Label8.Text = "Role User"
         ' 
         ' PictureBox8
         ' 
@@ -615,6 +646,17 @@ Partial Class Form1
         PanelTransaksiTerakhir.Size = New Size(635, 262)
         PanelTransaksiTerakhir.TabIndex = 8
         ' 
+        ' Label11
+        ' 
+        Label11.AutoSize = True
+        Label11.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label11.ForeColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
+        Label11.Location = New Point(24, 14)
+        Label11.Name = "Label11"
+        Label11.Size = New Size(199, 31)
+        Label11.TabIndex = 7
+        Label11.Text = "Transaksi Terakhir"
+        ' 
         ' DataGridView2
         ' 
         DataGridView2.BackgroundColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
@@ -636,6 +678,17 @@ Partial Class Form1
         PanelStokMenipis.Name = "PanelStokMenipis"
         PanelStokMenipis.Size = New Size(635, 262)
         PanelStokMenipis.TabIndex = 7
+        ' 
+        ' Label10
+        ' 
+        Label10.AutoSize = True
+        Label10.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label10.ForeColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
+        Label10.Location = New Point(18, 14)
+        Label10.Name = "Label10"
+        Label10.Size = New Size(148, 31)
+        Label10.TabIndex = 6
+        Label10.Text = "Stok Menipis"
         ' 
         ' DataGridView1
         ' 
@@ -669,49 +722,49 @@ Partial Class Form1
         Label7.TabIndex = 6
         Label7.Text = "User Login"
         ' 
-        ' Label8
+        ' Label12
         ' 
-        Label8.AutoSize = True
-        Label8.Font = New Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold)
-        Label8.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
-        Label8.Location = New Point(84, 13)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(130, 29)
-        Label8.TabIndex = 6
-        Label8.Text = "Role User"
+        Label12.AutoSize = True
+        Label12.Font = New Font("Segoe UI Semibold", 8F, FontStyle.Bold)
+        Label12.Location = New Point(33, 74)
+        Label12.Name = "Label12"
+        Label12.Size = New Size(66, 38)
+        Label12.TabIndex = 12
+        Label12.Text = "Transaksi" & vbCrLf & "Masuk"
+        Label12.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label9
+        ' Label13
         ' 
-        Label9.AutoSize = True
-        Label9.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label9.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
-        Label9.Location = New Point(85, 36)
-        Label9.Name = "Label9"
-        Label9.Size = New Size(145, 28)
-        Label9.TabIndex = 7
-        Label9.Text = "Gudang Utama"
+        Label13.AutoSize = True
+        Label13.Font = New Font("Segoe UI Semibold", 8F, FontStyle.Bold)
+        Label13.Location = New Point(129, 74)
+        Label13.Name = "Label13"
+        Label13.Size = New Size(66, 38)
+        Label13.TabIndex = 13
+        Label13.Text = "Transaksi" & vbCrLf & "Keluar"
+        Label13.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label10
+        ' Label14
         ' 
-        Label10.AutoSize = True
-        Label10.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label10.ForeColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
-        Label10.Location = New Point(18, 14)
-        Label10.Name = "Label10"
-        Label10.Size = New Size(148, 31)
-        Label10.TabIndex = 6
-        Label10.Text = "Stok Menipis"
+        Label14.AutoSize = True
+        Label14.Font = New Font("Segoe UI Semibold", 8F, FontStyle.Bold)
+        Label14.Location = New Point(228, 74)
+        Label14.Name = "Label14"
+        Label14.Size = New Size(52, 38)
+        Label14.TabIndex = 14
+        Label14.Text = "Stok" & vbCrLf & "Barang"
+        Label14.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label11
+        ' Label15
         ' 
-        Label11.AutoSize = True
-        Label11.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label11.ForeColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
-        Label11.Location = New Point(24, 14)
-        Label11.Name = "Label11"
-        Label11.Size = New Size(199, 31)
-        Label11.TabIndex = 7
-        Label11.Text = "Transaksi Terakhir"
+        Label15.AutoSize = True
+        Label15.Font = New Font("Segoe UI Semibold", 8F, FontStyle.Bold)
+        Label15.Location = New Point(330, 74)
+        Label15.Name = "Label15"
+        Label15.Size = New Size(59, 19)
+        Label15.TabIndex = 15
+        Label15.Text = "Laporan"
+        Label15.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Form1
         ' 
@@ -756,6 +809,7 @@ Partial Class Form1
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
         Panel13.ResumeLayout(False)
+        Panel13.PerformLayout()
         Panel11.ResumeLayout(False)
         Panel11.PerformLayout()
         CType(PictureBox8, ComponentModel.ISupportInitialize).EndInit()
@@ -835,5 +889,9 @@ Partial Class Form1
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label7 As Label
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label14 As Label
 
 End Class
