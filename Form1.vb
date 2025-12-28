@@ -44,7 +44,7 @@ Public Class Form1
         lblUser.Text = " " & loggedUser
         Me.BackgroundImageLayout = ImageLayout.Stretch
 
-        Timer1.Start()
+
     End Sub
 
     '===============================
@@ -143,7 +143,7 @@ Public Class Form1
         fromusermanagemen.Show() : Hide()
     End Sub
 
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs)
         lblJam.Text = Format(Now, "HH:mm:ss")
     End Sub
 
@@ -176,6 +176,10 @@ Public Class Form1
     End Sub
 
     Private Sub PanelGrafik_Paint(sender As Object, e As PaintEventArgs) Handles PanelGrafik.Paint
+
+    End Sub
+
+    Private Sub lblRole_Click(sender As Object, e As EventArgs) Handles lblRole.Click
 
     End Sub
 End Class

@@ -22,10 +22,8 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        components = New ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Label1 = New Label()
-        Timer1 = New Timer(components)
         lblJam = New Label()
         lblUser = New Label()
         lblRole = New Label()
@@ -79,9 +77,6 @@ Partial Class Form1
         Label1.TabIndex = 3
         Label1.Text = "INVENTORY GUDANG"
         ' 
-        ' Timer1
-        ' 
-        ' 
         ' lblJam
         ' 
         lblJam.AutoSize = True
@@ -103,11 +98,13 @@ Partial Class Form1
         ' lblRole
         ' 
         lblRole.AutoSize = True
-        lblRole.ForeColor = Color.Black
-        lblRole.Location = New Point(251, 59)
+        lblRole.BackColor = Color.Black
+        lblRole.ForeColor = Color.White
+        lblRole.Location = New Point(1706, 18)
         lblRole.Name = "lblRole"
-        lblRole.Size = New Size(0, 20)
+        lblRole.Size = New Size(53, 20)
         lblRole.TabIndex = 7
+        lblRole.Text = "Label1"
         ' 
         ' Panel1
         ' 
@@ -331,6 +328,7 @@ Partial Class Form1
         ' 
         ' Panel2
         ' 
+        Panel2.Controls.Add(lblRole)
         Panel2.Controls.Add(Panel11)
         Panel2.Controls.Add(PanelTransaksiTerakhir)
         Panel2.Controls.Add(PanelStokMenipis)
@@ -388,7 +386,6 @@ Partial Class Form1
         BackColor = Color.WhiteSmoke
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1902, 1033)
-        Controls.Add(lblRole)
         Controls.Add(Label1)
         Controls.Add(lblJam)
         Controls.Add(lblUser)
@@ -412,7 +409,6 @@ Partial Class Form1
     Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem3 As ToolStripMenuItem
     Friend WithEvents Label1 As Label
-    Public WithEvents Timer1 As Timer
     Friend WithEvents lblJam As Label
     Friend WithEvents lblUser As Label
     Friend WithEvents lblRole As Label
