@@ -10,6 +10,11 @@ Public Class FormLogin
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
 
+        btnLogin.FlatStyle = FlatStyle.Flat
+        btnLogin.FlatAppearance.BorderSize = 0
+        btnLogin.TabStop = False
+
+
         If txtUsername.Text = "" Or txtPassword.Text = "" Then
             MsgBox("Username dan Password tidak boleh kosong!", vbExclamation)
             Exit Sub
@@ -69,4 +74,15 @@ Public Class FormLogin
         Me.Hide()
     End Sub
 
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs)
+
+    End Sub
+
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+
+    End Sub
+
+    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
+
+    End Sub
 End Class
