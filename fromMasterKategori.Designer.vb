@@ -29,7 +29,9 @@ Partial Class fromMasterKategori
         Button1 = New Button()
         Button2 = New Button()
         Button3 = New Button()
+        Panel1 = New Panel()
         PictureBox1 = New PictureBox()
+        Panel1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -39,7 +41,7 @@ Partial Class fromMasterKategori
         Label1.Font = New Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.Location = New Point(529, 198)
         Label1.Name = "Label1"
-        Label1.Size = New Size(129, 25)
+        Label1.Size = New Size(105, 20)
         Label1.TabIndex = 0
         Label1.Text = "Kode kategori"
         ' 
@@ -49,7 +51,7 @@ Partial Class fromMasterKategori
         Label2.Font = New Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.Location = New Point(522, 279)
         Label2.Name = "Label2"
-        Label2.Size = New Size(136, 25)
+        Label2.Size = New Size(112, 20)
         Label2.TabIndex = 1
         Label2.Text = "Nama Kategori"
         ' 
@@ -57,14 +59,14 @@ Partial Class fromMasterKategori
         ' 
         TextBox1.Location = New Point(724, 196)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(191, 27)
+        TextBox1.Size = New Size(191, 23)
         TextBox1.TabIndex = 2
         ' 
         ' TextBox2
         ' 
         TextBox2.Location = New Point(724, 280)
         TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(315, 27)
+        TextBox2.Size = New Size(315, 23)
         TextBox2.TabIndex = 3
         ' 
         ' Button1
@@ -94,22 +96,30 @@ Partial Class fromMasterKategori
         Button3.Text = "Button3"
         Button3.UseVisualStyleBackColor = True
         ' 
+        ' Panel1
+        ' 
+        Panel1.Controls.Add(PictureBox1)
+        Panel1.Dock = DockStyle.Top
+        Panel1.Location = New Point(0, 0)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(1264, 90)
+        Panel1.TabIndex = 7
+        ' 
         ' PictureBox1
         ' 
-        PictureBox1.BackgroundImage = My.Resources.Resources.ikon_180x180
-        PictureBox1.Image = My.Resources.Resources.ikon_180x180
-        PictureBox1.Location = New Point(235, 12)
+        PictureBox1.Location = New Point(261, 26)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(172, 168)
-        PictureBox1.TabIndex = 7
+        PictureBox1.Size = New Size(100, 50)
+        PictureBox1.TabIndex = 0
         PictureBox1.TabStop = False
         ' 
         ' fromMasterKategori
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1426, 601)
-        Controls.Add(PictureBox1)
+        BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
+        ClientSize = New Size(1264, 681)
+        Controls.Add(Panel1)
         Controls.Add(Button3)
         Controls.Add(Button2)
         Controls.Add(Button1)
@@ -118,8 +128,12 @@ Partial Class fromMasterKategori
         Controls.Add(Label2)
         Controls.Add(Label1)
         Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        MaximizeBox = False
         Name = "fromMasterKategori"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "fromMasterKategori"
+        Panel1.ResumeLayout(False)
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
@@ -132,5 +146,6 @@ Partial Class fromMasterKategori
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
+    Friend WithEvents Panel1 As Panel
     Friend WithEvents PictureBox1 As PictureBox
 End Class
