@@ -179,7 +179,7 @@ Public Class Form1
 
     End Sub
 
-    Private Sub lblRole_Click(sender As Object, e As EventArgs) Handles lblRole.Click
+    Private Sub lblRole_Click(sender As Object, e As EventArgs)
 
     End Sub
 End Class
