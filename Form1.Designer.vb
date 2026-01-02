@@ -47,21 +47,27 @@ Partial Class Form1
         PictureBox1 = New PictureBox()
         Panel3 = New Panel()
         Panel7 = New Panel()
+        lblMasukHariIni = New Label()
         Label4 = New Label()
         PictureBox4 = New PictureBox()
         Panel6 = New Panel()
+        lblStokMenipis = New Label()
         Label3 = New Label()
         PictureBox6 = New PictureBox()
         Panel5 = New Panel()
+        lblStokAman = New Label()
         Label2 = New Label()
         PictureBox3 = New PictureBox()
         Panel4 = New Panel()
+        lblTotalItem = New Label()
         TotalBarang = New Label()
         PictureBox2 = New PictureBox()
         Panel8 = New Panel()
+        lblKeluarHariIni = New Label()
         Label5 = New Label()
         PictureBox5 = New PictureBox()
         Panel9 = New Panel()
+        lblTransferHariIni = New Label()
         Label6 = New Label()
         PictureBox7 = New PictureBox()
         Panel2 = New Panel()
@@ -79,12 +85,13 @@ Partial Class Form1
         Label8 = New Label()
         PictureBox8 = New PictureBox()
         Panel14 = New Panel()
+        lblRole = New Label()
         PanelTransaksiTerakhir = New Panel()
         Label11 = New Label()
-        DataGridView2 = New DataGridView()
+        dgTransaksiTerakhir = New DataGridView()
         PanelStokMenipis = New Panel()
         Label10 = New Label()
-        DataGridView1 = New DataGridView()
+        dgStokMenipis = New DataGridView()
         Panel10 = New Panel()
         Label7 = New Label()
         MenuStrip1.SuspendLayout()
@@ -106,10 +113,11 @@ Partial Class Form1
         Panel13.SuspendLayout()
         Panel11.SuspendLayout()
         CType(PictureBox8, ComponentModel.ISupportInitialize).BeginInit()
+        Panel14.SuspendLayout()
         PanelTransaksiTerakhir.SuspendLayout()
-        CType(DataGridView2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dgTransaksiTerakhir, ComponentModel.ISupportInitialize).BeginInit()
         PanelStokMenipis.SuspendLayout()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dgStokMenipis, ComponentModel.ISupportInitialize).BeginInit()
         Panel10.SuspendLayout()
         SuspendLayout()
         ' 
@@ -308,6 +316,7 @@ Partial Class Form1
         ' Panel7
         ' 
         Panel7.BackColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
+        Panel7.Controls.Add(lblMasukHariIni)
         Panel7.Controls.Add(Label4)
         Panel7.Controls.Add(PictureBox4)
         Panel7.ForeColor = Color.White
@@ -315,6 +324,17 @@ Partial Class Form1
         Panel7.Name = "Panel7"
         Panel7.Size = New Size(421, 120)
         Panel7.TabIndex = 3
+        ' 
+        ' lblMasukHariIni
+        ' 
+        lblMasukHariIni.AutoSize = True
+        lblMasukHariIni.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblMasukHariIni.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
+        lblMasukHariIni.Location = New Point(231, 69)
+        lblMasukHariIni.Name = "lblMasukHariIni"
+        lblMasukHariIni.Size = New Size(24, 31)
+        lblMasukHariIni.TabIndex = 4
+        lblMasukHariIni.Text = "_"
         ' 
         ' Label4
         ' 
@@ -339,12 +359,25 @@ Partial Class Form1
         ' Panel6
         ' 
         Panel6.BackColor = Color.FromArgb(CByte(69), CByte(69), CByte(69))
+        Panel6.Controls.Add(lblStokMenipis)
         Panel6.Controls.Add(Label3)
         Panel6.Controls.Add(PictureBox6)
         Panel6.Location = New Point(944, 11)
         Panel6.Name = "Panel6"
         Panel6.Size = New Size(421, 120)
         Panel6.TabIndex = 2
+        ' 
+        ' lblStokMenipis
+        ' 
+        lblStokMenipis.AutoSize = True
+        lblStokMenipis.BackColor = Color.Transparent
+        lblStokMenipis.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblStokMenipis.ForeColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
+        lblStokMenipis.Location = New Point(319, 69)
+        lblStokMenipis.Name = "lblStokMenipis"
+        lblStokMenipis.Size = New Size(24, 31)
+        lblStokMenipis.TabIndex = 4
+        lblStokMenipis.Text = "_"
         ' 
         ' Label3
         ' 
@@ -370,12 +403,24 @@ Partial Class Form1
         ' Panel5
         ' 
         Panel5.BackColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
+        Panel5.Controls.Add(lblStokAman)
         Panel5.Controls.Add(Label2)
         Panel5.Controls.Add(PictureBox3)
         Panel5.Location = New Point(504, 11)
         Panel5.Name = "Panel5"
         Panel5.Size = New Size(421, 120)
         Panel5.TabIndex = 1
+        ' 
+        ' lblStokAman
+        ' 
+        lblStokAman.AutoSize = True
+        lblStokAman.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblStokAman.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
+        lblStokAman.Location = New Point(304, 69)
+        lblStokAman.Name = "lblStokAman"
+        lblStokAman.Size = New Size(24, 31)
+        lblStokAman.TabIndex = 3
+        lblStokAman.Text = "_"
         ' 
         ' Label2
         ' 
@@ -400,6 +445,7 @@ Partial Class Form1
         ' Panel4
         ' 
         Panel4.BackColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
+        Panel4.Controls.Add(lblTotalItem)
         Panel4.Controls.Add(TotalBarang)
         Panel4.Controls.Add(PictureBox2)
         Panel4.ForeColor = Color.Black
@@ -407,6 +453,17 @@ Partial Class Form1
         Panel4.Name = "Panel4"
         Panel4.Size = New Size(421, 120)
         Panel4.TabIndex = 0
+        ' 
+        ' lblTotalItem
+        ' 
+        lblTotalItem.AutoSize = True
+        lblTotalItem.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblTotalItem.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
+        lblTotalItem.Location = New Point(290, 68)
+        lblTotalItem.Name = "lblTotalItem"
+        lblTotalItem.Size = New Size(24, 31)
+        lblTotalItem.TabIndex = 2
+        lblTotalItem.Text = "_"
         ' 
         ' TotalBarang
         ' 
@@ -431,6 +488,7 @@ Partial Class Form1
         ' Panel8
         ' 
         Panel8.BackColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
+        Panel8.Controls.Add(lblKeluarHariIni)
         Panel8.Controls.Add(Label5)
         Panel8.Controls.Add(PictureBox5)
         Panel8.ForeColor = Color.White
@@ -438,6 +496,17 @@ Partial Class Form1
         Panel8.Name = "Panel8"
         Panel8.Size = New Size(421, 120)
         Panel8.TabIndex = 4
+        ' 
+        ' lblKeluarHariIni
+        ' 
+        lblKeluarHariIni.AutoSize = True
+        lblKeluarHariIni.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblKeluarHariIni.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
+        lblKeluarHariIni.Location = New Point(229, 69)
+        lblKeluarHariIni.Name = "lblKeluarHariIni"
+        lblKeluarHariIni.Size = New Size(24, 31)
+        lblKeluarHariIni.TabIndex = 5
+        lblKeluarHariIni.Text = "_"
         ' 
         ' Label5
         ' 
@@ -462,6 +531,7 @@ Partial Class Form1
         ' Panel9
         ' 
         Panel9.BackColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
+        Panel9.Controls.Add(lblTransferHariIni)
         Panel9.Controls.Add(Label6)
         Panel9.Controls.Add(PictureBox7)
         Panel9.ForeColor = Color.White
@@ -469,6 +539,17 @@ Partial Class Form1
         Panel9.Name = "Panel9"
         Panel9.Size = New Size(421, 120)
         Panel9.TabIndex = 5
+        ' 
+        ' lblTransferHariIni
+        ' 
+        lblTransferHariIni.AutoSize = True
+        lblTransferHariIni.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblTransferHariIni.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
+        lblTransferHariIni.Location = New Point(229, 69)
+        lblTransferHariIni.Name = "lblTransferHariIni"
+        lblTransferHariIni.Size = New Size(24, 31)
+        lblTransferHariIni.TabIndex = 6
+        lblTransferHariIni.Text = "_"
         ' 
         ' Label6
         ' 
@@ -522,7 +603,7 @@ Partial Class Form1
         Panel13.Controls.Add(Button3)
         Panel13.Controls.Add(Button2)
         Panel13.Controls.Add(Button1)
-        Panel13.Location = New Point(1397, 892)
+        Panel13.Location = New Point(1397, 860)
         Panel13.Name = "Panel13"
         Panel13.Size = New Size(421, 120)
         Panel13.TabIndex = 10
@@ -610,7 +691,7 @@ Partial Class Form1
         Button1.FlatStyle = FlatStyle.Flat
         Button1.ForeColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
         Button1.Image = My.Resources.Resources.tambah_transaksi_new
-        Button1.Location = New Point(17, 9)
+        Button1.Location = New Point(17, 11)
         Button1.Name = "Button1"
         Button1.Size = New Size(91, 61)
         Button1.TabIndex = 0
@@ -623,7 +704,7 @@ Partial Class Form1
         Panel11.Controls.Add(Label8)
         Panel11.Controls.Add(PictureBox8)
         Panel11.Controls.Add(Panel14)
-        Panel11.Location = New Point(1397, 632)
+        Panel11.Location = New Point(1397, 612)
         Panel11.Name = "Panel11"
         Panel11.Size = New Size(421, 247)
         Panel11.TabIndex = 9
@@ -662,17 +743,30 @@ Partial Class Form1
         ' Panel14
         ' 
         Panel14.BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
+        Panel14.Controls.Add(lblRole)
         Panel14.Location = New Point(17, 80)
         Panel14.Name = "Panel14"
         Panel14.Size = New Size(387, 155)
         Panel14.TabIndex = 0
         ' 
+        ' lblRole
+        ' 
+        lblRole.AutoSize = True
+        lblRole.BackColor = Color.Transparent
+        lblRole.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblRole.ForeColor = Color.Black
+        lblRole.Location = New Point(197, 96)
+        lblRole.Name = "lblRole"
+        lblRole.Size = New Size(24, 31)
+        lblRole.TabIndex = 5
+        lblRole.Text = "_"
+        ' 
         ' PanelTransaksiTerakhir
         ' 
         PanelTransaksiTerakhir.BackColor = Color.FromArgb(CByte(69), CByte(69), CByte(69))
         PanelTransaksiTerakhir.Controls.Add(Label11)
-        PanelTransaksiTerakhir.Controls.Add(DataGridView2)
-        PanelTransaksiTerakhir.Location = New Point(741, 749)
+        PanelTransaksiTerakhir.Controls.Add(dgTransaksiTerakhir)
+        PanelTransaksiTerakhir.Location = New Point(741, 714)
         PanelTransaksiTerakhir.Name = "PanelTransaksiTerakhir"
         PanelTransaksiTerakhir.Size = New Size(635, 261)
         PanelTransaksiTerakhir.TabIndex = 8
@@ -688,24 +782,24 @@ Partial Class Form1
         Label11.TabIndex = 7
         Label11.Text = "Transaksi Terakhir"
         ' 
-        ' DataGridView2
+        ' dgTransaksiTerakhir
         ' 
-        DataGridView2.BackgroundColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
-        DataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView2.EnableHeadersVisualStyles = False
-        DataGridView2.GridColor = Color.FromArgb(CByte(167), CByte(165), CByte(156))
-        DataGridView2.Location = New Point(0, 59)
-        DataGridView2.Name = "DataGridView2"
-        DataGridView2.RowHeadersWidth = 51
-        DataGridView2.Size = New Size(635, 203)
-        DataGridView2.TabIndex = 0
+        dgTransaksiTerakhir.BackgroundColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
+        dgTransaksiTerakhir.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgTransaksiTerakhir.EnableHeadersVisualStyles = False
+        dgTransaksiTerakhir.GridColor = Color.FromArgb(CByte(167), CByte(165), CByte(156))
+        dgTransaksiTerakhir.Location = New Point(0, 59)
+        dgTransaksiTerakhir.Name = "dgTransaksiTerakhir"
+        dgTransaksiTerakhir.RowHeadersWidth = 51
+        dgTransaksiTerakhir.Size = New Size(635, 203)
+        dgTransaksiTerakhir.TabIndex = 0
         ' 
         ' PanelStokMenipis
         ' 
         PanelStokMenipis.BackColor = Color.FromArgb(CByte(69), CByte(69), CByte(69))
         PanelStokMenipis.Controls.Add(Label10)
-        PanelStokMenipis.Controls.Add(DataGridView1)
-        PanelStokMenipis.Location = New Point(85, 749)
+        PanelStokMenipis.Controls.Add(dgStokMenipis)
+        PanelStokMenipis.Location = New Point(85, 714)
         PanelStokMenipis.Name = "PanelStokMenipis"
         PanelStokMenipis.Size = New Size(635, 261)
         PanelStokMenipis.TabIndex = 7
@@ -721,23 +815,23 @@ Partial Class Form1
         Label10.TabIndex = 6
         Label10.Text = "Stok Menipis"
         ' 
-        ' DataGridView1
+        ' dgStokMenipis
         ' 
-        DataGridView1.BackgroundColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
-        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.EnableHeadersVisualStyles = False
-        DataGridView1.GridColor = Color.FromArgb(CByte(167), CByte(163), CByte(156))
-        DataGridView1.Location = New Point(0, 59)
-        DataGridView1.Name = "DataGridView1"
-        DataGridView1.RowHeadersWidth = 51
-        DataGridView1.Size = New Size(635, 203)
-        DataGridView1.TabIndex = 0
+        dgStokMenipis.BackgroundColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
+        dgStokMenipis.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgStokMenipis.EnableHeadersVisualStyles = False
+        dgStokMenipis.GridColor = Color.FromArgb(CByte(167), CByte(163), CByte(156))
+        dgStokMenipis.Location = New Point(0, 59)
+        dgStokMenipis.Name = "dgStokMenipis"
+        dgStokMenipis.RowHeadersWidth = 51
+        dgStokMenipis.Size = New Size(635, 203)
+        dgStokMenipis.TabIndex = 0
         ' 
         ' Panel10
         ' 
         Panel10.BackColor = Color.FromArgb(CByte(69), CByte(69), CByte(69))
         Panel10.Controls.Add(Label7)
-        Panel10.Location = New Point(1397, 572)
+        Panel10.Location = New Point(1397, 552)
         Panel10.Name = "Panel10"
         Panel10.Size = New Size(421, 83)
         Panel10.TabIndex = 11
@@ -799,12 +893,14 @@ Partial Class Form1
         Panel11.ResumeLayout(False)
         Panel11.PerformLayout()
         CType(PictureBox8, ComponentModel.ISupportInitialize).EndInit()
+        Panel14.ResumeLayout(False)
+        Panel14.PerformLayout()
         PanelTransaksiTerakhir.ResumeLayout(False)
         PanelTransaksiTerakhir.PerformLayout()
-        CType(DataGridView2, ComponentModel.ISupportInitialize).EndInit()
+        CType(dgTransaksiTerakhir, ComponentModel.ISupportInitialize).EndInit()
         PanelStokMenipis.ResumeLayout(False)
         PanelStokMenipis.PerformLayout()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
+        CType(dgStokMenipis, ComponentModel.ISupportInitialize).EndInit()
         Panel10.ResumeLayout(False)
         Panel10.PerformLayout()
         ResumeLayout(False)
@@ -846,8 +942,8 @@ Partial Class Form1
     Friend WithEvents Panel11 As Panel
     Friend WithEvents PanelTransaksiTerakhir As Panel
     Friend WithEvents PanelStokMenipis As Panel
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents DataGridView2 As DataGridView
+    Friend WithEvents dgStokMenipis As DataGridView
+    Friend WithEvents dgTransaksiTerakhir As DataGridView
     Friend WithEvents Panel13 As Panel
     Friend WithEvents Button1 As Button
     Friend WithEvents Panel14 As Panel
@@ -877,5 +973,12 @@ Partial Class Form1
     Friend WithEvents Label12 As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents Label14 As Label
+    Friend WithEvents lblStokMenipis As Label
+    Friend WithEvents lblStokAman As Label
+    Friend WithEvents lblTotalItem As Label
+    Friend WithEvents lblMasukHariIni As Label
+    Friend WithEvents lblKeluarHariIni As Label
+    Friend WithEvents lblTransferHariIni As Label
+    Friend WithEvents lblRole As Label
 
 End Class

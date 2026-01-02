@@ -40,6 +40,8 @@ Public Class Form1
         'Me.AutoScaleDimensions = New SizeF(96.0F, 96.0F)
 
 
+        Call Koneksi()
+        LoadDashboard()
 
         lblUser.Text = " " & loggedUser
         Me.BackgroundImageLayout = ImageLayout.Stretch
@@ -50,6 +52,71 @@ Public Class Form1
     '===============================
     ' Sub untuk membuka menu sesuai role
     '===============================
+    Sub LoadDashboard()
+
+        ' TOTAL ITEM
+        lblTotalItem.Text = ExecScalar("SELECT COUNT(*) FROM barang")
+
+        ' STOK AMAN (>= 10)
+        lblStokAman.Text = ExecScalar("
+            SELECT COUNT(*) FROM barang b
+            WHERE (
+                (SELECT IFNULL(SUM(qty),0) FROM barang_masuk_detail WHERE id_barang=b.id)
+                -
+                (SELECT IFNULL(SUM(qty),0) FROM barang_keluar_detail WHERE id_barang=b.id)
+            ) >= 10
+        ")
+
+        ' STOK MENIPIS (< 10)
+        lblStokMenipis.Text = ExecScalar("
+            SELECT COUNT(*) FROM barang b
+            WHERE (
+                (SELECT IFNULL(SUM(qty),0) FROM barang_masuk_detail WHERE id_barang=b.id)
+                -
+                (SELECT IFNULL(SUM(qty),0) FROM barang_keluar_detail WHERE id_barang=b.id)
+            ) < 10
+        ")
+
+        ' BARANG MASUK HARI INI
+        lblMasukHariIni.Text = ExecScalar("
+            SELECT COUNT(*) FROM barang_masuk WHERE tanggal = CURDATE()
+        ")
+
+        ' BARANG KELUAR HARI INI
+        lblKeluarHariIni.Text = ExecScalar("
+            SELECT COUNT(*) FROM barang_keluar WHERE tanggal = CURDATE()
+        ")
+
+        ' TRANSFER ANTAR GUDANG HARI INI
+        lblTransferHariIni.Text = ExecScalar("
+            SELECT COUNT(*) FROM transfer_gudang WHERE tanggal = CURDATE()
+        ")
+
+        ' GRID STOK MENIPIS
+        LoadGrid(dgStokMenipis, "
+            SELECT 
+                b.kode_barang,
+                b.nama_barang,
+                (
+                    (SELECT IFNULL(SUM(qty),0) FROM barang_masuk_detail WHERE id_barang=b.id)
+                    -
+                    (SELECT IFNULL(SUM(qty),0) FROM barang_keluar_detail WHERE id_barang=b.id)
+                ) AS stok
+            FROM barang b
+            HAVING stok < 10
+        ")
+
+        ' GRID TRANSAKSI TERAKHIR
+        LoadGrid(dgTransaksiTerakhir, "
+            SELECT 'Masuk' AS jenis, tanggal, no_dokumen FROM barang_masuk
+            UNION ALL
+            SELECT 'Keluar', tanggal, no_dokumen FROM barang_keluar
+            ORDER BY tanggal DESC
+            LIMIT 10
+        ")
+
+    End Sub
+
     Public Sub BukaMenuBerdasarkanRole()
 
         Dim role As String = lblRole.Text.Trim.ToLower()
@@ -155,31 +222,7 @@ Public Class Form1
         fromMastergudang.Show() : Hide()
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-
-    End Sub
-
-    Private Sub MenuStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles MenuStrip1.ItemClicked, MenuStrip1.ItemClicked
-
-    End Sub
-
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
-
-    End Sub
-
     Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
-
-    End Sub
-
-    Private Sub PanelGrafik_Paint(sender As Object, e As PaintEventArgs)
-
-    End Sub
-
-    Private Sub lblRole_Click(sender As Object, e As EventArgs)
 
     End Sub
 End Class
