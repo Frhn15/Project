@@ -24,16 +24,18 @@ Partial Class fromMastergudang
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(fromMastergudang))
         Label1 = New Label()
-        Txalamatgudang = New TextBox()
+        txtAlamat = New TextBox()
         Label4 = New Label()
-        Txnamagudang = New TextBox()
+        txtNamaGudang = New TextBox()
         Label3 = New Label()
-        Txkodegudang = New TextBox()
+        txtKodeGudang = New TextBox()
         Label2 = New Label()
-        Button4 = New Button()
-        Button3 = New Button()
-        Button2 = New Button()
-        Button1 = New Button()
+        btnKembali = New Button()
+        btnHapus = New Button()
+        btnEdit = New Button()
+        btnSimpan = New Button()
+        dgGudang = New DataGridView()
+        CType(dgGudang, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Label1
@@ -41,118 +43,127 @@ Partial Class fromMastergudang
         Label1.AutoSize = True
         Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(392, 48)
+        Label1.Location = New Point(788, 55)
         Label1.Margin = New Padding(2, 0, 2, 0)
         Label1.Name = "Label1"
         Label1.Size = New Size(250, 37)
         Label1.TabIndex = 19
         Label1.Text = "MASTER GUDANG"
         ' 
-        ' Txalamatgudang
+        ' txtAlamat
         ' 
-        Txalamatgudang.BackColor = Color.White
-        Txalamatgudang.Location = New Point(354, 271)
-        Txalamatgudang.Name = "Txalamatgudang"
-        Txalamatgudang.Size = New Size(456, 27)
-        Txalamatgudang.TabIndex = 32
+        txtAlamat.BackColor = Color.White
+        txtAlamat.Location = New Point(353, 455)
+        txtAlamat.Name = "txtAlamat"
+        txtAlamat.Size = New Size(456, 27)
+        txtAlamat.TabIndex = 32
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
         Label4.BackColor = Color.Transparent
-        Label4.Location = New Point(197, 270)
+        Label4.Location = New Point(196, 454)
         Label4.Name = "Label4"
         Label4.Size = New Size(57, 20)
         Label4.TabIndex = 31
         Label4.Text = "Alamat"
         ' 
-        ' Txnamagudang
+        ' txtNamaGudang
         ' 
-        Txnamagudang.BackColor = Color.White
-        Txnamagudang.Location = New Point(354, 207)
-        Txnamagudang.Name = "Txnamagudang"
-        Txnamagudang.Size = New Size(456, 27)
-        Txnamagudang.TabIndex = 30
+        txtNamaGudang.BackColor = Color.White
+        txtNamaGudang.Location = New Point(353, 391)
+        txtNamaGudang.Name = "txtNamaGudang"
+        txtNamaGudang.Size = New Size(456, 27)
+        txtNamaGudang.TabIndex = 30
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
         Label3.BackColor = Color.Transparent
-        Label3.Location = New Point(197, 206)
+        Label3.Location = New Point(196, 390)
         Label3.Name = "Label3"
         Label3.Size = New Size(105, 20)
         Label3.TabIndex = 29
         Label3.Text = "Nama Gudang"
         ' 
-        ' Txkodegudang
+        ' txtKodeGudang
         ' 
-        Txkodegudang.BackColor = Color.White
-        Txkodegudang.Location = New Point(354, 142)
-        Txkodegudang.Name = "Txkodegudang"
-        Txkodegudang.Size = New Size(456, 27)
-        Txkodegudang.TabIndex = 28
+        txtKodeGudang.BackColor = Color.White
+        txtKodeGudang.Location = New Point(353, 326)
+        txtKodeGudang.Name = "txtKodeGudang"
+        txtKodeGudang.Size = New Size(456, 27)
+        txtKodeGudang.TabIndex = 28
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
         Label2.BackColor = Color.Transparent
-        Label2.Location = New Point(197, 142)
+        Label2.Location = New Point(196, 326)
         Label2.Name = "Label2"
         Label2.Size = New Size(100, 20)
         Label2.TabIndex = 27
         Label2.Text = "Kode Gudang"
         ' 
-        ' Button4
+        ' btnKembali
         ' 
-        Button4.BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
-        Button4.FlatStyle = FlatStyle.Flat
-        Button4.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button4.ForeColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
-        Button4.Image = My.Resources.Resources.Kembali
-        Button4.Location = New Point(668, 330)
-        Button4.Name = "Button4"
-        Button4.Size = New Size(150, 50)
-        Button4.TabIndex = 40
-        Button4.UseVisualStyleBackColor = False
+        btnKembali.BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
+        btnKembali.FlatStyle = FlatStyle.Flat
+        btnKembali.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnKembali.ForeColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
+        btnKembali.Image = My.Resources.Resources.Kembali
+        btnKembali.Location = New Point(667, 514)
+        btnKembali.Name = "btnKembali"
+        btnKembali.Size = New Size(150, 50)
+        btnKembali.TabIndex = 40
+        btnKembali.UseVisualStyleBackColor = False
         ' 
-        ' Button3
+        ' btnHapus
         ' 
-        Button3.BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
-        Button3.FlatStyle = FlatStyle.Flat
-        Button3.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button3.ForeColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
-        Button3.Image = My.Resources.Resources.hapus
-        Button3.Location = New Point(506, 330)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(150, 50)
-        Button3.TabIndex = 39
-        Button3.UseVisualStyleBackColor = False
+        btnHapus.BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
+        btnHapus.FlatStyle = FlatStyle.Flat
+        btnHapus.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnHapus.ForeColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
+        btnHapus.Image = My.Resources.Resources.hapus
+        btnHapus.Location = New Point(505, 514)
+        btnHapus.Name = "btnHapus"
+        btnHapus.Size = New Size(150, 50)
+        btnHapus.TabIndex = 39
+        btnHapus.UseVisualStyleBackColor = False
         ' 
-        ' Button2
+        ' btnEdit
         ' 
-        Button2.BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
-        Button2.FlatStyle = FlatStyle.Flat
-        Button2.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button2.ForeColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
-        Button2.Image = CType(resources.GetObject("Button2.Image"), Image)
-        Button2.Location = New Point(346, 330)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(150, 50)
-        Button2.TabIndex = 38
-        Button2.UseVisualStyleBackColor = False
+        btnEdit.BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
+        btnEdit.FlatStyle = FlatStyle.Flat
+        btnEdit.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnEdit.ForeColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
+        btnEdit.Image = CType(resources.GetObject("btnEdit.Image"), Image)
+        btnEdit.Location = New Point(345, 514)
+        btnEdit.Name = "btnEdit"
+        btnEdit.Size = New Size(150, 50)
+        btnEdit.TabIndex = 38
+        btnEdit.UseVisualStyleBackColor = False
         ' 
-        ' Button1
+        ' btnSimpan
         ' 
-        Button1.BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
-        Button1.FlatStyle = FlatStyle.Flat
-        Button1.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.ForeColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
-        Button1.Image = CType(resources.GetObject("Button1.Image"), Image)
-        Button1.Location = New Point(189, 331)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(150, 50)
-        Button1.TabIndex = 37
-        Button1.UseVisualStyleBackColor = False
+        btnSimpan.BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
+        btnSimpan.FlatStyle = FlatStyle.Flat
+        btnSimpan.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnSimpan.ForeColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
+        btnSimpan.Image = CType(resources.GetObject("btnSimpan.Image"), Image)
+        btnSimpan.Location = New Point(188, 515)
+        btnSimpan.Name = "btnSimpan"
+        btnSimpan.Size = New Size(150, 50)
+        btnSimpan.TabIndex = 37
+        btnSimpan.UseVisualStyleBackColor = False
+        ' 
+        ' dgGudang
+        ' 
+        dgGudang.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgGudang.Location = New Point(1065, 313)
+        dgGudang.Name = "dgGudang"
+        dgGudang.RowHeadersWidth = 51
+        dgGudang.Size = New Size(802, 488)
+        dgGudang.TabIndex = 41
         ' 
         ' fromMastergudang
         ' 
@@ -160,33 +171,38 @@ Partial Class fromMastergudang
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(1006, 531)
-        Controls.Add(Button4)
-        Controls.Add(Button3)
-        Controls.Add(Button2)
-        Controls.Add(Button1)
-        Controls.Add(Txalamatgudang)
+        ClientSize = New Size(1902, 1033)
+        Controls.Add(dgGudang)
+        Controls.Add(btnKembali)
+        Controls.Add(btnHapus)
+        Controls.Add(btnEdit)
+        Controls.Add(btnSimpan)
+        Controls.Add(txtAlamat)
         Controls.Add(Label4)
-        Controls.Add(Txnamagudang)
+        Controls.Add(txtNamaGudang)
         Controls.Add(Label3)
-        Controls.Add(Txkodegudang)
+        Controls.Add(txtKodeGudang)
         Controls.Add(Label2)
         Controls.Add(Label1)
         Name = "fromMastergudang"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "fromMastergudang"
+        WindowState = FormWindowState.Maximized
+        CType(dgGudang, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents Txalamatgudang As TextBox
+    Friend WithEvents txtAlamat As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents Txnamagudang As TextBox
+    Friend WithEvents txtNamaGudang As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents Txkodegudang As TextBox
+    Friend WithEvents txtKodeGudang As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnKembali As Button
+    Friend WithEvents btnHapus As Button
+    Friend WithEvents btnEdit As Button
+    Friend WithEvents btnSimpan As Button
+    Friend WithEvents dgGudang As DataGridView
 End Class

@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Label1 = New Label()
         lblJam = New Label()
@@ -94,6 +95,8 @@ Partial Class Form1
         dgStokMenipis = New DataGridView()
         Panel10 = New Panel()
         Label7 = New Label()
+        TimerRefresh = New Timer(components)
+        TimerDashboard = New Timer(components)
         MenuStrip1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel3.SuspendLayout()
@@ -125,7 +128,7 @@ Partial Class Form1
         ' 
         Label1.AutoSize = True
         Label1.BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
-        Label1.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
+        Label1.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold)
         Label1.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
         Label1.Location = New Point(103, 19)
         Label1.Name = "Label1"
@@ -611,7 +614,7 @@ Partial Class Form1
         ' Label15
         ' 
         Label15.AutoSize = True
-        Label15.Font = New Font("Segoe UI Semibold", 8F, FontStyle.Bold)
+        Label15.Font = New Font("Segoe UI Semibold", 8.0F, FontStyle.Bold)
         Label15.Location = New Point(330, 75)
         Label15.Name = "Label15"
         Label15.Size = New Size(59, 19)
@@ -622,7 +625,7 @@ Partial Class Form1
         ' Label14
         ' 
         Label14.AutoSize = True
-        Label14.Font = New Font("Segoe UI Semibold", 8F, FontStyle.Bold)
+        Label14.Font = New Font("Segoe UI Semibold", 8.0F, FontStyle.Bold)
         Label14.Location = New Point(229, 75)
         Label14.Name = "Label14"
         Label14.Size = New Size(52, 38)
@@ -633,7 +636,7 @@ Partial Class Form1
         ' Label13
         ' 
         Label13.AutoSize = True
-        Label13.Font = New Font("Segoe UI Semibold", 8F, FontStyle.Bold)
+        Label13.Font = New Font("Segoe UI Semibold", 8.0F, FontStyle.Bold)
         Label13.Location = New Point(129, 75)
         Label13.Name = "Label13"
         Label13.Size = New Size(66, 38)
@@ -644,7 +647,7 @@ Partial Class Form1
         ' Label12
         ' 
         Label12.AutoSize = True
-        Label12.Font = New Font("Segoe UI Semibold", 8F, FontStyle.Bold)
+        Label12.Font = New Font("Segoe UI Semibold", 8.0F, FontStyle.Bold)
         Label12.Location = New Point(33, 75)
         Label12.Name = "Label12"
         Label12.Size = New Size(66, 38)
@@ -712,7 +715,7 @@ Partial Class Form1
         ' Label9
         ' 
         Label9.AutoSize = True
-        Label9.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label9.Font = New Font("Segoe UI", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label9.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
         Label9.Location = New Point(85, 36)
         Label9.Name = "Label9"
@@ -847,9 +850,13 @@ Partial Class Form1
         Label7.TabIndex = 6
         Label7.Text = "User Login"
         ' 
+        ' TimerDashboard
+        ' 
+        TimerDashboard.Interval = 5000
+        ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
         BackgroundImageLayout = ImageLayout.Stretch
@@ -980,5 +987,7 @@ Partial Class Form1
     Friend WithEvents lblKeluarHariIni As Label
     Friend WithEvents lblTransferHariIni As Label
     Friend WithEvents lblRole As Label
+    Public WithEvents TimerRefresh As Timer
+    Friend WithEvents TimerDashboard As Timer
 
 End Class

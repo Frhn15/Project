@@ -55,27 +55,42 @@ Public Class Form1
     Sub LoadDashboard()
 
         ' TOTAL ITEM
-        lblTotalItem.Text = ExecScalar("SELECT COUNT(*) FROM barang")
+        lblTotalItem.Text = ExecScalar("SELECT IFNULL(SUM(stok_min),0) FROM barang")
 
-        ' STOK AMAN (>= 10)
+
+        ' ===============================
+        ' STOK AMAN (stok > stok_min)
+        ' ===============================
         lblStokAman.Text = ExecScalar("
-            SELECT COUNT(*) FROM barang b
-            WHERE (
-                (SELECT IFNULL(SUM(qty),0) FROM barang_masuk_detail WHERE id_barang=b.id)
-                -
-                (SELECT IFNULL(SUM(qty),0) FROM barang_keluar_detail WHERE id_barang=b.id)
-            ) >= 10
-        ")
+    SELECT COUNT(*) 
+FROM barang b
+WHERE
+(
+   (SELECT IFNULL(SUM(qty),0) FROM barang_masuk_detail WHERE id_barang=b.id)
+ -
+   (SELECT IFNULL(SUM(qty),0) FROM barang_keluar_detail WHERE id_barang=b.id)
+) >= b.stok_min
 
-        ' STOK MENIPIS (< 10)
+")
+
+
+        ' ===============================
+        ' STOK MENIPIS (stok <= stok_min)
+        ' ===============================
         lblStokMenipis.Text = ExecScalar("
-            SELECT COUNT(*) FROM barang b
-            WHERE (
-                (SELECT IFNULL(SUM(qty),0) FROM barang_masuk_detail WHERE id_barang=b.id)
-                -
-                (SELECT IFNULL(SUM(qty),0) FROM barang_keluar_detail WHERE id_barang=b.id)
-            ) < 10
-        ")
+   SELECT COUNT(*) 
+FROM barang b
+WHERE
+(
+   (SELECT IFNULL(SUM(qty),0) FROM barang_masuk_detail WHERE id_barang=b.id)
+ -
+   (SELECT IFNULL(SUM(qty),0) FROM barang_keluar_detail WHERE id_barang=b.id)
+) < b.stok_min
+
+")
+
+
+
 
         ' BARANG MASUK HARI INI
         lblMasukHariIni.Text = ExecScalar("
@@ -92,19 +107,18 @@ Public Class Form1
             SELECT COUNT(*) FROM transfer_gudang WHERE tanggal = CURDATE()
         ")
 
-        ' GRID STOK MENIPIS
         LoadGrid(dgStokMenipis, "
-            SELECT 
-                b.kode_barang,
-                b.nama_barang,
-                (
-                    (SELECT IFNULL(SUM(qty),0) FROM barang_masuk_detail WHERE id_barang=b.id)
-                    -
-                    (SELECT IFNULL(SUM(qty),0) FROM barang_keluar_detail WHERE id_barang=b.id)
-                ) AS stok
-            FROM barang b
-            HAVING stok < 10
-        ")
+    SELECT 
+        b.kode_barang,
+        b.nama_barang,
+        b.stok_min
+    FROM barang b
+    WHERE b.stok_min > 0
+    ORDER BY b.stok_min ASC
+")
+
+
+
 
         ' GRID TRANSAKSI TERAKHIR
         LoadGrid(dgTransaksiTerakhir, "
@@ -222,7 +236,27 @@ Public Class Form1
         fromMastergudang.Show() : Hide()
     End Sub
 
-    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
+    Private Sub TimerDashboard_Tick(sender As Object, e As EventArgs) Handles TimerDashboard.Tick
+        LoadDashboard()
+    End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        FormTransaksiMasuk.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        fromTransaksiKeluar.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        FormStokBarang.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        FromLaporan.Show()
+        Me.Hide()
     End Sub
 End Class

@@ -19,4 +19,8 @@
     Private Sub no_Click(sender As Object, e As EventArgs) Handles no.Click
 
     End Sub
+
+    Private Sub Panelhead_Paint(sender As Object, e As PaintEventArgs) Handles Panelhead.Paint
+
+    End Sub
 End Class
