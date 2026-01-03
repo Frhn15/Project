@@ -36,13 +36,14 @@ Partial Class FormStokBarang
         btnCari = New Button()
         btnKeluar = New Button()
         Panel1 = New Panel()
-        Label6 = New Label()
         PictureBox1 = New PictureBox()
         MenuStrip1 = New MenuStrip()
         Label7 = New Label()
+        PictureBox2 = New PictureBox()
         CType(dgvStokBarang, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Label1
@@ -97,6 +98,7 @@ Partial Class FormStokBarang
         ' 
         dgvStokBarang.AllowUserToAddRows = False
         dgvStokBarang.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader
+        dgvStokBarang.BackgroundColor = SystemColors.ButtonHighlight
         dgvStokBarang.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgvStokBarang.Location = New Point(719, 223)
         dgvStokBarang.Name = "dgvStokBarang"
@@ -138,26 +140,31 @@ Partial Class FormStokBarang
         ' 
         ' btnCari
         ' 
+        btnCari.BackColor = Color.Black
+        btnCari.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnCari.ForeColor = SystemColors.ControlLightLight
         btnCari.Location = New Point(192, 383)
         btnCari.Name = "btnCari"
-        btnCari.Size = New Size(94, 29)
+        btnCari.Size = New Size(137, 29)
         btnCari.TabIndex = 13
-        btnCari.Text = "cari"
-        btnCari.UseVisualStyleBackColor = True
+        btnCari.Text = "Cari"
+        btnCari.UseVisualStyleBackColor = False
         ' 
         ' btnKeluar
         ' 
-        btnKeluar.Location = New Point(306, 383)
+        btnKeluar.BackColor = SystemColors.ActiveBorder
+        btnKeluar.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        btnKeluar.ForeColor = SystemColors.ControlLightLight
+        btnKeluar.Location = New Point(335, 383)
         btnKeluar.Name = "btnKeluar"
-        btnKeluar.Size = New Size(94, 29)
+        btnKeluar.Size = New Size(130, 29)
         btnKeluar.TabIndex = 14
-        btnKeluar.Text = "keluar"
-        btnKeluar.UseVisualStyleBackColor = True
+        btnKeluar.Text = "Kembali"
+        btnKeluar.UseVisualStyleBackColor = False
         ' 
         ' Panel1
         ' 
-        Panel1.BackColor = SystemColors.ActiveBorder
-        Panel1.Controls.Add(Label6)
+        Panel1.BackColor = Color.Transparent
         Panel1.Controls.Add(Label1)
         Panel1.Controls.Add(btnKeluar)
         Panel1.Controls.Add(txtKode)
@@ -174,16 +181,6 @@ Partial Class FormStokBarang
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(582, 447)
         Panel1.TabIndex = 15
-        ' 
-        ' Label6
-        ' 
-        Label6.AutoSize = True
-        Label6.Location = New Point(44, 364)
-        Label6.Margin = New Padding(2, 0, 2, 0)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(59, 20)
-        Label6.TabIndex = 15
-        Label6.Text = "Sampel"
         ' 
         ' PictureBox1
         ' 
@@ -210,20 +207,34 @@ Partial Class FormStokBarang
         ' Label7
         ' 
         Label7.AutoSize = True
-        Label7.Font = New Font("MS Reference Sans Serif", 16.2F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        Label7.Location = New Point(651, 76)
+        Label7.BackColor = Color.Transparent
+        Label7.FlatStyle = FlatStyle.Flat
+        Label7.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
+        Label7.ForeColor = SystemColors.ActiveCaptionText
+        Label7.Location = New Point(705, 107)
         Label7.Name = "Label7"
-        Label7.Size = New Size(205, 35)
+        Label7.Size = New Size(197, 41)
         Label7.TabIndex = 18
-        Label7.Text = "stok barang "
+        Label7.Text = "Stok Barang "
+        Label7.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' PictureBox2
+        ' 
+        PictureBox2.Image = My.Resources.Resources.logo_hitam_60x60
+        PictureBox2.Location = New Point(639, 98)
+        PictureBox2.Name = "PictureBox2"
+        PictureBox2.Size = New Size(60, 62)
+        PictureBox2.TabIndex = 19
+        PictureBox2.TabStop = False
         ' 
         ' FormStokBarang
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        BackgroundImage = My.Resources.Resources.assd1
+        BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1539, 787)
+        Controls.Add(PictureBox2)
         Controls.Add(Label7)
         Controls.Add(PictureBox1)
         Controls.Add(Panel1)
@@ -236,6 +247,7 @@ Partial Class FormStokBarang
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -255,7 +267,7 @@ Partial Class FormStokBarang
     Friend WithEvents btnKeluar As Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label6 As Label
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents Label7 As Label
+    Friend WithEvents PictureBox2 As PictureBox
 End Class

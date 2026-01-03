@@ -36,8 +36,11 @@ Partial Class fromstockopname
         dgStockOpname = New DataGridView()
         btnSimpan = New Button()
         btnKembali = New Button()
+        PictureBox1 = New PictureBox()
+        Button1 = New Button()
         CType(nudStokFisik, ComponentModel.ISupportInitialize).BeginInit()
         CType(dgStockOpname, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Label1
@@ -53,7 +56,7 @@ Partial Class fromstockopname
         ' cbBarang
         ' 
         cbBarang.FormattingEnabled = True
-        cbBarang.Location = New Point(458, 253)
+        cbBarang.Location = New Point(381, 127)
         cbBarang.Name = "cbBarang"
         cbBarang.Size = New Size(151, 28)
         cbBarang.TabIndex = 1
@@ -61,7 +64,7 @@ Partial Class fromstockopname
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(355, 253)
+        Label2.Location = New Point(281, 127)
         Label2.Name = "Label2"
         Label2.Size = New Size(56, 20)
         Label2.TabIndex = 2
@@ -70,7 +73,7 @@ Partial Class fromstockopname
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(355, 332)
+        Label3.Location = New Point(281, 181)
         Label3.Name = "Label3"
         Label3.Size = New Size(61, 20)
         Label3.TabIndex = 3
@@ -79,7 +82,7 @@ Partial Class fromstockopname
         ' cbGudang
         ' 
         cbGudang.FormattingEnabled = True
-        cbGudang.Location = New Point(458, 332)
+        cbGudang.Location = New Point(381, 181)
         cbGudang.Name = "cbGudang"
         cbGudang.Size = New Size(151, 28)
         cbGudang.TabIndex = 4
@@ -87,7 +90,7 @@ Partial Class fromstockopname
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(355, 416)
+        Label4.Location = New Point(281, 238)
         Label4.Name = "Label4"
         Label4.Size = New Size(86, 20)
         Label4.TabIndex = 5
@@ -95,7 +98,7 @@ Partial Class fromstockopname
         ' 
         ' txtStokSistem
         ' 
-        txtStokSistem.Location = New Point(459, 416)
+        txtStokSistem.Location = New Point(381, 238)
         txtStokSistem.Name = "txtStokSistem"
         txtStokSistem.Size = New Size(245, 27)
         txtStokSistem.TabIndex = 6
@@ -103,7 +106,7 @@ Partial Class fromstockopname
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(355, 499)
+        Label5.Location = New Point(812, 125)
         Label5.Name = "Label5"
         Label5.Size = New Size(70, 20)
         Label5.TabIndex = 7
@@ -111,7 +114,7 @@ Partial Class fromstockopname
         ' 
         ' nudStokFisik
         ' 
-        nudStokFisik.Location = New Point(459, 499)
+        nudStokFisik.Location = New Point(931, 125)
         nudStokFisik.Name = "nudStokFisik"
         nudStokFisik.Size = New Size(150, 27)
         nudStokFisik.TabIndex = 8
@@ -119,7 +122,7 @@ Partial Class fromstockopname
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Location = New Point(355, 580)
+        Label6.Location = New Point(812, 181)
         Label6.Name = "Label6"
         Label6.Size = New Size(51, 20)
         Label6.TabIndex = 9
@@ -127,37 +130,64 @@ Partial Class fromstockopname
         ' 
         ' txtSelisih
         ' 
-        txtSelisih.Location = New Point(458, 577)
+        txtSelisih.Location = New Point(931, 182)
         txtSelisih.Name = "txtSelisih"
         txtSelisih.Size = New Size(246, 27)
         txtSelisih.TabIndex = 10
         ' 
         ' dgStockOpname
         ' 
+        dgStockOpname.BackgroundColor = Color.White
         dgStockOpname.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgStockOpname.Location = New Point(787, 253)
+        dgStockOpname.Location = New Point(289, 336)
         dgStockOpname.Name = "dgStockOpname"
         dgStockOpname.RowHeadersWidth = 51
-        dgStockOpname.Size = New Size(593, 351)
+        dgStockOpname.Size = New Size(888, 351)
         dgStockOpname.TabIndex = 11
         ' 
         ' btnSimpan
         ' 
-        btnSimpan.Location = New Point(355, 671)
+        btnSimpan.BackColor = Color.Black
+        btnSimpan.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnSimpan.ForeColor = SystemColors.ButtonHighlight
+        btnSimpan.Location = New Point(812, 258)
         btnSimpan.Name = "btnSimpan"
-        btnSimpan.Size = New Size(94, 29)
+        btnSimpan.Size = New Size(146, 29)
         btnSimpan.TabIndex = 12
         btnSimpan.Text = "Simpan"
-        btnSimpan.UseVisualStyleBackColor = True
+        btnSimpan.UseVisualStyleBackColor = False
         ' 
         ' btnKembali
         ' 
+        btnKembali.BackColor = Color.Silver
+        btnKembali.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnKembali.Location = New Point(489, 671)
         btnKembali.Name = "btnKembali"
-        btnKembali.Size = New Size(94, 29)
+        btnKembali.Size = New Size(0, 0)
         btnKembali.TabIndex = 13
         btnKembali.Text = "Kembali"
-        btnKembali.UseVisualStyleBackColor = True
+        btnKembali.UseVisualStyleBackColor = False
+        ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.BackgroundImage = My.Resources.Resources.logo_hitam_60x60
+        PictureBox1.Location = New Point(650, 32)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(60, 60)
+        PictureBox1.TabIndex = 14
+        PictureBox1.TabStop = False
+        ' 
+        ' Button1
+        ' 
+        Button1.BackColor = Color.Silver
+        Button1.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button1.ForeColor = SystemColors.ActiveCaptionText
+        Button1.Location = New Point(1015, 258)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(146, 29)
+        Button1.TabIndex = 15
+        Button1.Text = "Kembali"
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' fromstockopname
         ' 
@@ -165,6 +195,8 @@ Partial Class fromstockopname
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
         ClientSize = New Size(1539, 799)
+        Controls.Add(Button1)
+        Controls.Add(PictureBox1)
         Controls.Add(btnKembali)
         Controls.Add(btnSimpan)
         Controls.Add(dgStockOpname)
@@ -185,6 +217,7 @@ Partial Class fromstockopname
         WindowState = FormWindowState.Maximized
         CType(nudStokFisik, ComponentModel.ISupportInitialize).EndInit()
         CType(dgStockOpname, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -203,4 +236,6 @@ Partial Class fromstockopname
     Friend WithEvents dgStockOpname As DataGridView
     Friend WithEvents btnSimpan As Button
     Friend WithEvents btnKembali As Button
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Button1 As Button
 End Class

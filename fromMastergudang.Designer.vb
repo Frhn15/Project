@@ -35,7 +35,9 @@ Partial Class fromMastergudang
         btnEdit = New Button()
         btnSimpan = New Button()
         dgGudang = New DataGridView()
+        PictureBox1 = New PictureBox()
         CType(dgGudang, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Label1
@@ -64,9 +66,9 @@ Partial Class fromMastergudang
         Label4.BackColor = Color.Transparent
         Label4.Location = New Point(196, 454)
         Label4.Name = "Label4"
-        Label4.Size = New Size(57, 20)
+        Label4.Size = New Size(50, 20)
         Label4.TabIndex = 31
-        Label4.Text = "Alamat"
+        Label4.Text = "Lokasi"
         ' 
         ' txtNamaGudang
         ' 
@@ -159,11 +161,20 @@ Partial Class fromMastergudang
         ' dgGudang
         ' 
         dgGudang.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgGudang.Location = New Point(1065, 313)
+        dgGudang.Location = New Point(870, 204)
         dgGudang.Name = "dgGudang"
         dgGudang.RowHeadersWidth = 51
         dgGudang.Size = New Size(802, 488)
         dgGudang.TabIndex = 41
+        ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.BackgroundImage = My.Resources.Resources.logo_hitam_60x60
+        PictureBox1.Location = New Point(723, 44)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(60, 61)
+        PictureBox1.TabIndex = 42
+        PictureBox1.TabStop = False
         ' 
         ' fromMastergudang
         ' 
@@ -171,7 +182,8 @@ Partial Class fromMastergudang
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(1902, 1033)
+        ClientSize = New Size(1740, 840)
+        Controls.Add(PictureBox1)
         Controls.Add(dgGudang)
         Controls.Add(btnKembali)
         Controls.Add(btnHapus)
@@ -189,6 +201,7 @@ Partial Class fromMastergudang
         Text = "fromMastergudang"
         WindowState = FormWindowState.Maximized
         CType(dgGudang, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -205,4 +218,5 @@ Partial Class fromMastergudang
     Friend WithEvents btnEdit As Button
     Friend WithEvents btnSimpan As Button
     Friend WithEvents dgGudang As DataGridView
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

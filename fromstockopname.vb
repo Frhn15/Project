@@ -81,9 +81,9 @@ Public Class fromstockopname
         cmd.Parameters.AddWithValue("@fisik", nudStokFisik.Value)
         cmd.Parameters.AddWithValue("@selisih", txtSelisih.Text)
 
-        conn.Open()
-        cmd.ExecuteNonQuery()
-        conn.Close()
+        conn.Open
+        cmd.ExecuteNonQuery
+        conn.Close
 
         ' UPDATE stok_gudang
         Dim cmdUpdate As New MySqlCommand("
@@ -95,12 +95,12 @@ Public Class fromstockopname
         cmdUpdate.Parameters.AddWithValue("@gudang", cbGudang.SelectedValue)
         cmdUpdate.Parameters.AddWithValue("@stok", nudStokFisik.Value)
 
-        conn.Open()
-        cmdUpdate.ExecuteNonQuery()
-        conn.Close()
+        conn.Open
+        cmdUpdate.ExecuteNonQuery
+        conn.Close
 
         MsgBox("Stock opname berhasil disimpan", vbInformation)
-        LoadGrid()
+        LoadGrid
     End Sub
 
     ' ================= LOAD GRID =================
@@ -131,7 +131,7 @@ Public Class fromstockopname
         End Try
     End Sub
 
-    Private Sub btnKembali_Click(sender As Object, e As EventArgs) Handles btnKembali.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Form1.Show()
         Form1.BringToFront()
         Me.Hide()

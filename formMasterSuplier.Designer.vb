@@ -37,7 +37,9 @@ Partial Class formMasterSuplier
         btnEdit = New Button()
         btnSimpan = New Button()
         dgSupplier = New DataGridView()
+        PictureBox1 = New PictureBox()
         CType(dgSupplier, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Label1
@@ -190,6 +192,15 @@ Partial Class formMasterSuplier
         dgSupplier.Size = New Size(795, 670)
         dgSupplier.TabIndex = 32
         ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Image = My.Resources.Resources.logo_hitam_60x60
+        PictureBox1.Location = New Point(674, 22)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(58, 62)
+        PictureBox1.TabIndex = 33
+        PictureBox1.TabStop = False
+        ' 
         ' formMasterSuplier
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -197,6 +208,7 @@ Partial Class formMasterSuplier
         BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1902, 1033)
+        Controls.Add(PictureBox1)
         Controls.Add(dgSupplier)
         Controls.Add(btnKembali)
         Controls.Add(btnHapus)
@@ -216,6 +228,7 @@ Partial Class formMasterSuplier
         Text = "formMasterSuplier"
         WindowState = FormWindowState.Maximized
         CType(dgSupplier, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -233,4 +246,5 @@ Partial Class formMasterSuplier
     Friend WithEvents btnEdit As Button
     Friend WithEvents btnSimpan As Button
     Friend WithEvents dgSupplier As DataGridView
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

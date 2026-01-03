@@ -37,6 +37,7 @@ Partial Class Form1
         MasterGudangToolStripMenuItem = New ToolStripMenuItem()
         StockOpnameToolStripMenuItem = New ToolStripMenuItem()
         StokBarangToolStripMenuItem = New ToolStripMenuItem()
+        StokGudangToolStripMenuItem = New ToolStripMenuItem()
         TransaksiMasukToolStripMenuItem = New ToolStripMenuItem()
         TransaksiKeluarToolStripMenuItem = New ToolStripMenuItem()
         EditStokBarangToolStripMenuItem = New ToolStripMenuItem()
@@ -128,7 +129,7 @@ Partial Class Form1
         ' 
         Label1.AutoSize = True
         Label1.BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
-        Label1.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold)
+        Label1.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
         Label1.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
         Label1.Location = New Point(103, 19)
         Label1.Name = "Label1"
@@ -174,7 +175,7 @@ Partial Class Form1
         MenuStrip1.Name = "MenuStrip1"
         MenuStrip1.Padding = New Padding(11, 0, 6, 0)
         MenuStrip1.RenderMode = ToolStripRenderMode.Professional
-        MenuStrip1.Size = New Size(1626, 29)
+        MenuStrip1.Size = New Size(1776, 29)
         MenuStrip1.TabIndex = 1
         MenuStrip1.Text = "MenuStrip1"
         ' 
@@ -229,10 +230,17 @@ Partial Class Form1
         ' StokBarangToolStripMenuItem
         ' 
         StokBarangToolStripMenuItem.BackgroundImageLayout = ImageLayout.Stretch
+        StokBarangToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {StokGudangToolStripMenuItem})
         StokBarangToolStripMenuItem.ForeColor = Color.White
         StokBarangToolStripMenuItem.Name = "StokBarangToolStripMenuItem"
         StokBarangToolStripMenuItem.Size = New Size(130, 29)
         StokBarangToolStripMenuItem.Text = "Stok Barang"
+        ' 
+        ' StokGudangToolStripMenuItem
+        ' 
+        StokGudangToolStripMenuItem.Name = "StokGudangToolStripMenuItem"
+        StokGudangToolStripMenuItem.Size = New Size(224, 30)
+        StokGudangToolStripMenuItem.Text = "Stok Gudang"
         ' 
         ' TransaksiMasukToolStripMenuItem
         ' 
@@ -592,7 +600,7 @@ Partial Class Form1
         Panel2.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
         Panel2.Location = New Point(0, 0)
         Panel2.Name = "Panel2"
-        Panel2.Size = New Size(1902, 1033)
+        Panel2.Size = New Size(1539, 840)
         Panel2.TabIndex = 10
         ' 
         ' Panel13
@@ -614,7 +622,7 @@ Partial Class Form1
         ' Label15
         ' 
         Label15.AutoSize = True
-        Label15.Font = New Font("Segoe UI Semibold", 8.0F, FontStyle.Bold)
+        Label15.Font = New Font("Segoe UI Semibold", 8F, FontStyle.Bold)
         Label15.Location = New Point(330, 75)
         Label15.Name = "Label15"
         Label15.Size = New Size(59, 19)
@@ -625,7 +633,7 @@ Partial Class Form1
         ' Label14
         ' 
         Label14.AutoSize = True
-        Label14.Font = New Font("Segoe UI Semibold", 8.0F, FontStyle.Bold)
+        Label14.Font = New Font("Segoe UI Semibold", 8F, FontStyle.Bold)
         Label14.Location = New Point(229, 75)
         Label14.Name = "Label14"
         Label14.Size = New Size(52, 38)
@@ -636,7 +644,7 @@ Partial Class Form1
         ' Label13
         ' 
         Label13.AutoSize = True
-        Label13.Font = New Font("Segoe UI Semibold", 8.0F, FontStyle.Bold)
+        Label13.Font = New Font("Segoe UI Semibold", 8F, FontStyle.Bold)
         Label13.Location = New Point(129, 75)
         Label13.Name = "Label13"
         Label13.Size = New Size(66, 38)
@@ -647,7 +655,7 @@ Partial Class Form1
         ' Label12
         ' 
         Label12.AutoSize = True
-        Label12.Font = New Font("Segoe UI Semibold", 8.0F, FontStyle.Bold)
+        Label12.Font = New Font("Segoe UI Semibold", 8F, FontStyle.Bold)
         Label12.Location = New Point(33, 75)
         Label12.Name = "Label12"
         Label12.Size = New Size(66, 38)
@@ -715,7 +723,7 @@ Partial Class Form1
         ' Label9
         ' 
         Label9.AutoSize = True
-        Label9.Font = New Font("Segoe UI", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label9.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label9.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
         Label9.Location = New Point(85, 36)
         Label9.Name = "Label9"
@@ -856,11 +864,11 @@ Partial Class Form1
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(1902, 1033)
+        ClientSize = New Size(1539, 840)
         Controls.Add(Label1)
         Controls.Add(lblJam)
         Controls.Add(lblUser)
@@ -989,5 +997,6 @@ Partial Class Form1
     Friend WithEvents lblRole As Label
     Public WithEvents TimerRefresh As Timer
     Friend WithEvents TimerDashboard As Timer
+    Friend WithEvents StokGudangToolStripMenuItem As ToolStripMenuItem
 
 End Class

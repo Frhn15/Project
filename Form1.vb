@@ -259,4 +259,12 @@ WHERE
         FromLaporan.Show()
         Me.Hide()
     End Sub
+
+    Private Sub StokGudangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles StokGudangToolStripMenuItem.Click
+        formStokGudang.Show() : Hide()
+    End Sub
+
+    Private Sub datamaster_Click(sender As Object, e As EventArgs) Handles datamaster.Click
+
+    End Sub
 End Class

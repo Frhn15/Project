@@ -23,4 +23,13 @@
     Private Sub Panelhead_Paint(sender As Object, e As PaintEventArgs) Handles Panelhead.Paint
 
     End Sub
+
+    Private Sub dgvKeluar_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvKeluar.CellContentClick
+
+    End Sub
+
+    Private Sub btnkembali_Click(sender As Object, e As EventArgs) Handles btnkembali.Click
+        Form1.Show()
+        Me.Hide()
+    End Sub
 End Class

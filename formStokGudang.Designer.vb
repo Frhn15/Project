@@ -26,9 +26,11 @@ Partial Class formStokGudang
         Txpencarianbarang = New TextBox()
         Label2 = New Label()
         Cbfiltergudang = New ComboBox()
-        DataGridView1 = New DataGridView()
-        Button4 = New Button()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
+        dgStokGudang = New DataGridView()
+        btnKembali = New Button()
+        PictureBox1 = New PictureBox()
+        CType(dgStokGudang, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Label1
@@ -74,29 +76,38 @@ Partial Class formStokGudang
         Cbfiltergudang.TabIndex = 23
         Cbfiltergudang.Text = "FIlter Gudang"
         ' 
-        ' DataGridView1
+        ' dgStokGudang
         ' 
-        DataGridView1.BackgroundColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
-        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Location = New Point(172, 162)
-        DataGridView1.Margin = New Padding(2, 2, 2, 2)
-        DataGridView1.Name = "DataGridView1"
-        DataGridView1.RowHeadersWidth = 62
-        DataGridView1.Size = New Size(663, 227)
-        DataGridView1.TabIndex = 24
+        dgStokGudang.BackgroundColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
+        dgStokGudang.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgStokGudang.Location = New Point(172, 162)
+        dgStokGudang.Margin = New Padding(2)
+        dgStokGudang.Name = "dgStokGudang"
+        dgStokGudang.RowHeadersWidth = 62
+        dgStokGudang.Size = New Size(663, 227)
+        dgStokGudang.TabIndex = 24
         ' 
-        ' Button4
+        ' btnKembali
         ' 
-        Button4.BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
-        Button4.FlatStyle = FlatStyle.Flat
-        Button4.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button4.ForeColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
-        Button4.Image = My.Resources.Resources.Kembali
-        Button4.Location = New Point(685, 408)
-        Button4.Name = "Button4"
-        Button4.Size = New Size(150, 50)
-        Button4.TabIndex = 41
-        Button4.UseVisualStyleBackColor = False
+        btnKembali.BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
+        btnKembali.FlatStyle = FlatStyle.Flat
+        btnKembali.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnKembali.ForeColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
+        btnKembali.Image = My.Resources.Resources.Kembali
+        btnKembali.Location = New Point(685, 408)
+        btnKembali.Name = "btnKembali"
+        btnKembali.Size = New Size(150, 50)
+        btnKembali.TabIndex = 41
+        btnKembali.UseVisualStyleBackColor = False
+        ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Image = My.Resources.Resources.logo_hitam_60x60
+        PictureBox1.Location = New Point(337, 29)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(58, 59)
+        PictureBox1.TabIndex = 42
+        PictureBox1.TabStop = False
         ' 
         ' formStokGudang
         ' 
@@ -104,16 +115,18 @@ Partial Class formStokGudang
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
         ClientSize = New Size(1006, 531)
-        Controls.Add(Button4)
-        Controls.Add(DataGridView1)
+        Controls.Add(PictureBox1)
+        Controls.Add(btnKembali)
+        Controls.Add(dgStokGudang)
         Controls.Add(Cbfiltergudang)
         Controls.Add(Label2)
         Controls.Add(Txpencarianbarang)
         Controls.Add(Label1)
-        Margin = New Padding(2, 2, 2, 2)
+        Margin = New Padding(2)
         Name = "formStokGudang"
         Text = "formStokGudang"
-        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
+        CType(dgStokGudang, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -122,6 +135,7 @@ Partial Class formStokGudang
     Friend WithEvents Txpencarianbarang As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Cbfiltergudang As ComboBox
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Button4 As Button
+    Friend WithEvents dgStokGudang As DataGridView
+    Friend WithEvents btnKembali As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

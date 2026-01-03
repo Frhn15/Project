@@ -23,6 +23,13 @@ Public Class fromMastergudang
             FROM gudang
             ORDER BY nama_gudang
         ")
+
+        dgGudang.AllowUserToAddRows = False
+        dgGudang.ReadOnly = True
+        dgGudang.SelectionMode = DataGridViewSelectionMode.FullRowSelect
+        dgGudang.MultiSelect = False
+
+
     End Sub
 
     '================================
@@ -70,15 +77,23 @@ Public Class fromMastergudang
     Private Sub dgGudang_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgGudang.CellClick
         If e.RowIndex < 0 Then Exit Sub
 
-        idEdit = dgGudang.Rows(e.RowIndex).Cells("id").Value
-        txtKodeGudang.Text = dgGudang.Rows(e.RowIndex).Cells("kode_gudang").Value
-        txtNamaGudang.Text = dgGudang.Rows(e.RowIndex).Cells("nama_gudang").Value
-        txtAlamat.Text = dgGudang.Rows(e.RowIndex).Cells("lokasi").Value
+        Dim row = dgGudang.Rows(e.RowIndex)
+        If row.IsNewRow Then Exit Sub
+
+        Dim vId = row.Cells("id").Value
+        If vId Is Nothing OrElse vId Is DBNull.Value Then Exit Sub
+
+        idEdit = Convert.ToInt32(vId)
+
+        txtKodeGudang.Text = Convert.ToString(row.Cells("kode_gudang").Value)
+        txtNamaGudang.Text = Convert.ToString(row.Cells("nama_gudang").Value)
+        txtAlamat.Text = Convert.ToString(row.Cells("lokasi").Value)
 
         btnSimpan.Enabled = False
         btnEdit.Enabled = True
         btnHapus.Enabled = True
     End Sub
+
 
     '================================
     ' EDIT DATA

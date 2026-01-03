@@ -30,6 +30,12 @@ Public Class formMasterSuplier
             FROM supplier
             ORDER BY nama_supplier
         ")
+
+        dgSupplier.AllowUserToAddRows = False
+        dgSupplier.ReadOnly = True
+        dgSupplier.SelectionMode = DataGridViewSelectionMode.FullRowSelect
+        dgSupplier.MultiSelect = False
+
     End Sub
 
     '===============================
@@ -44,9 +50,10 @@ Public Class formMasterSuplier
         idEdit = 0
 
         btnSimpan.Enabled = True
-        btnSimpan.Enabled = False
+        btnEdit.Enabled = False
         btnHapus.Enabled = False
     End Sub
+
 
     '===============================
     ' SIMPAN DATA
@@ -83,21 +90,31 @@ Public Class formMasterSuplier
     Private Sub dgSupplier_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgSupplier.CellClick
         If e.RowIndex < 0 Then Exit Sub
 
-        idEdit = dgSupplier.Rows(e.RowIndex).Cells("id").Value
-        txtKodeSupplier.Text = dgSupplier.Rows(e.RowIndex).Cells("kode_supplier").Value
-        txtNamaSupplier.Text = dgSupplier.Rows(e.RowIndex).Cells("nama_supplier").Value
-        txtAlamat.Text = dgSupplier.Rows(e.RowIndex).Cells("alamat").Value
-        txtNoTelp.Text = dgSupplier.Rows(e.RowIndex).Cells("telepon").Value
+        Dim row = dgSupplier.Rows(e.RowIndex)
+
+        ' Kalau yang diklik baris kosong/new row, stop
+        If row.IsNewRow Then Exit Sub
+
+        Dim vId = row.Cells("id").Value
+        If vId Is Nothing OrElse vId Is DBNull.Value Then Exit Sub
+
+        idEdit = Convert.ToInt32(vId)
+
+        txtKodeSupplier.Text = Convert.ToString(row.Cells("kode_supplier").Value)
+        txtNamaSupplier.Text = Convert.ToString(row.Cells("nama_supplier").Value)
+        txtAlamat.Text = Convert.ToString(row.Cells("alamat").Value)
+        txtNoTelp.Text = Convert.ToString(row.Cells("telepon").Value)
 
         btnSimpan.Enabled = False
-        btnSimpan.Enabled = True
+        btnEdit.Enabled = True
         btnHapus.Enabled = True
     End Sub
+
 
     '===============================
     ' EDIT DATA
     '===============================
-    Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnSimpan.Click
+    Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
         If idEdit = 0 Then Exit Sub
 
         cmd = New MySqlCommand("
@@ -147,4 +164,7 @@ Public Class formMasterSuplier
         Me.Hide()
     End Sub
 
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
+    End Sub
 End Class
