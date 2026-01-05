@@ -164,7 +164,15 @@ Public Class formMasterSuplier
         Me.Hide()
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub dgSupplier_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgSupplier.CellContentClick
+
+    End Sub
+
+    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
 
     End Sub
 End Class

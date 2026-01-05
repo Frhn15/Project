@@ -75,10 +75,10 @@ Partial Class FormTransaksiMasuk
         ' 
         ' Button2
         ' 
-        Button2.BackColor = Color.Silver
+        Button2.BackColor = Color.FromArgb(CByte(69), CByte(69), CByte(69))
         Button2.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         Button2.ForeColor = Color.White
-        Button2.Location = New Point(295, 368)
+        Button2.Location = New Point(277, 378)
         Button2.Margin = New Padding(1, 2, 1, 2)
         Button2.Name = "Button2"
         Button2.Size = New Size(161, 34)
@@ -92,7 +92,7 @@ Partial Class FormTransaksiMasuk
         Button1.FlatStyle = FlatStyle.Flat
         Button1.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         Button1.ForeColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
-        Button1.Location = New Point(83, 368)
+        Button1.Location = New Point(39, 378)
         Button1.Margin = New Padding(1, 2, 1, 2)
         Button1.Name = "Button1"
         Button1.Size = New Size(169, 34)
@@ -105,7 +105,7 @@ Partial Class FormTransaksiMasuk
         NumericUpDown1.Location = New Point(199, 312)
         NumericUpDown1.Margin = New Padding(1, 2, 1, 2)
         NumericUpDown1.Name = "NumericUpDown1"
-        NumericUpDown1.Size = New Size(144, 27)
+        NumericUpDown1.Size = New Size(239, 27)
         NumericUpDown1.TabIndex = 13
         ' 
         ' ComboBox3
@@ -249,7 +249,7 @@ Partial Class FormTransaksiMasuk
         ' 
         ' DataGridView1
         ' 
-        DataGridView1.BackgroundColor = Color.White
+        DataGridView1.BackgroundColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridView1.Location = New Point(687, 166)
         DataGridView1.Margin = New Padding(1, 2, 1, 2)

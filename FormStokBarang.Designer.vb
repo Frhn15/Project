@@ -236,10 +236,10 @@ Partial Class FormStokBarang
         ClientSize = New Size(1539, 787)
         Controls.Add(PictureBox2)
         Controls.Add(Label7)
-        Controls.Add(PictureBox1)
         Controls.Add(Panel1)
         Controls.Add(dgvStokBarang)
         Controls.Add(MenuStrip1)
+        Controls.Add(PictureBox1)
         MainMenuStrip = MenuStrip1
         Name = "FormStokBarang"
         Text = "FormStokBarang"

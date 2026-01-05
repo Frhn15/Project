@@ -139,4 +139,7 @@ Public Class fromMasterKategori
         Me.Hide()
     End Sub
 
+    Private Sub Panel5_Paint(sender As Object, e As PaintEventArgs) Handles Panel5.Paint
+
+    End Sub
 End Class

@@ -63,7 +63,7 @@ Partial Class fromMasterKategori
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label3.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label3.ForeColor = Color.FromArgb(CByte(69), CByte(69), CByte(69))
         Label3.Location = New Point(129, 24)
         Label3.Name = "Label3"
@@ -145,7 +145,7 @@ Partial Class fromMasterKategori
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label6.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label6.ForeColor = Color.FromArgb(CByte(69), CByte(69), CByte(69))
         Label6.Location = New Point(4, 12)
         Label6.Name = "Label6"
@@ -199,7 +199,7 @@ Partial Class fromMasterKategori
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.Location = New Point(23, 138)
         Label2.Name = "Label2"
         Label2.Size = New Size(111, 20)
@@ -231,7 +231,7 @@ Partial Class fromMasterKategori
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label4.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label4.ForeColor = Color.FromArgb(CByte(69), CByte(69), CByte(69))
         Label4.Location = New Point(12, 12)
         Label4.Name = "Label4"
@@ -249,7 +249,7 @@ Partial Class fromMasterKategori
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.Location = New Point(23, 72)
         Label1.Name = "Label1"
         Label1.Size = New Size(105, 20)
@@ -265,13 +265,13 @@ Partial Class fromMasterKategori
         ' 
         ' fromMasterKategori
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
         ClientSize = New Size(1262, 673)
         Controls.Add(Panel2)
         Controls.Add(Panel1)
-        Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         FormBorderStyle = FormBorderStyle.FixedSingle
         MaximizeBox = False
         Name = "fromMasterKategori"

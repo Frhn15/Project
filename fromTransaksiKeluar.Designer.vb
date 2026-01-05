@@ -75,18 +75,18 @@ Partial Class fromTransaksiKeluar
         Panelhead.Controls.Add(transaksikeluar)
         Panelhead.Dock = DockStyle.Top
         Panelhead.Location = New Point(0, 0)
-        Panelhead.Margin = New Padding(4, 5, 4, 5)
+        Panelhead.Margin = New Padding(3, 4, 3, 4)
         Panelhead.Name = "Panelhead"
-        Panelhead.Size = New Size(1774, 117)
+        Panelhead.Size = New Size(1419, 94)
         Panelhead.TabIndex = 0
         ' 
         ' PictureBox1
         ' 
         PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(41, 20)
-        PictureBox1.Margin = New Padding(4, 5, 4, 5)
+        PictureBox1.Location = New Point(33, 16)
+        PictureBox1.Margin = New Padding(3, 4, 3, 4)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(86, 83)
+        PictureBox1.Size = New Size(69, 66)
         PictureBox1.TabIndex = 1
         PictureBox1.TabStop = False
         ' 
@@ -95,10 +95,9 @@ Partial Class fromTransaksiKeluar
         transaksikeluar.AutoSize = True
         transaksikeluar.Font = New Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         transaksikeluar.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
-        transaksikeluar.Location = New Point(139, 37)
-        transaksikeluar.Margin = New Padding(4, 0, 4, 0)
+        transaksikeluar.Location = New Point(111, 30)
         transaksikeluar.Name = "transaksikeluar"
-        transaksikeluar.Size = New Size(471, 45)
+        transaksikeluar.Size = New Size(395, 37)
         transaksikeluar.TabIndex = 0
         transaksikeluar.Text = "TRANSAKSI BARANG KELUAR"
         ' 
@@ -108,20 +107,20 @@ Partial Class fromTransaksiKeluar
         Panelright.Controls.Add(Panel4)
         Panelright.Controls.Add(Panelleft)
         Panelright.Dock = DockStyle.Fill
-        Panelright.Location = New Point(0, 117)
-        Panelright.Margin = New Padding(4, 5, 4, 5)
+        Panelright.Location = New Point(0, 94)
+        Panelright.Margin = New Padding(3, 4, 3, 4)
         Panelright.Name = "Panelright"
-        Panelright.Size = New Size(1774, 1009)
+        Panelright.Size = New Size(1419, 750)
         Panelright.TabIndex = 1
         ' 
         ' Panel6
         ' 
         Panel6.Controls.Add(btnSimtrans)
         Panel6.Dock = DockStyle.Bottom
-        Panel6.Location = New Point(614, 904)
-        Panel6.Margin = New Padding(4, 5, 4, 5)
+        Panel6.Location = New Point(491, 666)
+        Panel6.Margin = New Padding(3, 4, 3, 4)
         Panel6.Name = "Panel6"
-        Panel6.Size = New Size(1160, 105)
+        Panel6.Size = New Size(928, 84)
         Panel6.TabIndex = 2
         ' 
         ' btnSimtrans
@@ -130,10 +129,10 @@ Partial Class fromTransaksiKeluar
         btnSimtrans.FlatAppearance.BorderSize = 0
         btnSimtrans.FlatStyle = FlatStyle.Flat
         btnSimtrans.ForeColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
-        btnSimtrans.Location = New Point(864, 27)
-        btnSimtrans.Margin = New Padding(4, 5, 4, 5)
+        btnSimtrans.Location = New Point(691, 22)
+        btnSimtrans.Margin = New Padding(3, 4, 3, 4)
         btnSimtrans.Name = "btnSimtrans"
-        btnSimtrans.Size = New Size(241, 58)
+        btnSimtrans.Size = New Size(193, 46)
         btnSimtrans.TabIndex = 0
         btnSimtrans.Text = "Simpan Transaksi"
         btnSimtrans.UseVisualStyleBackColor = False
@@ -143,19 +142,19 @@ Partial Class fromTransaksiKeluar
         Panel4.Controls.Add(Panel5)
         Panel4.Controls.Add(Label1)
         Panel4.Controls.Add(dgvKeluar)
-        Panel4.Location = New Point(614, 67)
-        Panel4.Margin = New Padding(4, 5, 4, 5)
+        Panel4.Location = New Point(491, 54)
+        Panel4.Margin = New Padding(3, 4, 3, 4)
         Panel4.Name = "Panel4"
-        Panel4.Size = New Size(1166, 837)
+        Panel4.Size = New Size(933, 670)
         Panel4.TabIndex = 1
         ' 
         ' Panel5
         ' 
         Panel5.BackColor = Color.FromArgb(CByte(150), CByte(150), CByte(150))
-        Panel5.Location = New Point(224, 40)
-        Panel5.Margin = New Padding(4, 5, 4, 5)
+        Panel5.Location = New Point(179, 32)
+        Panel5.Margin = New Padding(3, 4, 3, 4)
         Panel5.Name = "Panel5"
-        Panel5.Size = New Size(831, 2)
+        Panel5.Size = New Size(665, 2)
         Panel5.TabIndex = 15
         ' 
         ' Label1
@@ -163,10 +162,9 @@ Partial Class fromTransaksiKeluar
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
-        Label1.Location = New Point(21, 22)
-        Label1.Margin = New Padding(4, 0, 4, 0)
+        Label1.Location = New Point(17, 18)
         Label1.Name = "Label1"
-        Label1.Size = New Size(189, 31)
+        Label1.Size = New Size(156, 25)
         Label1.TabIndex = 15
         Label1.Text = "Detail Dokumen"
         ' 
@@ -177,14 +175,14 @@ Partial Class fromTransaksiKeluar
         dgvKeluar.ColumnHeadersHeight = 29
         dgvKeluar.EnableHeadersVisualStyles = False
         dgvKeluar.GridColor = Color.FromArgb(CByte(167), CByte(163), CByte(156))
-        dgvKeluar.Location = New Point(24, 88)
-        dgvKeluar.Margin = New Padding(4, 5, 4, 5)
+        dgvKeluar.Location = New Point(19, 70)
+        dgvKeluar.Margin = New Padding(3, 4, 3, 4)
         dgvKeluar.MultiSelect = False
         dgvKeluar.Name = "dgvKeluar"
         dgvKeluar.ReadOnly = True
         dgvKeluar.RowHeadersWidth = 51
         dgvKeluar.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        dgvKeluar.Size = New Size(1121, 728)
+        dgvKeluar.Size = New Size(897, 582)
         dgvKeluar.TabIndex = 0
         ' 
         ' Panelleft
@@ -194,9 +192,9 @@ Partial Class fromTransaksiKeluar
         Panelleft.Controls.Add(Pnldocument)
         Panelleft.Dock = DockStyle.Left
         Panelleft.Location = New Point(0, 0)
-        Panelleft.Margin = New Padding(4, 5, 4, 5)
+        Panelleft.Margin = New Padding(3, 4, 3, 4)
         Panelleft.Name = "Panelleft"
-        Panelleft.Size = New Size(614, 1009)
+        Panelleft.Size = New Size(491, 750)
         Panelleft.TabIndex = 0
         ' 
         ' btnkembali
@@ -204,10 +202,10 @@ Partial Class fromTransaksiKeluar
         btnkembali.BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
         btnkembali.FlatStyle = FlatStyle.Flat
         btnkembali.ForeColor = Color.FromArgb(CByte(67), CByte(67), CByte(67))
-        btnkembali.Location = New Point(20, 928)
-        btnkembali.Margin = New Padding(4, 5, 4, 5)
+        btnkembali.Location = New Point(16, 742)
+        btnkembali.Margin = New Padding(3, 4, 3, 4)
         btnkembali.Name = "btnkembali"
-        btnkembali.Size = New Size(174, 58)
+        btnkembali.Size = New Size(139, 46)
         btnkembali.TabIndex = 1
         btnkembali.Text = "Kembali"
         btnkembali.UseVisualStyleBackColor = False
@@ -221,10 +219,10 @@ Partial Class fromTransaksiKeluar
         Panel2.Controls.Add(input)
         Panel2.Controls.Add(qty)
         Panel2.Controls.Add(ComboBox1)
-        Panel2.Location = New Point(20, 537)
-        Panel2.Margin = New Padding(4, 5, 4, 5)
+        Panel2.Location = New Point(16, 430)
+        Panel2.Margin = New Padding(3, 4, 3, 4)
         Panel2.Name = "Panel2"
-        Panel2.Size = New Size(571, 367)
+        Panel2.Size = New Size(457, 294)
         Panel2.TabIndex = 1
         ' 
         ' btnTambah
@@ -234,10 +232,10 @@ Partial Class fromTransaksiKeluar
         btnTambah.FlatStyle = FlatStyle.Flat
         btnTambah.Font = New Font("Segoe UI", 11F)
         btnTambah.ForeColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
-        btnTambah.Location = New Point(21, 242)
-        btnTambah.Margin = New Padding(4, 5, 4, 5)
+        btnTambah.Location = New Point(17, 194)
+        btnTambah.Margin = New Padding(3, 4, 3, 4)
         btnTambah.Name = "btnTambah"
-        btnTambah.Size = New Size(519, 60)
+        btnTambah.Size = New Size(415, 48)
         btnTambah.TabIndex = 18
         btnTambah.Text = "Tambah Ke List"
         btnTambah.UseVisualStyleBackColor = False
@@ -247,10 +245,9 @@ Partial Class fromTransaksiKeluar
         Label5.AutoSize = True
         Label5.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label5.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
-        Label5.Location = New Point(21, 167)
-        Label5.Margin = New Padding(4, 0, 4, 0)
+        Label5.Location = New Point(17, 134)
         Label5.Name = "Label5"
-        Label5.Size = New Size(90, 25)
+        Label5.Size = New Size(72, 20)
         Label5.TabIndex = 17
         Label5.Text = "Kuantitas"
         ' 
@@ -259,20 +256,19 @@ Partial Class fromTransaksiKeluar
         pilih.AutoSize = True
         pilih.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         pilih.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
-        pilih.Location = New Point(21, 102)
-        pilih.Margin = New Padding(4, 0, 4, 0)
+        pilih.Location = New Point(17, 82)
         pilih.Name = "pilih"
-        pilih.Size = New Size(111, 25)
+        pilih.Size = New Size(92, 20)
         pilih.TabIndex = 15
         pilih.Text = "Pilih Barang"
         ' 
         ' Panel3
         ' 
         Panel3.BackColor = Color.FromArgb(CByte(150), CByte(150), CByte(150))
-        Panel3.Location = New Point(209, 48)
-        Panel3.Margin = New Padding(4, 5, 4, 5)
+        Panel3.Location = New Point(167, 38)
+        Panel3.Margin = New Padding(3, 4, 3, 4)
         Panel3.Name = "Panel3"
-        Panel3.Size = New Size(331, 2)
+        Panel3.Size = New Size(265, 2)
         Panel3.TabIndex = 15
         ' 
         ' input
@@ -280,10 +276,9 @@ Partial Class fromTransaksiKeluar
         input.AutoSize = True
         input.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         input.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
-        input.Location = New Point(21, 32)
-        input.Margin = New Padding(4, 0, 4, 0)
+        input.Location = New Point(17, 26)
         input.Name = "input"
-        input.Size = New Size(154, 31)
+        input.Size = New Size(130, 25)
         input.TabIndex = 15
         input.Text = "Input Barang"
         ' 
@@ -291,12 +286,12 @@ Partial Class fromTransaksiKeluar
         ' 
         qty.BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
         qty.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
-        qty.Location = New Point(209, 163)
-        qty.Margin = New Padding(4, 5, 4, 5)
+        qty.Location = New Point(167, 130)
+        qty.Margin = New Padding(3, 4, 3, 4)
         qty.Maximum = New Decimal(New Integer() {9999, 0, 0, 0})
         qty.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         qty.Name = "qty"
-        qty.Size = New Size(169, 31)
+        qty.Size = New Size(265, 27)
         qty.TabIndex = 16
         qty.Value = New Decimal(New Integer() {1, 0, 0, 0})
         ' 
@@ -305,10 +300,10 @@ Partial Class fromTransaksiKeluar
         ComboBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList
         ComboBox1.FormattingEnabled = True
-        ComboBox1.Location = New Point(209, 97)
-        ComboBox1.Margin = New Padding(4, 5, 4, 5)
+        ComboBox1.Location = New Point(167, 78)
+        ComboBox1.Margin = New Padding(3, 4, 3, 4)
         ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(330, 33)
+        ComboBox1.Size = New Size(265, 28)
         ComboBox1.TabIndex = 15
         ' 
         ' Pnldocument
@@ -325,51 +320,51 @@ Partial Class fromTransaksiKeluar
         Pnldocument.Controls.Add(tggl)
         Pnldocument.Controls.Add(no)
         Pnldocument.Controls.Add(detaildokumen)
-        Pnldocument.Location = New Point(20, 67)
-        Pnldocument.Margin = New Padding(4, 5, 4, 5)
+        Pnldocument.Location = New Point(16, 54)
+        Pnldocument.Margin = New Padding(3, 4, 3, 4)
         Pnldocument.Name = "Pnldocument"
-        Pnldocument.Size = New Size(571, 433)
+        Pnldocument.Size = New Size(457, 346)
         Pnldocument.TabIndex = 0
         ' 
         ' Panel1
         ' 
         Panel1.BackColor = Color.FromArgb(CByte(150), CByte(150), CByte(150))
-        Panel1.Location = New Point(226, 40)
-        Panel1.Margin = New Padding(4, 5, 4, 5)
+        Panel1.Location = New Point(181, 32)
+        Panel1.Margin = New Padding(3, 4, 3, 4)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(331, 2)
+        Panel1.Size = New Size(265, 2)
         Panel1.TabIndex = 14
         ' 
         ' TextBox4
         ' 
-        TextBox4.Location = New Point(209, 350)
-        TextBox4.Margin = New Padding(4, 5, 4, 5)
+        TextBox4.Location = New Point(167, 280)
+        TextBox4.Margin = New Padding(3, 4, 3, 4)
         TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(330, 31)
+        TextBox4.Size = New Size(265, 27)
         TextBox4.TabIndex = 13
         ' 
         ' TextBox3
         ' 
-        TextBox3.Location = New Point(209, 283)
-        TextBox3.Margin = New Padding(4, 5, 4, 5)
+        TextBox3.Location = New Point(167, 226)
+        TextBox3.Margin = New Padding(3, 4, 3, 4)
         TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(330, 31)
+        TextBox3.Size = New Size(265, 27)
         TextBox3.TabIndex = 12
         ' 
         ' TextBox2
         ' 
-        TextBox2.Location = New Point(209, 150)
-        TextBox2.Margin = New Padding(4, 5, 4, 5)
+        TextBox2.Location = New Point(167, 120)
+        TextBox2.Margin = New Padding(3, 4, 3, 4)
         TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(330, 31)
+        TextBox2.Size = New Size(265, 27)
         TextBox2.TabIndex = 11
         ' 
         ' TextBox1
         ' 
-        TextBox1.Location = New Point(209, 83)
-        TextBox1.Margin = New Padding(4, 5, 4, 5)
+        TextBox1.Location = New Point(167, 66)
+        TextBox1.Margin = New Padding(3, 4, 3, 4)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(330, 31)
+        TextBox1.Size = New Size(265, 27)
         TextBox1.TabIndex = 10
         ' 
         ' ComboBox3
@@ -377,10 +372,10 @@ Partial Class fromTransaksiKeluar
         ComboBox3.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         ComboBox3.DropDownStyle = ComboBoxStyle.DropDownList
         ComboBox3.FormattingEnabled = True
-        ComboBox3.Location = New Point(209, 217)
-        ComboBox3.Margin = New Padding(4, 5, 4, 5)
+        ComboBox3.Location = New Point(167, 174)
+        ComboBox3.Margin = New Padding(3, 4, 3, 4)
         ComboBox3.Name = "ComboBox3"
-        ComboBox3.Size = New Size(330, 33)
+        ComboBox3.Size = New Size(265, 28)
         ComboBox3.TabIndex = 8
         ' 
         ' Label4
@@ -388,10 +383,9 @@ Partial Class fromTransaksiKeluar
         Label4.AutoSize = True
         Label4.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label4.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
-        Label4.Location = New Point(21, 355)
-        Label4.Margin = New Padding(4, 0, 4, 0)
+        Label4.Location = New Point(17, 284)
         Label4.Name = "Label4"
-        Label4.Size = New Size(108, 25)
+        Label4.Size = New Size(88, 20)
         Label4.TabIndex = 5
         Label4.Text = "Keterangan"
         ' 
@@ -400,10 +394,9 @@ Partial Class fromTransaksiKeluar
         Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold)
         Label3.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
-        Label3.Location = New Point(21, 288)
-        Label3.Margin = New Padding(4, 0, 4, 0)
+        Label3.Location = New Point(17, 230)
         Label3.Name = "Label3"
-        Label3.Size = New Size(68, 25)
+        Label3.Size = New Size(55, 20)
         Label3.TabIndex = 4
         Label3.Text = "Tujuan"
         ' 
@@ -412,10 +405,9 @@ Partial Class fromTransaksiKeluar
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold)
         Label2.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
-        Label2.Location = New Point(21, 222)
-        Label2.Margin = New Padding(4, 0, 4, 0)
+        Label2.Location = New Point(17, 178)
         Label2.Name = "Label2"
-        Label2.Size = New Size(117, 25)
+        Label2.Size = New Size(95, 20)
         Label2.TabIndex = 3
         Label2.Text = "Gudang Asal"
         ' 
@@ -424,10 +416,9 @@ Partial Class fromTransaksiKeluar
         tggl.AutoSize = True
         tggl.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold)
         tggl.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
-        tggl.Location = New Point(21, 155)
-        tggl.Margin = New Padding(4, 0, 4, 0)
+        tggl.Location = New Point(17, 124)
         tggl.Name = "tggl"
-        tggl.Size = New Size(76, 25)
+        tggl.Size = New Size(63, 20)
         tggl.TabIndex = 2
         tggl.Text = "Tanggal"
         ' 
@@ -436,10 +427,9 @@ Partial Class fromTransaksiKeluar
         no.AutoSize = True
         no.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold)
         no.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
-        no.Location = New Point(21, 88)
-        no.Margin = New Padding(4, 0, 4, 0)
+        no.Location = New Point(17, 70)
         no.Name = "no"
-        no.Size = New Size(127, 25)
+        no.Size = New Size(105, 20)
         no.TabIndex = 1
         no.Text = "No. Dokumen"
         ' 
@@ -448,22 +438,21 @@ Partial Class fromTransaksiKeluar
         detaildokumen.AutoSize = True
         detaildokumen.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         detaildokumen.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
-        detaildokumen.Location = New Point(21, 22)
-        detaildokumen.Margin = New Padding(4, 0, 4, 0)
+        detaildokumen.Location = New Point(17, 18)
         detaildokumen.Name = "detaildokumen"
-        detaildokumen.Size = New Size(189, 31)
+        detaildokumen.Size = New Size(156, 25)
         detaildokumen.TabIndex = 0
         detaildokumen.Text = "Detail Dokumen"
         ' 
         ' fromTransaksiKeluar
         ' 
-        AutoScaleDimensions = New SizeF(10F, 25F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
-        ClientSize = New Size(1774, 1126)
+        ClientSize = New Size(1419, 844)
         Controls.Add(Panelright)
         Controls.Add(Panelhead)
-        Margin = New Padding(4, 3, 4, 3)
+        Margin = New Padding(3, 2, 3, 2)
         Name = "fromTransaksiKeluar"
         Text = "fromTransaksiKeluar"
         Panelhead.ResumeLayout(False)
