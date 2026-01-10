@@ -22,36 +22,36 @@ Partial Class FromTransferAntarGudang
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        ComboBox1 = New ComboBox()
+        cbGudangAsal = New ComboBox()
         Label1 = New Label()
-        ComboBox2 = New ComboBox()
+        cbGudangTujuan = New ComboBox()
         Label2 = New Label()
         Label3 = New Label()
-        ComboBox3 = New ComboBox()
-        Button1 = New Button()
-        Button2 = New Button()
-        Button3 = New Button()
-        Button4 = New Button()
-        NumericUpDown1 = New NumericUpDown()
+        cbBarang = New ComboBox()
+        btnRefresh = New Button()
+        btnSimpan = New Button()
+        btnTambahItem = New Button()
+        btnKembali = New Button()
+        nudQty = New NumericUpDown()
         Label4 = New Label()
-        DataGridView1 = New DataGridView()
+        dgList = New DataGridView()
         Label5 = New Label()
         PictureBox1 = New PictureBox()
         Panel1 = New Panel()
         Label6 = New Label()
-        CType(NumericUpDown1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nudQty, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dgList, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
         SuspendLayout()
         ' 
-        ' ComboBox1
+        ' cbGudangAsal
         ' 
-        ComboBox1.FormattingEnabled = True
-        ComboBox1.Location = New Point(490, 212)
-        ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(339, 28)
-        ComboBox1.TabIndex = 0
+        cbGudangAsal.FormattingEnabled = True
+        cbGudangAsal.Location = New Point(490, 212)
+        cbGudangAsal.Name = "cbGudangAsal"
+        cbGudangAsal.Size = New Size(339, 28)
+        cbGudangAsal.TabIndex = 0
         ' 
         ' Label1
         ' 
@@ -62,13 +62,13 @@ Partial Class FromTransferAntarGudang
         Label1.TabIndex = 1
         Label1.Text = "Gudang Asal"
         ' 
-        ' ComboBox2
+        ' cbGudangTujuan
         ' 
-        ComboBox2.FormattingEnabled = True
-        ComboBox2.Location = New Point(490, 291)
-        ComboBox2.Name = "ComboBox2"
-        ComboBox2.Size = New Size(339, 28)
-        ComboBox2.TabIndex = 2
+        cbGudangTujuan.FormattingEnabled = True
+        cbGudangTujuan.Location = New Point(490, 291)
+        cbGudangTujuan.Name = "cbGudangTujuan"
+        cbGudangTujuan.Size = New Size(339, 28)
+        cbGudangTujuan.TabIndex = 2
         ' 
         ' Label2
         ' 
@@ -88,65 +88,65 @@ Partial Class FromTransferAntarGudang
         Label3.TabIndex = 4
         Label3.Text = "Barang"
         ' 
-        ' ComboBox3
+        ' cbBarang
         ' 
-        ComboBox3.FormattingEnabled = True
-        ComboBox3.Location = New Point(490, 376)
-        ComboBox3.Name = "ComboBox3"
-        ComboBox3.Size = New Size(339, 28)
-        ComboBox3.TabIndex = 5
+        cbBarang.FormattingEnabled = True
+        cbBarang.Location = New Point(490, 376)
+        cbBarang.Name = "cbBarang"
+        cbBarang.Size = New Size(339, 28)
+        cbBarang.TabIndex = 5
         ' 
-        ' Button1
+        ' btnRefresh
         ' 
-        Button1.BackColor = Color.DeepSkyBlue
-        Button1.Location = New Point(1729, 751)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(136, 29)
-        Button1.TabIndex = 6
-        Button1.Text = "Refresh"
-        Button1.UseVisualStyleBackColor = False
+        btnRefresh.BackColor = Color.DeepSkyBlue
+        btnRefresh.Location = New Point(1729, 751)
+        btnRefresh.Name = "btnRefresh"
+        btnRefresh.Size = New Size(136, 29)
+        btnRefresh.TabIndex = 6
+        btnRefresh.Text = "Refresh"
+        btnRefresh.UseVisualStyleBackColor = False
         ' 
-        ' Button2
+        ' btnSimpan
         ' 
-        Button2.BackColor = SystemColors.ActiveCaptionText
-        Button2.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button2.ForeColor = SystemColors.ButtonHighlight
-        Button2.Location = New Point(342, 552)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(136, 29)
-        Button2.TabIndex = 7
-        Button2.Text = "Simpan"
-        Button2.UseVisualStyleBackColor = False
+        btnSimpan.BackColor = SystemColors.ActiveCaptionText
+        btnSimpan.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnSimpan.ForeColor = SystemColors.ButtonHighlight
+        btnSimpan.Location = New Point(342, 552)
+        btnSimpan.Name = "btnSimpan"
+        btnSimpan.Size = New Size(136, 29)
+        btnSimpan.TabIndex = 7
+        btnSimpan.Text = "Simpan"
+        btnSimpan.UseVisualStyleBackColor = False
         ' 
-        ' Button3
+        ' btnTambahItem
         ' 
-        Button3.BackColor = SystemColors.AppWorkspace
-        Button3.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button3.ForeColor = SystemColors.ButtonHighlight
-        Button3.Location = New Point(510, 552)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(136, 29)
-        Button3.TabIndex = 8
-        Button3.Text = "Tambah Item"
-        Button3.UseVisualStyleBackColor = False
+        btnTambahItem.BackColor = SystemColors.AppWorkspace
+        btnTambahItem.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnTambahItem.ForeColor = SystemColors.ButtonHighlight
+        btnTambahItem.Location = New Point(510, 552)
+        btnTambahItem.Name = "btnTambahItem"
+        btnTambahItem.Size = New Size(136, 29)
+        btnTambahItem.TabIndex = 8
+        btnTambahItem.Text = "Tambah Item"
+        btnTambahItem.UseVisualStyleBackColor = False
         ' 
-        ' Button4
+        ' btnKembali
         ' 
-        Button4.BackColor = Color.OldLace
-        Button4.ForeColor = SystemColors.ControlText
-        Button4.Location = New Point(694, 552)
-        Button4.Name = "Button4"
-        Button4.Size = New Size(136, 29)
-        Button4.TabIndex = 9
-        Button4.Text = "Kembali"
-        Button4.UseVisualStyleBackColor = False
+        btnKembali.BackColor = Color.OldLace
+        btnKembali.ForeColor = SystemColors.ControlText
+        btnKembali.Location = New Point(694, 552)
+        btnKembali.Name = "btnKembali"
+        btnKembali.Size = New Size(136, 29)
+        btnKembali.TabIndex = 9
+        btnKembali.Text = "Kembali"
+        btnKembali.UseVisualStyleBackColor = False
         ' 
-        ' NumericUpDown1
+        ' nudQty
         ' 
-        NumericUpDown1.Location = New Point(490, 458)
-        NumericUpDown1.Name = "NumericUpDown1"
-        NumericUpDown1.Size = New Size(142, 27)
-        NumericUpDown1.TabIndex = 10
+        nudQty.Location = New Point(490, 458)
+        nudQty.Name = "nudQty"
+        nudQty.Size = New Size(142, 27)
+        nudQty.TabIndex = 10
         ' 
         ' Label4
         ' 
@@ -157,15 +157,15 @@ Partial Class FromTransferAntarGudang
         Label4.TabIndex = 11
         Label4.Text = "Qty"
         ' 
-        ' DataGridView1
+        ' dgList
         ' 
-        DataGridView1.BackgroundColor = SystemColors.ButtonHighlight
-        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Location = New Point(898, 270)
-        DataGridView1.Name = "DataGridView1"
-        DataGridView1.RowHeadersWidth = 51
-        DataGridView1.Size = New Size(968, 453)
-        DataGridView1.TabIndex = 12
+        dgList.BackgroundColor = SystemColors.ButtonHighlight
+        dgList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgList.Location = New Point(898, 270)
+        dgList.Name = "dgList"
+        dgList.RowHeadersWidth = 51
+        dgList.Size = New Size(968, 453)
+        dgList.TabIndex = 12
         ' 
         ' Label5
         ' 
@@ -212,24 +212,24 @@ Partial Class FromTransferAntarGudang
         Controls.Add(Panel1)
         Controls.Add(PictureBox1)
         Controls.Add(Label5)
-        Controls.Add(DataGridView1)
+        Controls.Add(dgList)
         Controls.Add(Label4)
-        Controls.Add(NumericUpDown1)
-        Controls.Add(Button4)
-        Controls.Add(Button3)
-        Controls.Add(Button2)
-        Controls.Add(Button1)
-        Controls.Add(ComboBox3)
+        Controls.Add(nudQty)
+        Controls.Add(btnKembali)
+        Controls.Add(btnTambahItem)
+        Controls.Add(btnSimpan)
+        Controls.Add(btnRefresh)
+        Controls.Add(cbBarang)
         Controls.Add(Label3)
         Controls.Add(Label2)
-        Controls.Add(ComboBox2)
+        Controls.Add(cbGudangTujuan)
         Controls.Add(Label1)
-        Controls.Add(ComboBox1)
+        Controls.Add(cbGudangAsal)
         Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Name = "FromTransferAntarGudang"
         Text = "FromTransferAntarGudang"
-        CType(NumericUpDown1, ComponentModel.ISupportInitialize).EndInit()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
+        CType(nudQty, ComponentModel.ISupportInitialize).EndInit()
+        CType(dgList, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
@@ -237,19 +237,19 @@ Partial Class FromTransferAntarGudang
         PerformLayout()
     End Sub
 
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cbGudangAsal As ComboBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents cbGudangTujuan As ComboBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents ComboBox3 As ComboBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents NumericUpDown1 As NumericUpDown
+    Friend WithEvents cbBarang As ComboBox
+    Friend WithEvents btnRefresh As Button
+    Friend WithEvents btnSimpan As Button
+    Friend WithEvents btnTambahItem As Button
+    Friend WithEvents btnKembali As Button
+    Friend WithEvents nudQty As NumericUpDown
     Friend WithEvents Label4 As Label
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dgList As DataGridView
     Friend WithEvents Label5 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Panel1 As Panel

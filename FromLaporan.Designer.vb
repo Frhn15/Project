@@ -22,7 +22,7 @@ Partial Class FromLaporan
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        cmbJenisLaporan = New ComboBox()
+        cbPilih = New ComboBox()
         dtDari = New DateTimePicker()
         dtSampai = New DateTimePicker()
         txtCari = New TextBox()
@@ -40,14 +40,14 @@ Partial Class FromLaporan
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
-        ' cmbJenisLaporan
+        ' cbPilih
         ' 
-        cmbJenisLaporan.FormattingEnabled = True
-        cmbJenisLaporan.Items.AddRange(New Object() {"Barang Masuk", "Barang Keluar", "Transfer Gudang", "Stock Opname", "Stok Gudang"})
-        cmbJenisLaporan.Location = New Point(742, 186)
-        cmbJenisLaporan.Name = "cmbJenisLaporan"
-        cmbJenisLaporan.Size = New Size(571, 28)
-        cmbJenisLaporan.TabIndex = 0
+        cbPilih.FormattingEnabled = True
+        cbPilih.Items.AddRange(New Object() {"Barang Masuk", "Barang Keluar", "Transfer Gudang", "Stock Opname", "Stok Gudang"})
+        cbPilih.Location = New Point(742, 186)
+        cbPilih.Name = "cbPilih"
+        cbPilih.Size = New Size(571, 28)
+        cbPilih.TabIndex = 0
         ' 
         ' dtDari
         ' 
@@ -189,7 +189,7 @@ Partial Class FromLaporan
         Controls.Add(txtCari)
         Controls.Add(dtSampai)
         Controls.Add(dtDari)
-        Controls.Add(cmbJenisLaporan)
+        Controls.Add(cbPilih)
         Name = "FromLaporan"
         Text = "FromLaporan"
         CType(dgLaporan, ComponentModel.ISupportInitialize).EndInit()
@@ -198,7 +198,7 @@ Partial Class FromLaporan
         PerformLayout()
     End Sub
 
-    Friend WithEvents cmbJenisLaporan As ComboBox
+    Friend WithEvents cbPilih As ComboBox
     Friend WithEvents dtDari As DateTimePicker
     Friend WithEvents dtSampai As DateTimePicker
     Friend WithEvents txtCari As TextBox
