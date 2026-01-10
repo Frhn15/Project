@@ -145,20 +145,20 @@ WHERE
             LogoutToolStripMenuItem1.Enabled = True
 
             'Petugas tidak boleh akses:
-            EditStokBarangToolStripMenuItem.Enabled = False
+            EditStokBarangToolStripMenuItem.Visible = False
             LaporanMasukKeluarToolStripMenuItem.Enabled = False
             datamaster.Enabled = False
             MasterKategoriToolStripMenuItem.Enabled = False
             MasterSuplierToolStripMenuItem.Enabled = False
             TransferAntarGudangToolStripMenuItem.Enabled = False
-            usermanagement.Enabled = False
+            usermanagement.Visible = False
             StockOpnameToolStripMenuItem.Enabled = False
             MasterGudangToolStripMenuItem.Enabled = False
 
         ElseIf role = "admin" Then
 
             'Admin boleh semua
-            EditStokBarangToolStripMenuItem.Enabled = True
+            EditStokBarangToolStripMenuItem.Visible = True
             StokBarangToolStripMenuItem.Enabled = True
             TransaksiMasukToolStripMenuItem.Enabled = True
             TransaksiKeluarToolStripMenuItem.Enabled = True
@@ -168,7 +168,7 @@ WHERE
             MasterKategoriToolStripMenuItem.Enabled = True
             MasterSuplierToolStripMenuItem.Enabled = True
             TransferAntarGudangToolStripMenuItem.Enabled = True
-            usermanagement.Enabled = True
+            usermanagement.Visible = True
             StockOpnameToolStripMenuItem.Enabled = True
             MasterGudangToolStripMenuItem.Enabled = True
         End If
@@ -265,6 +265,10 @@ WHERE
     End Sub
 
     Private Sub datamaster_Click(sender As Object, e As EventArgs) Handles datamaster.Click
+
+    End Sub
+
+    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
 
     End Sub
 End Class
