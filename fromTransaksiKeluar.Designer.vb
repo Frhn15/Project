@@ -32,7 +32,7 @@ Partial Class fromTransaksiKeluar
         Panel4 = New Panel()
         Panel5 = New Panel()
         Label1 = New Label()
-        dgvKeluar = New DataGridView()
+        dgList = New DataGridView()
         Panelleft = New Panel()
         btnKembali = New Button()
         Panel2 = New Panel()
@@ -44,6 +44,7 @@ Partial Class fromTransaksiKeluar
         nudQty = New NumericUpDown()
         cbBarang = New ComboBox()
         Pnldocument = New Panel()
+        dtTanggal = New DateTimePicker()
         Panel1 = New Panel()
         txtKeterangan = New TextBox()
         txtTujuan = New TextBox()
@@ -55,13 +56,12 @@ Partial Class fromTransaksiKeluar
         tggl = New Label()
         no = New Label()
         detaildokumen = New Label()
-        dtTanggal = New DateTimePicker()
         Panelhead.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panelright.SuspendLayout()
         Panel6.SuspendLayout()
         Panel4.SuspendLayout()
-        CType(dgvKeluar, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dgList, ComponentModel.ISupportInitialize).BeginInit()
         Panelleft.SuspendLayout()
         Panel2.SuspendLayout()
         CType(nudQty, ComponentModel.ISupportInitialize).BeginInit()
@@ -77,7 +77,7 @@ Partial Class fromTransaksiKeluar
         Panelhead.Location = New Point(0, 0)
         Panelhead.Margin = New Padding(3, 4, 3, 4)
         Panelhead.Name = "Panelhead"
-        Panelhead.Size = New Size(1419, 94)
+        Panelhead.Size = New Size(1559, 94)
         Panelhead.TabIndex = 0
         ' 
         ' PictureBox1
@@ -110,17 +110,17 @@ Partial Class fromTransaksiKeluar
         Panelright.Location = New Point(0, 94)
         Panelright.Margin = New Padding(3, 4, 3, 4)
         Panelright.Name = "Panelright"
-        Panelright.Size = New Size(1419, 750)
+        Panelright.Size = New Size(1559, 853)
         Panelright.TabIndex = 1
         ' 
         ' Panel6
         ' 
         Panel6.Controls.Add(btnSimpanTransaksi)
         Panel6.Dock = DockStyle.Bottom
-        Panel6.Location = New Point(491, 666)
+        Panel6.Location = New Point(491, 769)
         Panel6.Margin = New Padding(3, 4, 3, 4)
         Panel6.Name = "Panel6"
-        Panel6.Size = New Size(928, 84)
+        Panel6.Size = New Size(1068, 84)
         Panel6.TabIndex = 2
         ' 
         ' btnSimpanTransaksi
@@ -141,7 +141,7 @@ Partial Class fromTransaksiKeluar
         ' 
         Panel4.Controls.Add(Panel5)
         Panel4.Controls.Add(Label1)
-        Panel4.Controls.Add(dgvKeluar)
+        Panel4.Controls.Add(dgList)
         Panel4.Location = New Point(491, 54)
         Panel4.Margin = New Padding(3, 4, 3, 4)
         Panel4.Name = "Panel4"
@@ -168,23 +168,23 @@ Partial Class fromTransaksiKeluar
         Label1.TabIndex = 15
         Label1.Text = "Detail Dokumen"
         ' 
-        ' dgvKeluar
+        ' dgList
         ' 
-        dgvKeluar.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
-        dgvKeluar.BackgroundColor = Color.FromArgb(CByte(225), CByte(225), CByte(225))
-        dgvKeluar.BorderStyle = BorderStyle.None
-        dgvKeluar.ColumnHeadersHeight = 29
-        dgvKeluar.EnableHeadersVisualStyles = False
-        dgvKeluar.GridColor = Color.FromArgb(CByte(167), CByte(163), CByte(156))
-        dgvKeluar.Location = New Point(28, 70)
-        dgvKeluar.Margin = New Padding(3, 4, 3, 4)
-        dgvKeluar.MultiSelect = False
-        dgvKeluar.Name = "dgvKeluar"
-        dgvKeluar.ReadOnly = True
-        dgvKeluar.RowHeadersWidth = 51
-        dgvKeluar.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        dgvKeluar.Size = New Size(897, 582)
-        dgvKeluar.TabIndex = 0
+        dgList.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        dgList.BackgroundColor = Color.FromArgb(CByte(225), CByte(225), CByte(225))
+        dgList.BorderStyle = BorderStyle.None
+        dgList.ColumnHeadersHeight = 29
+        dgList.EnableHeadersVisualStyles = False
+        dgList.GridColor = Color.FromArgb(CByte(167), CByte(163), CByte(156))
+        dgList.Location = New Point(28, 70)
+        dgList.Margin = New Padding(3, 4, 3, 4)
+        dgList.MultiSelect = False
+        dgList.Name = "dgList"
+        dgList.ReadOnly = True
+        dgList.RowHeadersWidth = 51
+        dgList.SelectionMode = DataGridViewSelectionMode.FullRowSelect
+        dgList.Size = New Size(897, 582)
+        dgList.TabIndex = 0
         ' 
         ' Panelleft
         ' 
@@ -195,7 +195,7 @@ Partial Class fromTransaksiKeluar
         Panelleft.Location = New Point(0, 0)
         Panelleft.Margin = New Padding(3, 4, 3, 4)
         Panelleft.Name = "Panelleft"
-        Panelleft.Size = New Size(491, 750)
+        Panelleft.Size = New Size(491, 853)
         Panelleft.TabIndex = 0
         ' 
         ' btnKembali
@@ -327,6 +327,13 @@ Partial Class fromTransaksiKeluar
         Pnldocument.Size = New Size(457, 346)
         Pnldocument.TabIndex = 0
         ' 
+        ' dtTanggal
+        ' 
+        dtTanggal.Location = New Point(167, 119)
+        dtTanggal.Name = "dtTanggal"
+        dtTanggal.Size = New Size(265, 27)
+        dtTanggal.TabIndex = 15
+        ' 
         ' Panel1
         ' 
         Panel1.BackColor = Color.FromArgb(CByte(150), CByte(150), CByte(150))
@@ -437,19 +444,12 @@ Partial Class fromTransaksiKeluar
         detaildokumen.TabIndex = 0
         detaildokumen.Text = "Detail Dokumen"
         ' 
-        ' dtTanggal
-        ' 
-        dtTanggal.Location = New Point(167, 119)
-        dtTanggal.Name = "dtTanggal"
-        dtTanggal.Size = New Size(265, 27)
-        dtTanggal.TabIndex = 15
-        ' 
         ' fromTransaksiKeluar
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
-        ClientSize = New Size(1419, 844)
+        ClientSize = New Size(1559, 947)
         Controls.Add(Panelright)
         Controls.Add(Panelhead)
         Margin = New Padding(3, 2, 3, 2)
@@ -462,7 +462,7 @@ Partial Class fromTransaksiKeluar
         Panel6.ResumeLayout(False)
         Panel4.ResumeLayout(False)
         Panel4.PerformLayout()
-        CType(dgvKeluar, ComponentModel.ISupportInitialize).EndInit()
+        CType(dgList, ComponentModel.ISupportInitialize).EndInit()
         Panelleft.ResumeLayout(False)
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
@@ -494,7 +494,7 @@ Partial Class fromTransaksiKeluar
     Friend WithEvents input As Label
     Friend WithEvents nudQty As NumericUpDown
     Friend WithEvents cbBarang As ComboBox
-    Friend WithEvents dgvKeluar As DataGridView
+    Friend WithEvents dgList As DataGridView
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Panel6 As Panel
     Friend WithEvents btnSimpanTransaksi As Button

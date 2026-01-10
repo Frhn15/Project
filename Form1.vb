@@ -145,20 +145,20 @@ WHERE
             LogoutToolStripMenuItem1.Enabled = True
 
             'Petugas tidak boleh akses:
-            EditStokBarangToolStripMenuItem.Visible = False
+            EditStokBarangToolStripMenuItem.Enabled = False
             LaporanMasukKeluarToolStripMenuItem.Enabled = False
             datamaster.Enabled = False
             MasterKategoriToolStripMenuItem.Enabled = False
             MasterSuplierToolStripMenuItem.Enabled = False
             TransferAntarGudangToolStripMenuItem.Enabled = False
-            usermanagement.Visible = False
+            usermanagement.Enabled = False
             StockOpnameToolStripMenuItem.Enabled = False
             MasterGudangToolStripMenuItem.Enabled = False
 
         ElseIf role = "admin" Then
 
             'Admin boleh semua
-            EditStokBarangToolStripMenuItem.Visible = True
+            EditStokBarangToolStripMenuItem.Enabled = True
             StokBarangToolStripMenuItem.Enabled = True
             TransaksiMasukToolStripMenuItem.Enabled = True
             TransaksiKeluarToolStripMenuItem.Enabled = True
@@ -168,7 +168,7 @@ WHERE
             MasterKategoriToolStripMenuItem.Enabled = True
             MasterSuplierToolStripMenuItem.Enabled = True
             TransferAntarGudangToolStripMenuItem.Enabled = True
-            usermanagement.Visible = True
+            usermanagement.Enabled = True
             StockOpnameToolStripMenuItem.Enabled = True
             MasterGudangToolStripMenuItem.Enabled = True
         End If
