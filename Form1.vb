@@ -12,7 +12,7 @@ Public Class Form1
     ' Kunci Semua Menu
     '===============================
     Public Sub KunciMenu()
-        EditStokBarangToolStripMenuItem.Enabled = False
+        EditStokBarangToolStripMenuItem.Visible = False
         StokBarangToolStripMenuItem.Enabled = False
         TransaksiMasukToolStripMenuItem.Enabled = False
         TransaksiKeluarToolStripMenuItem.Enabled = False
@@ -22,7 +22,7 @@ Public Class Form1
         MasterKategoriToolStripMenuItem.Enabled = False
         MasterSuplierToolStripMenuItem.Enabled = False
         TransferAntarGudangToolStripMenuItem.Enabled = False
-        usermanagement.Enabled = False
+        usermanagement.Visible = False
         StockOpnameToolStripMenuItem.Enabled = False
         MasterGudangToolStripMenuItem.Enabled = False
     End Sub
