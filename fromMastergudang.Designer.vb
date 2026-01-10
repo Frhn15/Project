@@ -162,6 +162,7 @@ Partial Class fromMastergudang
         ' dgGudang
         ' 
         dgGudang.Anchor = AnchorStyles.None
+        dgGudang.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         dgGudang.BackgroundColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
         dgGudang.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgGudang.Location = New Point(130, 365)

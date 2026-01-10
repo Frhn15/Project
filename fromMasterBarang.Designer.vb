@@ -222,6 +222,7 @@ Partial Class fromMasterBarang
         ' 
         ' DataGridView1
         ' 
+        DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         DataGridView1.BackgroundColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridView1.GridColor = Color.FromArgb(CByte(167), CByte(163), CByte(156))

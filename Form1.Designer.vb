@@ -83,11 +83,10 @@ Partial Class Form1
         Button2 = New Button()
         Button1 = New Button()
         Panel11 = New Panel()
-        Label9 = New Label()
+        lblRole = New Label()
         Label8 = New Label()
         PictureBox8 = New PictureBox()
         Panel14 = New Panel()
-        lblRole = New Label()
         PanelTransaksiTerakhir = New Panel()
         Label11 = New Label()
         dgTransaksiTerakhir = New DataGridView()
@@ -117,7 +116,6 @@ Partial Class Form1
         Panel13.SuspendLayout()
         Panel11.SuspendLayout()
         CType(PictureBox8, ComponentModel.ISupportInitialize).BeginInit()
-        Panel14.SuspendLayout()
         PanelTransaksiTerakhir.SuspendLayout()
         CType(dgTransaksiTerakhir, ComponentModel.ISupportInitialize).BeginInit()
         PanelStokMenipis.SuspendLayout()
@@ -175,7 +173,7 @@ Partial Class Form1
         MenuStrip1.Name = "MenuStrip1"
         MenuStrip1.Padding = New Padding(11, 0, 6, 0)
         MenuStrip1.RenderMode = ToolStripRenderMode.Professional
-        MenuStrip1.Size = New Size(1776, 29)
+        MenuStrip1.Size = New Size(1626, 29)
         MenuStrip1.TabIndex = 1
         MenuStrip1.Text = "MenuStrip1"
         ' 
@@ -239,7 +237,7 @@ Partial Class Form1
         ' StokGudangToolStripMenuItem
         ' 
         StokGudangToolStripMenuItem.Name = "StokGudangToolStripMenuItem"
-        StokGudangToolStripMenuItem.Size = New Size(224, 30)
+        StokGudangToolStripMenuItem.Size = New Size(208, 30)
         StokGudangToolStripMenuItem.Text = "Stok Gudang"
         ' 
         ' TransaksiMasukToolStripMenuItem
@@ -339,11 +337,11 @@ Partial Class Form1
         ' lblMasukHariIni
         ' 
         lblMasukHariIni.AutoSize = True
-        lblMasukHariIni.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblMasukHariIni.Font = New Font("Segoe UI Semibold", 16F, FontStyle.Bold)
         lblMasukHariIni.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
-        lblMasukHariIni.Location = New Point(231, 69)
+        lblMasukHariIni.Location = New Point(216, 62)
         lblMasukHariIni.Name = "lblMasukHariIni"
-        lblMasukHariIni.Size = New Size(24, 31)
+        lblMasukHariIni.Size = New Size(28, 37)
         lblMasukHariIni.TabIndex = 4
         lblMasukHariIni.Text = "_"
         ' 
@@ -382,11 +380,11 @@ Partial Class Form1
         ' 
         lblStokMenipis.AutoSize = True
         lblStokMenipis.BackColor = Color.Transparent
-        lblStokMenipis.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblStokMenipis.Font = New Font("Segoe UI Semibold", 16F, FontStyle.Bold)
         lblStokMenipis.ForeColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
-        lblStokMenipis.Location = New Point(319, 69)
+        lblStokMenipis.Location = New Point(327, 68)
         lblStokMenipis.Name = "lblStokMenipis"
-        lblStokMenipis.Size = New Size(24, 31)
+        lblStokMenipis.Size = New Size(28, 37)
         lblStokMenipis.TabIndex = 4
         lblStokMenipis.Text = "_"
         ' 
@@ -425,11 +423,11 @@ Partial Class Form1
         ' lblStokAman
         ' 
         lblStokAman.AutoSize = True
-        lblStokAman.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblStokAman.Font = New Font("Segoe UI Semibold", 16F, FontStyle.Bold)
         lblStokAman.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
-        lblStokAman.Location = New Point(304, 69)
+        lblStokAman.Location = New Point(328, 62)
         lblStokAman.Name = "lblStokAman"
-        lblStokAman.Size = New Size(24, 31)
+        lblStokAman.Size = New Size(28, 37)
         lblStokAman.TabIndex = 3
         lblStokAman.Text = "_"
         ' 
@@ -468,11 +466,11 @@ Partial Class Form1
         ' lblTotalItem
         ' 
         lblTotalItem.AutoSize = True
-        lblTotalItem.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblTotalItem.Font = New Font("Segoe UI Semibold", 16F, FontStyle.Bold)
         lblTotalItem.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
         lblTotalItem.Location = New Point(290, 68)
         lblTotalItem.Name = "lblTotalItem"
-        lblTotalItem.Size = New Size(24, 31)
+        lblTotalItem.Size = New Size(28, 37)
         lblTotalItem.TabIndex = 2
         lblTotalItem.Text = "_"
         ' 
@@ -511,11 +509,11 @@ Partial Class Form1
         ' lblKeluarHariIni
         ' 
         lblKeluarHariIni.AutoSize = True
-        lblKeluarHariIni.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblKeluarHariIni.Font = New Font("Segoe UI Semibold", 16F, FontStyle.Bold)
         lblKeluarHariIni.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
-        lblKeluarHariIni.Location = New Point(229, 69)
+        lblKeluarHariIni.Location = New Point(214, 63)
         lblKeluarHariIni.Name = "lblKeluarHariIni"
-        lblKeluarHariIni.Size = New Size(24, 31)
+        lblKeluarHariIni.Size = New Size(28, 37)
         lblKeluarHariIni.TabIndex = 5
         lblKeluarHariIni.Text = "_"
         ' 
@@ -554,11 +552,11 @@ Partial Class Form1
         ' lblTransferHariIni
         ' 
         lblTransferHariIni.AutoSize = True
-        lblTransferHariIni.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblTransferHariIni.Font = New Font("Segoe UI Semibold", 16F, FontStyle.Bold)
         lblTransferHariIni.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
         lblTransferHariIni.Location = New Point(229, 69)
         lblTransferHariIni.Name = "lblTransferHariIni"
-        lblTransferHariIni.Size = New Size(24, 31)
+        lblTransferHariIni.Size = New Size(28, 37)
         lblTransferHariIni.TabIndex = 6
         lblTransferHariIni.Text = "_"
         ' 
@@ -600,7 +598,7 @@ Partial Class Form1
         Panel2.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
         Panel2.Location = New Point(0, 0)
         Panel2.Name = "Panel2"
-        Panel2.Size = New Size(1539, 840)
+        Panel2.Size = New Size(1859, 840)
         Panel2.TabIndex = 10
         ' 
         ' Panel13
@@ -711,7 +709,7 @@ Partial Class Form1
         ' Panel11
         ' 
         Panel11.BackColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
-        Panel11.Controls.Add(Label9)
+        Panel11.Controls.Add(lblRole)
         Panel11.Controls.Add(Label8)
         Panel11.Controls.Add(PictureBox8)
         Panel11.Controls.Add(Panel14)
@@ -720,16 +718,17 @@ Partial Class Form1
         Panel11.Size = New Size(421, 247)
         Panel11.TabIndex = 9
         ' 
-        ' Label9
+        ' lblRole
         ' 
-        Label9.AutoSize = True
-        Label9.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label9.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
-        Label9.Location = New Point(85, 36)
-        Label9.Name = "Label9"
-        Label9.Size = New Size(145, 28)
-        Label9.TabIndex = 7
-        Label9.Text = "Gudang Utama"
+        lblRole.AutoSize = True
+        lblRole.BackColor = Color.Transparent
+        lblRole.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblRole.ForeColor = Color.Black
+        lblRole.Location = New Point(90, 39)
+        lblRole.Name = "lblRole"
+        lblRole.Size = New Size(24, 31)
+        lblRole.TabIndex = 5
+        lblRole.Text = "_"
         ' 
         ' Label8
         ' 
@@ -754,23 +753,10 @@ Partial Class Form1
         ' Panel14
         ' 
         Panel14.BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
-        Panel14.Controls.Add(lblRole)
         Panel14.Location = New Point(17, 80)
         Panel14.Name = "Panel14"
         Panel14.Size = New Size(387, 155)
         Panel14.TabIndex = 0
-        ' 
-        ' lblRole
-        ' 
-        lblRole.AutoSize = True
-        lblRole.BackColor = Color.Transparent
-        lblRole.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblRole.ForeColor = Color.Black
-        lblRole.Location = New Point(197, 96)
-        lblRole.Name = "lblRole"
-        lblRole.Size = New Size(24, 31)
-        lblRole.TabIndex = 5
-        lblRole.Text = "_"
         ' 
         ' PanelTransaksiTerakhir
         ' 
@@ -795,6 +781,7 @@ Partial Class Form1
         ' 
         ' dgTransaksiTerakhir
         ' 
+        dgTransaksiTerakhir.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         dgTransaksiTerakhir.BackgroundColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
         dgTransaksiTerakhir.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgTransaksiTerakhir.EnableHeadersVisualStyles = False
@@ -828,6 +815,7 @@ Partial Class Form1
         ' 
         ' dgStokMenipis
         ' 
+        dgStokMenipis.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         dgStokMenipis.BackgroundColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
         dgStokMenipis.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgStokMenipis.EnableHeadersVisualStyles = False
@@ -868,7 +856,7 @@ Partial Class Form1
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(1539, 840)
+        ClientSize = New Size(1859, 840)
         Controls.Add(Label1)
         Controls.Add(lblJam)
         Controls.Add(lblUser)
@@ -908,8 +896,6 @@ Partial Class Form1
         Panel11.ResumeLayout(False)
         Panel11.PerformLayout()
         CType(PictureBox8, ComponentModel.ISupportInitialize).EndInit()
-        Panel14.ResumeLayout(False)
-        Panel14.PerformLayout()
         PanelTransaksiTerakhir.ResumeLayout(False)
         PanelTransaksiTerakhir.PerformLayout()
         CType(dgTransaksiTerakhir, ComponentModel.ISupportInitialize).EndInit()

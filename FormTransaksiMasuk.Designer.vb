@@ -249,6 +249,7 @@ Partial Class FormTransaksiMasuk
         ' 
         ' DataGridView1
         ' 
+        DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         DataGridView1.BackgroundColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridView1.Location = New Point(687, 166)

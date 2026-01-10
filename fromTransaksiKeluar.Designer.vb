@@ -170,12 +170,13 @@ Partial Class fromTransaksiKeluar
         ' 
         ' dgvKeluar
         ' 
+        dgvKeluar.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         dgvKeluar.BackgroundColor = Color.FromArgb(CByte(225), CByte(225), CByte(225))
         dgvKeluar.BorderStyle = BorderStyle.None
         dgvKeluar.ColumnHeadersHeight = 29
         dgvKeluar.EnableHeadersVisualStyles = False
         dgvKeluar.GridColor = Color.FromArgb(CByte(167), CByte(163), CByte(156))
-        dgvKeluar.Location = New Point(19, 70)
+        dgvKeluar.Location = New Point(28, 70)
         dgvKeluar.Margin = New Padding(3, 4, 3, 4)
         dgvKeluar.MultiSelect = False
         dgvKeluar.Name = "dgvKeluar"

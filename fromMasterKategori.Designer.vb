@@ -118,6 +118,7 @@ Partial Class fromMasterKategori
         ' 
         dgKategori.AllowUserToAddRows = False
         dgKategori.AllowUserToDeleteRows = False
+        dgKategori.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         dgKategori.BackgroundColor = Color.FromArgb(CByte(225), CByte(225), CByte(225))
         dgKategori.BorderStyle = BorderStyle.None
         dgKategori.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
@@ -176,9 +177,9 @@ Partial Class fromMasterKategori
         btnClear.BackColor = Color.FromArgb(CByte(225), CByte(216), CByte(203))
         btnClear.FlatStyle = FlatStyle.Flat
         btnClear.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
-        btnClear.Location = New Point(337, 206)
+        btnClear.Location = New Point(304, 206)
         btnClear.Name = "btnClear"
-        btnClear.Size = New Size(100, 36)
+        btnClear.Size = New Size(128, 36)
         btnClear.TabIndex = 21
         btnClear.Text = "Clear"
         btnClear.UseVisualStyleBackColor = False
@@ -189,9 +190,9 @@ Partial Class fromMasterKategori
         btnEdit.FlatAppearance.BorderSize = 0
         btnEdit.FlatStyle = FlatStyle.Flat
         btnEdit.ForeColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
-        btnEdit.Location = New Point(176, 206)
+        btnEdit.Location = New Point(165, 206)
         btnEdit.Name = "btnEdit"
-        btnEdit.Size = New Size(100, 36)
+        btnEdit.Size = New Size(128, 36)
         btnEdit.TabIndex = 19
         btnEdit.Text = "Edit"
         btnEdit.UseVisualStyleBackColor = False
@@ -214,7 +215,7 @@ Partial Class fromMasterKategori
         btnSimpan.ForeColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
         btnSimpan.Location = New Point(23, 206)
         btnSimpan.Name = "btnSimpan"
-        btnSimpan.Size = New Size(100, 36)
+        btnSimpan.Size = New Size(128, 36)
         btnSimpan.TabIndex = 11
         btnSimpan.Text = "Simpan"
         btnSimpan.UseVisualStyleBackColor = False
