@@ -28,34 +28,34 @@ Partial Class fromTransaksiKeluar
         transaksikeluar = New Label()
         Panelright = New Panel()
         Panel6 = New Panel()
-        btnSimtrans = New Button()
+        btnSimpanTransaksi = New Button()
         Panel4 = New Panel()
         Panel5 = New Panel()
         Label1 = New Label()
         dgvKeluar = New DataGridView()
         Panelleft = New Panel()
-        btnkembali = New Button()
+        btnKembali = New Button()
         Panel2 = New Panel()
-        btnTambah = New Button()
+        btnTambahKeList = New Button()
         Label5 = New Label()
         pilih = New Label()
         Panel3 = New Panel()
         input = New Label()
-        qty = New NumericUpDown()
-        ComboBox1 = New ComboBox()
+        nudQty = New NumericUpDown()
+        cbBarang = New ComboBox()
         Pnldocument = New Panel()
         Panel1 = New Panel()
-        TextBox4 = New TextBox()
-        TextBox3 = New TextBox()
-        TextBox2 = New TextBox()
-        TextBox1 = New TextBox()
-        ComboBox3 = New ComboBox()
+        txtKeterangan = New TextBox()
+        txtTujuan = New TextBox()
+        txtNoDokumen = New TextBox()
+        cbGudangAsal = New ComboBox()
         Label4 = New Label()
         Label3 = New Label()
         Label2 = New Label()
         tggl = New Label()
         no = New Label()
         detaildokumen = New Label()
+        dtTanggal = New DateTimePicker()
         Panelhead.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panelright.SuspendLayout()
@@ -64,7 +64,7 @@ Partial Class fromTransaksiKeluar
         CType(dgvKeluar, ComponentModel.ISupportInitialize).BeginInit()
         Panelleft.SuspendLayout()
         Panel2.SuspendLayout()
-        CType(qty, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nudQty, ComponentModel.ISupportInitialize).BeginInit()
         Pnldocument.SuspendLayout()
         SuspendLayout()
         ' 
@@ -115,7 +115,7 @@ Partial Class fromTransaksiKeluar
         ' 
         ' Panel6
         ' 
-        Panel6.Controls.Add(btnSimtrans)
+        Panel6.Controls.Add(btnSimpanTransaksi)
         Panel6.Dock = DockStyle.Bottom
         Panel6.Location = New Point(491, 666)
         Panel6.Margin = New Padding(3, 4, 3, 4)
@@ -123,19 +123,19 @@ Partial Class fromTransaksiKeluar
         Panel6.Size = New Size(928, 84)
         Panel6.TabIndex = 2
         ' 
-        ' btnSimtrans
+        ' btnSimpanTransaksi
         ' 
-        btnSimtrans.BackColor = Color.FromArgb(CByte(67), CByte(67), CByte(67))
-        btnSimtrans.FlatAppearance.BorderSize = 0
-        btnSimtrans.FlatStyle = FlatStyle.Flat
-        btnSimtrans.ForeColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
-        btnSimtrans.Location = New Point(691, 22)
-        btnSimtrans.Margin = New Padding(3, 4, 3, 4)
-        btnSimtrans.Name = "btnSimtrans"
-        btnSimtrans.Size = New Size(193, 46)
-        btnSimtrans.TabIndex = 0
-        btnSimtrans.Text = "Simpan Transaksi"
-        btnSimtrans.UseVisualStyleBackColor = False
+        btnSimpanTransaksi.BackColor = Color.FromArgb(CByte(67), CByte(67), CByte(67))
+        btnSimpanTransaksi.FlatAppearance.BorderSize = 0
+        btnSimpanTransaksi.FlatStyle = FlatStyle.Flat
+        btnSimpanTransaksi.ForeColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
+        btnSimpanTransaksi.Location = New Point(691, 22)
+        btnSimpanTransaksi.Margin = New Padding(3, 4, 3, 4)
+        btnSimpanTransaksi.Name = "btnSimpanTransaksi"
+        btnSimpanTransaksi.Size = New Size(193, 46)
+        btnSimpanTransaksi.TabIndex = 0
+        btnSimpanTransaksi.Text = "Simpan Transaksi"
+        btnSimpanTransaksi.UseVisualStyleBackColor = False
         ' 
         ' Panel4
         ' 
@@ -188,7 +188,7 @@ Partial Class fromTransaksiKeluar
         ' 
         ' Panelleft
         ' 
-        Panelleft.Controls.Add(btnkembali)
+        Panelleft.Controls.Add(btnKembali)
         Panelleft.Controls.Add(Panel2)
         Panelleft.Controls.Add(Pnldocument)
         Panelleft.Dock = DockStyle.Left
@@ -198,48 +198,48 @@ Partial Class fromTransaksiKeluar
         Panelleft.Size = New Size(491, 750)
         Panelleft.TabIndex = 0
         ' 
-        ' btnkembali
+        ' btnKembali
         ' 
-        btnkembali.BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
-        btnkembali.FlatStyle = FlatStyle.Flat
-        btnkembali.ForeColor = Color.FromArgb(CByte(67), CByte(67), CByte(67))
-        btnkembali.Location = New Point(16, 742)
-        btnkembali.Margin = New Padding(3, 4, 3, 4)
-        btnkembali.Name = "btnkembali"
-        btnkembali.Size = New Size(139, 46)
-        btnkembali.TabIndex = 1
-        btnkembali.Text = "Kembali"
-        btnkembali.UseVisualStyleBackColor = False
+        btnKembali.BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
+        btnKembali.FlatStyle = FlatStyle.Flat
+        btnKembali.ForeColor = Color.FromArgb(CByte(67), CByte(67), CByte(67))
+        btnKembali.Location = New Point(16, 742)
+        btnKembali.Margin = New Padding(3, 4, 3, 4)
+        btnKembali.Name = "btnKembali"
+        btnKembali.Size = New Size(139, 46)
+        btnKembali.TabIndex = 1
+        btnKembali.Text = "Kembali"
+        btnKembali.UseVisualStyleBackColor = False
         ' 
         ' Panel2
         ' 
-        Panel2.Controls.Add(btnTambah)
+        Panel2.Controls.Add(btnTambahKeList)
         Panel2.Controls.Add(Label5)
         Panel2.Controls.Add(pilih)
         Panel2.Controls.Add(Panel3)
         Panel2.Controls.Add(input)
-        Panel2.Controls.Add(qty)
-        Panel2.Controls.Add(ComboBox1)
+        Panel2.Controls.Add(nudQty)
+        Panel2.Controls.Add(cbBarang)
         Panel2.Location = New Point(16, 430)
         Panel2.Margin = New Padding(3, 4, 3, 4)
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(457, 294)
         Panel2.TabIndex = 1
         ' 
-        ' btnTambah
+        ' btnTambahKeList
         ' 
-        btnTambah.BackColor = Color.FromArgb(CByte(69), CByte(69), CByte(69))
-        btnTambah.FlatAppearance.BorderSize = 0
-        btnTambah.FlatStyle = FlatStyle.Flat
-        btnTambah.Font = New Font("Segoe UI", 11F)
-        btnTambah.ForeColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
-        btnTambah.Location = New Point(17, 194)
-        btnTambah.Margin = New Padding(3, 4, 3, 4)
-        btnTambah.Name = "btnTambah"
-        btnTambah.Size = New Size(415, 48)
-        btnTambah.TabIndex = 18
-        btnTambah.Text = "Tambah Ke List"
-        btnTambah.UseVisualStyleBackColor = False
+        btnTambahKeList.BackColor = Color.FromArgb(CByte(69), CByte(69), CByte(69))
+        btnTambahKeList.FlatAppearance.BorderSize = 0
+        btnTambahKeList.FlatStyle = FlatStyle.Flat
+        btnTambahKeList.Font = New Font("Segoe UI", 11F)
+        btnTambahKeList.ForeColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
+        btnTambahKeList.Location = New Point(17, 194)
+        btnTambahKeList.Margin = New Padding(3, 4, 3, 4)
+        btnTambahKeList.Name = "btnTambahKeList"
+        btnTambahKeList.Size = New Size(415, 48)
+        btnTambahKeList.TabIndex = 18
+        btnTambahKeList.Text = "Tambah Ke List"
+        btnTambahKeList.UseVisualStyleBackColor = False
         ' 
         ' Label5
         ' 
@@ -283,38 +283,38 @@ Partial Class fromTransaksiKeluar
         input.TabIndex = 15
         input.Text = "Input Barang"
         ' 
-        ' qty
+        ' nudQty
         ' 
-        qty.BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
-        qty.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
-        qty.Location = New Point(167, 130)
-        qty.Margin = New Padding(3, 4, 3, 4)
-        qty.Maximum = New Decimal(New Integer() {9999, 0, 0, 0})
-        qty.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
-        qty.Name = "qty"
-        qty.Size = New Size(265, 27)
-        qty.TabIndex = 16
-        qty.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        nudQty.BackColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
+        nudQty.ForeColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
+        nudQty.Location = New Point(167, 130)
+        nudQty.Margin = New Padding(3, 4, 3, 4)
+        nudQty.Maximum = New Decimal(New Integer() {9999, 0, 0, 0})
+        nudQty.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        nudQty.Name = "nudQty"
+        nudQty.Size = New Size(265, 27)
+        nudQty.TabIndex = 16
+        nudQty.Value = New Decimal(New Integer() {1, 0, 0, 0})
         ' 
-        ' ComboBox1
+        ' cbBarang
         ' 
-        ComboBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList
-        ComboBox1.FormattingEnabled = True
-        ComboBox1.Location = New Point(167, 78)
-        ComboBox1.Margin = New Padding(3, 4, 3, 4)
-        ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(265, 28)
-        ComboBox1.TabIndex = 15
+        cbBarang.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        cbBarang.DropDownStyle = ComboBoxStyle.DropDownList
+        cbBarang.FormattingEnabled = True
+        cbBarang.Location = New Point(167, 78)
+        cbBarang.Margin = New Padding(3, 4, 3, 4)
+        cbBarang.Name = "cbBarang"
+        cbBarang.Size = New Size(265, 28)
+        cbBarang.TabIndex = 15
         ' 
         ' Pnldocument
         ' 
+        Pnldocument.Controls.Add(dtTanggal)
         Pnldocument.Controls.Add(Panel1)
-        Pnldocument.Controls.Add(TextBox4)
-        Pnldocument.Controls.Add(TextBox3)
-        Pnldocument.Controls.Add(TextBox2)
-        Pnldocument.Controls.Add(TextBox1)
-        Pnldocument.Controls.Add(ComboBox3)
+        Pnldocument.Controls.Add(txtKeterangan)
+        Pnldocument.Controls.Add(txtTujuan)
+        Pnldocument.Controls.Add(txtNoDokumen)
+        Pnldocument.Controls.Add(cbGudangAsal)
         Pnldocument.Controls.Add(Label4)
         Pnldocument.Controls.Add(Label3)
         Pnldocument.Controls.Add(Label2)
@@ -336,48 +336,40 @@ Partial Class fromTransaksiKeluar
         Panel1.Size = New Size(265, 2)
         Panel1.TabIndex = 14
         ' 
-        ' TextBox4
+        ' txtKeterangan
         ' 
-        TextBox4.Location = New Point(167, 280)
-        TextBox4.Margin = New Padding(3, 4, 3, 4)
-        TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(265, 27)
-        TextBox4.TabIndex = 13
+        txtKeterangan.Location = New Point(167, 280)
+        txtKeterangan.Margin = New Padding(3, 4, 3, 4)
+        txtKeterangan.Name = "txtKeterangan"
+        txtKeterangan.Size = New Size(265, 27)
+        txtKeterangan.TabIndex = 13
         ' 
-        ' TextBox3
+        ' txtTujuan
         ' 
-        TextBox3.Location = New Point(167, 226)
-        TextBox3.Margin = New Padding(3, 4, 3, 4)
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(265, 27)
-        TextBox3.TabIndex = 12
+        txtTujuan.Location = New Point(167, 226)
+        txtTujuan.Margin = New Padding(3, 4, 3, 4)
+        txtTujuan.Name = "txtTujuan"
+        txtTujuan.Size = New Size(265, 27)
+        txtTujuan.TabIndex = 12
         ' 
-        ' TextBox2
+        ' txtNoDokumen
         ' 
-        TextBox2.Location = New Point(167, 120)
-        TextBox2.Margin = New Padding(3, 4, 3, 4)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(265, 27)
-        TextBox2.TabIndex = 11
+        txtNoDokumen.Location = New Point(167, 66)
+        txtNoDokumen.Margin = New Padding(3, 4, 3, 4)
+        txtNoDokumen.Name = "txtNoDokumen"
+        txtNoDokumen.Size = New Size(265, 27)
+        txtNoDokumen.TabIndex = 10
         ' 
-        ' TextBox1
+        ' cbGudangAsal
         ' 
-        TextBox1.Location = New Point(167, 66)
-        TextBox1.Margin = New Padding(3, 4, 3, 4)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(265, 27)
-        TextBox1.TabIndex = 10
-        ' 
-        ' ComboBox3
-        ' 
-        ComboBox3.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        ComboBox3.DropDownStyle = ComboBoxStyle.DropDownList
-        ComboBox3.FormattingEnabled = True
-        ComboBox3.Location = New Point(167, 174)
-        ComboBox3.Margin = New Padding(3, 4, 3, 4)
-        ComboBox3.Name = "ComboBox3"
-        ComboBox3.Size = New Size(265, 28)
-        ComboBox3.TabIndex = 8
+        cbGudangAsal.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        cbGudangAsal.DropDownStyle = ComboBoxStyle.DropDownList
+        cbGudangAsal.FormattingEnabled = True
+        cbGudangAsal.Location = New Point(167, 174)
+        cbGudangAsal.Margin = New Padding(3, 4, 3, 4)
+        cbGudangAsal.Name = "cbGudangAsal"
+        cbGudangAsal.Size = New Size(265, 28)
+        cbGudangAsal.TabIndex = 8
         ' 
         ' Label4
         ' 
@@ -445,6 +437,13 @@ Partial Class fromTransaksiKeluar
         detaildokumen.TabIndex = 0
         detaildokumen.Text = "Detail Dokumen"
         ' 
+        ' dtTanggal
+        ' 
+        dtTanggal.Location = New Point(167, 119)
+        dtTanggal.Name = "dtTanggal"
+        dtTanggal.Size = New Size(265, 27)
+        dtTanggal.TabIndex = 15
+        ' 
         ' fromTransaksiKeluar
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -467,7 +466,7 @@ Partial Class fromTransaksiKeluar
         Panelleft.ResumeLayout(False)
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
-        CType(qty, ComponentModel.ISupportInitialize).EndInit()
+        CType(nudQty, ComponentModel.ISupportInitialize).EndInit()
         Pnldocument.ResumeLayout(False)
         Pnldocument.PerformLayout()
         ResumeLayout(False)
@@ -478,32 +477,32 @@ Partial Class fromTransaksiKeluar
     Friend WithEvents Panelright As Panel
     Friend WithEvents Panelleft As Panel
     Friend WithEvents Pnldocument As Panel
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents txtNoDokumen As TextBox
+    Friend WithEvents cbGudangAsal As ComboBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents tggl As Label
     Friend WithEvents no As Label
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtKeterangan As TextBox
+    Friend WithEvents txtTujuan As TextBox
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents btnTambah As Button
+    Friend WithEvents btnTambahKeList As Button
     Friend WithEvents Label5 As Label
     Friend WithEvents pilih As Label
     Friend WithEvents Panel3 As Panel
     Friend WithEvents input As Label
-    Friend WithEvents qty As NumericUpDown
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents nudQty As NumericUpDown
+    Friend WithEvents cbBarang As ComboBox
     Friend WithEvents dgvKeluar As DataGridView
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Panel6 As Panel
-    Friend WithEvents btnSimtrans As Button
+    Friend WithEvents btnSimpanTransaksi As Button
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents detaildokumen As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents btnkembali As Button
+    Friend WithEvents btnKembali As Button
+    Friend WithEvents dtTanggal As DateTimePicker
 End Class

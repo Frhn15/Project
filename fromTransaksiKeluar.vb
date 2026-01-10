@@ -28,7 +28,7 @@
 
     End Sub
 
-    Private Sub btnkembali_Click(sender As Object, e As EventArgs) Handles btnkembali.Click
+    Private Sub btnkembali_Click(sender As Object, e As EventArgs) Handles btnKembali.Click
         Form1.Show()
         Me.Hide()
     End Sub
